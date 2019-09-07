@@ -1,0 +1,39 @@
+\documentclass[a4paper,12pt]{fancy}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[table]{xcolor}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\usepackage{pdfpages}
+\usepackage{physics}
+\usepackage[version=4]{mhchem}
+\newcommand{\Depth}{3}
+\newcommand{\Height}{3}
+\newcommand{\Width}{3}
+\usepackage{pgfplots}
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text}
+\tikzset{
+	arrow/.style={-{Triangle[length=5mm,width=2mm]}}
+}
+\usetikzlibrary{patterns,fillbetween}
+\pgfplotsset{width=8cm,compat=newest}
+\def\wall{ \fill
+	[fill=black!50] (1,-.5) rectangle (2,.5);
+	\pattern [pattern=bricks] (1,-.5) rectangle (2,.5);
+	\draw
+	[line width=1pt] (1cm+.5pt,-.5) -- ++(0,1); }
+\begin{document}
+%\includepdf[pages=1]{conicfrontcover3.pdf}
+\frontmatter
+\pagenumbering{alpkh}
+%\input{conicacknowledge.tex}
+%\input{conicpreface.tex}
+%\input{conictableofcontents.tex}
+\mainmatter
+\pagenumbering{khmer}
+\input{lesson1.tex}
+\input{exercises1.tex}
+\input{lesson2.tex}
+\input{exercises2.tex}
+\end{document}

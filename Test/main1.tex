@@ -1,0 +1,141 @@
+\documentclass[12pt,a4paper]{article}
+% math font
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{mathtools}
+\RequirePackage{newpxmath}
+\usepackage{beton,euler}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\newcommand{\Depth}{3}
+\newcommand{\Height}{3}
+\newcommand{\Width}{3}
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text}
+\usepackage{pgfplots}
+\usetikzlibrary{patterns,fillbetween}
+\setmainfont{Khmer OS Bokor}
+\pagecolor{green!60!white}
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}[remember picture, overlay]
+\fill[left color=green!67!cyan,right color=green!25!cyan]
+(current page.north west) rectangle ([yshift=-7cm]current page.north east);
+\path ([xshift=-2.5cm,yshift=-2.5cm]current page.north east)
+
+node[opacity=1]{\includegraphics[width=4cm]{msc.png}};
+%
+\fill[color=green!44!white,opacity=.75]
+([yshift=-10.5cm]current page.north west) rectangle ([xshift=1.75cm]current page.south west);
+%
+\draw[line width=2pt,color=white,opacity=.75]
+([yshift=-4cm]current page.north west) -- ([xshift=-9cm,yshift=-4cm]current page.north east);
+%
+\draw[line width=2pt,color=white,opacity=.75]
+([yshift=-10.5cm]current page.north west) -- ([xshift=-9cm,yshift=-10.5cm]current page.north east);
+%
+\draw[line width=2pt,color=white,opacity=.75]
+([xshift=1.75cm]current page.north west) -- ([xshift=1.75cm]current page.south west);
+%
+\path ([xshift=2.5cm,yshift=-1.5cm]current page.north west)
+node [right,text=white,text opacity=1,font=\bfseries] {\scalebox{2}{សាលាមេតូឌីស្ទកម្ពុជា}};
+%
+\path ([xshift=3.5cm,yshift=-2.75cm]current page.north west)
+
+node [right,text=white,text opacity=1] {\scalebox{1.75}{វិទ្យាសាស្រ្ត}};
+%
+\path ([xshift=1cm,yshift=-8.75cm]current page.north west)
+node [rotate=90,text=white,font=\bfseries] {\scalebox{2.5}{២០១៩}};
+%
+\path ([xshift=2.5cm,yshift=-6cm]current page.north west)
+node [right,text=white,text opacity=1,font=\bfseries\scshape] {\scalebox{2.5}{ស៊ុំ សំអុន}};
+%
+\path ([xshift=2.5cm,yshift=-9cm]current page.north west)
+node [right,text=magenta!77!red,font=\bfseries] {\scalebox{5}{\parbox{4cm}{រូបវិទ្យា}}};
+%
+\path ([xshift=2.5cm,yshift=-11.5cm]current page.north west)
+node [right,text=magenta,text opacity=.7,font=\bfseries] {\scalebox{2}{បោះពុម្ពលើកទី ១}};
+%
+\fill[fill=white,fill opacity=.45,rounded corners=1cm]
+([yshift=-11cm]current page.north east) --
+([xshift=-5cm,yshift=-11cm]current page.north east)--
+([xshift=-5cm,yshift=-7cm]current page.north east)-- ([yshift=-7cm]current page.north east);
+
+%\path ([xshift=-3cm,yshift=-5cm]current page.north east)
+%node[text=orange!90!white,text opacity=.75,font=\bfseries]{\scalebox{6}{ថ្នាក់ទី}};
+\path ([xshift=-2.5cm,yshift=-9cm]current page.north east)
+node[text=magenta!90!white,text opacity=.90,font=\bfseries]{\scalebox{8}{១២}};
+%
+\node[text=magenta!77!red,text opacity=.75,left,rotate=90](level)at([xshift=1cm,yshift=-16cm]current page.north west){\scalebox{2.5}{ស្របតាមកម្មវិធីសិក្សា}};
+\node[text=magenta!77!red,text opacity=.75,left,rotate=0](level)at([xshift=20cm,yshift=-18cm]current page.north west){\scalebox{1.6}{ផ្ទៃខាងនៃធុង}};
+
+% graph
+% ​​រូបទី២
+
+\begin{scope}[scale=2.2,xshift=1.6cm, yshift=-8cm,every node/.style={text=magenta!77!red},every path/.style={magenta!77!red,line width=2pt}]
+\large
+	\coordinate (O) at (0,0,0);
+\coordinate (A) at (0,\Width,0);
+\coordinate (B) at (0,\Width,\Height);
+\coordinate (C) at (0,0,\Height);
+\coordinate (D) at (\Depth,0,0);
+\coordinate (E) at (\Depth,\Width,0);
+\coordinate (F) at (\Depth,\Width,\Height);
+\coordinate (G) at (\Depth,0,\Height);
+\draw[->, -Stealth] (0,0,0) -- (4,0,0);
+\draw[->, -Stealth] (0,0,0) -- (0,4,0);
+\draw[->, -Stealth] (0,0,0) -- (0,0,4.5);
+\draw[gray,fill=orange!30] (O) -- (C) -- (G) -- (D) -- cycle;% Bottom Face
+\draw[fill=orange!20!white] (O) -- (A) -- (E) -- (D) -- cycle;% Back Face
+\draw[fill=red!10] (O) -- (A) -- (B) -- (C) -- cycle;% Left Face
+\fill [cyan!60] (D) -- (E) -- (F) -- (G) -- cycle;% Right Face
+\pattern [pattern color=white, pattern=bricks,opacity=1] (D) -- (E) -- (F) -- (G) -- cycle;% Right Face
+\draw[fill=white!20,opacity=0.6] (C) -- (B) -- (F) -- (G) -- cycle;% Front Face
+\draw[fill=white!20,opacity=0.6] (A) -- (B) -- (F) -- (E) -- cycle;% Top Face
+\shade [ball color = green, opacity = 1] (-.5,1) circle (.2cm);
+\draw [->, -Latex, line width=3.0pt] (-.3,1) --(1,1.5);
+\draw [dashed, gray] (-.3,1) -- (2.5,1);
+\coordinate[label = right:$\overrightarrow{v}$] ($v$) at (.8,1.6);
+\coordinate[label = above:$m_{0}$] ($m_{0}$) at (-.5,1.1); 
+\coordinate[label = right:$x$] ($x$) at (.1,0,4.6); 
+\coordinate[label = below:$y$] ($y$) at (4,0,0);
+\coordinate[label = right:$z$] ($z$) at (0,4,0); 
+\coordinate[label = right:$L$] ($L$) at (.4,-1.4);
+\coordinate[label = right:$L$] ($L$) at (-1.5,.7);
+\coordinate[label = right:$L$] ($L$) at (2.7,-.5);
+\draw [->, -Latex, line width=3.0pt] (4,1.8) --(2.5,1);
+%\draw [<->, line width=3.0pt] (-1.2,-1.5) --(2,-1.5);
+
+% ​​រូបទី២
+%\draw [dashed,white, line width=2pt, xstep=1.0cm,ystep=1.0cm] grid (5.9,3.9);
+%\fill [cyan!60] (1,0) -- (1,1) -- (2,1) -- (3,3) --(3,3) -- (4,2) -- (4,1)--(5,1) -- (5,0) -- cycle;
+%\pattern[pattern color=white,pattern=bricks] (1,0) -- (1,1) -- (2,1) -- (3,3) --(3,3) -- (4,2) -- (4,1)--(5,1) -- (5,0) -- cycle;
+%\draw [->, -Stealth] (0,0)-- (6,0);
+%\draw [ultra thick] (1,1)-- (2,1)--(3,3)--(4,2)--(4,1)--(5,1);
+%\draw [dashed] (1,0)--(1,1);
+%\draw [dashed] (5,1)-- (5,0);
+%\draw [->, -Stealth] (0,0)-- (0,4);
+%\draw(0,3.9) node [right=.1cm]{$P\left(kPa\right)$};
+%\draw(0,1) node [left=.1cm]{$200$};
+%\draw(0,2) node [left=.1cm]{$400$};
+%\draw(0,3) node [left=.1cm]{$600$};
+%\draw (1,-.3) node {$2.0$};
+%\draw (2,-.3) node {$4.0$};
+%\draw (3,-.3) node {$6.0$};
+%\draw (4,-.3) node {$8.0$};
+%\draw (5,-.3) node {$10$};
+%\draw (6,0) node [right=.1cm]{$V\left(m^{3}\right)$};
+%\draw [arrows = {-Latex[width=10pt, length=10pt]}] (3.4,2.6) -- (3.6,2.4);
+%\draw [arrows = {-Latex[width=10pt, length=10pt]}] (2.5,2) -- (2.6,2.2);
+%\draw [arrows = {-Latex[width=10pt, length=10pt]}] (4.5,1) -- (4.7,1);
+%\draw [arrows = {-Latex[width=10pt, length=10pt]}] (1.5,1) -- (1.7,1);
+%\draw (1,1) node {$\bullet$};
+%\draw (3,3) node {$\bullet$};
+%\draw (5,1) node {$\bullet$};
+%\coordinate [label=above left:$A$] (A) at (1,1);
+%\coordinate [label=above right:$B$] (B) at (3,3);
+%\coordinate [label=above right:$C$] (C) at (5,1);
+\end{scope}
+\end{tikzpicture}
+\end{document}
