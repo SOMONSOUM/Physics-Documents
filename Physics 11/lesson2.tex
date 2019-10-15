@@ -1,0 +1,83 @@
+\chapter{ចលនាអង្គធាតុតាមមួយវិមាត្រ}
+\section{បម្លាស់ទី ល្បឿន វុិចទ័រល្បឿន}
+\subsection{ចម្ងាយចរ និងបម្លាស់ទី}
+\begin{definition}
+	\emph{\kml ចម្ងាយចរៈ} ជាប្រវែងសរុបនៃចលនារបស់អង្គធាតុដោយមិនគិតពីទិសដៅនៃចលនា។\\
+	\emph{\kml បម្លាស់ទីៈ} ជាចម្ងាយចរដែលវាស់តាមខ្សែត្រង់ និងតាមទិសដៅជាក់លាក់។
+\end{definition}
+\begin{remark}
+	លក្ខណៈសម្គាល់ទាំងពីរនៃបម្លាស់ទីគឺៈ
+	\begin{itemize}
+		\item [$-$] \emph{បម្លាស់ទី} គឺជាចម្ងាយចររវាងទីតាំងដើម និងទីតាំងស្រេចរបស់អង្គធាតុ។
+		\item [$-$] \emph{បម្លាស់ទី} មានទិសដៅពីទីតាំងដើម​ទៅទីតាំងស្រេចរបស់អង្គធាតុ។
+	\end{itemize}
+\end{remark}
+\subsection{ល្បឿន វុិចទ័រល្បឿន}
+\begin{enumerate}[m]
+	\item \emph{\kml ល្បឿន}\\
+	ល្បឿននៃអង្គធាតុមួយសម្គាល់ភាពលឿន ឬភាពយឺតនៃចលនារបស់អង្គធាតុនោះ ហើយកំណត់ដោយផលធៀបរវាងចម្ងាយចរ និងរយៈពេល។ យើងបានៈ \fbox{$\text{ល្បឿន}=\frac{\text{ចម្ងាយចរ}}{\text{រយៈពេល}}$ ឬ $v=\frac{d}{t}$}\\
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item [$-$] ចម្ងាយចរគិតជាម៉ែត្រ $\left(m\right)$
+			\item [$-$] រយៈពេលគិតជាវិនាទី $\left(s\right)$
+			\item [$-$] ល្បឿនគិតជាម៉ែត្រក្នុងមួយវិនាទី $\left(m/s\right)$
+		\end{itemize}
+	\end{multicols}
+	ភាកច្រើននៃអង្គធាតុមិនមានចលនាដោយល្បឿនថេរទេ ល្បឿនបស់វាពេលខ្លះយឺត និងពេលខ្លះលឿន។ ហេតុនេះហើយគេត្រូវកំណត់ល្បឿនរបស់អង្គធាតុនោះជាល្បឿនមធ្យមដែលល្បឿននេះដោយផលធៀបរវាងចម្ងាយចរសរុប និងរយៈពេលសរុប។\\
+	យើងបានៈ \fbox{$\text{ល្បឿនមធ្យម}=\frac{\text{ចម្ងាយចរសរុប}}{\text{រយៈពេលសរុប}}$ ឬ $\overline{v}=\frac{d}{t}$}
+	\item \emph{\kml វុិចទ័រល្បឿន}\\
+	វុិចទ័រល្បឿនគឺជាបម្រែបម្រួលបម្លាស់ទីក្នុងមួយខ្នាតពេល។\\
+	យើងបានៈ \fbox{$\text{វុិចទ័រល្បឿន}=\frac{\text{បម្លាស់ទី(ចម្ងាយត្រង់)}}{\text{រយៈពេលចរ}}$}។
+	\begin{multicols}{2}
+		ឧបមាថានៅខណៈ $t_{1}$ ចល័តស្ថិតនៅត្រង់ចំណុចមួយដែលមានទីតាំង $x_{1}$ ហើយនៅខណៈ $t_{2}$ ចល័តស្ថិតនៅត្រង់ចំណុចមួយដែលមានទីតាំង $x_{2}$។
+		\begin{figure}[H]
+			\centering
+%			\begin{tikzpicture}
+%				\begin{scope}
+%					\draw [->, -Stealth] (-1,0) --(5,0);
+%					\coordinate[label=below:$O$] (0,0) at (0,0);
+%					\coordinate[label=below:$x_{1}$] (1,0) at (1,0);
+%					\coordinate[label=below:$x_{2}$] (3,0) at (3,0);
+%					\coordinate[label=above:$t_{1}$] (1,0) at (1,0);
+%					\coordinate[label=above:$t_{2}$] (3,0) at (3,0);
+%					\draw (0,0) node {$\bullet$};
+%					\draw (1,0) node {$\bullet$};
+%					\draw (3,0) node {$\bullet$};
+%					\draw [|-|] (1,1) --(3,1);
+%					\draw (2,1.5) node {$\Delta x$};
+%				\end{scope}
+%			\end{tikzpicture}
+			\begin{tikzpicture}
+				\begin{scope}
+					\shade[top color=orange, bottom color=white, shading angle={10}]
+%					[draw=black,fill=orange!20,rounded corners=1.2ex,very thick] (1.5,.5) -- ++(0,1) -- ++(1,0.3) --  ++(3,0) -- ++(1,0) -- ++(0,-1.3) -- (1.5,.5) -- cycle;
+					\draw[very thick, rounded corners=0.5ex,fill=black!20!blue!20!white,thick]  (2.5,1.8) -- ++(1,0.7) -- ++(1.6,0) -- ++(0.6,-0.7) -- (2.5,1.8);
+					\draw[thick]  (4.2,1.8) -- (4.2,2.5);
+					\draw[draw=black,fill=black!80,thick] (2.75,.5) circle (.5);
+					\draw[draw=black,fill=black!80,thick] (5.5,.5) circle (.5);
+					\draw[draw=black,fill=gray!80,semithick] (2.75,.5) circle (.2);
+					\draw[draw=black,fill=gray!80,semithick] (5.5,.5) circle (.2);
+					
+					\draw[->,-Stealth] (-1,0) -- (8,0);
+					\draw (8.5,0) node {$x(t)$};
+					\coordinate[label=below:$O$] (0,0) at (0,0);
+					\coordinate[label=below:$x_{1}$] (1,0) at (1,0);
+					\coordinate[label=below:$x_{2}$] (3,0) at (3,0);
+					\coordinate[label=above:$t_{1}$] (1,0) at (1,0);
+					\coordinate[label=above:$t_{2}$] (3,0) at (3,0);
+					\draw (0,0) node {$\bullet$};
+					\draw (1,0) node {$\bullet$};
+					\draw (3,0) node {$\bullet$};
+					\draw [|-|] (1,1) --(3,1);
+					\draw (2,1.5) node {$\Delta x$};
+				\end{scope}
+			\end{tikzpicture}
+		\end{figure}
+	\end{multicols}
+	យើងបានៈ \fbox{$\text{វុិចទ័រល្បឿនមធ្យម}=\frac{\text{បម្លាស់ទីសរុប}}{\text{រយៈពេលចរ}}$ ឬ $v_{av}=\frac{\Delta x}{\Delta t}=\frac{x_{2}-x_{1}}{t_{2}-t_{1}}$}
+	\begin{remark}
+		កាលណាគេនិយាយពីវុិចទ័រល្បឿននៃអង្គធាតុមួយគេត្រូវគិតដល់ល្បឿននិងទិសដៅដែលវាបានឆ្លងកាត់។
+	\end{remark}
+\end{enumerate}
+\subsection{វុិចទ័រល្បឿនខណៈ}
+

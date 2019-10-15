@@ -1,0 +1,4 @@
+\contentsline {part}{I\hspace {1em}ការចាប់ផ្តើមគូសរូប}{1}
+\contentsline {chapter}{\numberline {1}ការប្រើប្រាស់ \texten {tikz}}{3}
+\contentsline {section}{\numberline {1.1}សញ្ញាណទូទៅ}{3}
+\contentsline {chapter}{\numberline {A}ការប្រើប្រាស់ \texten {tikz}}{5}

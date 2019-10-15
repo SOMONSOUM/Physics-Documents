@@ -2,7 +2,7 @@
 	\section{ទ្រឹស្តីសុីនេទិចនៃឧស្ម័ន}
 	%
 	\begin{definition}
-		\emph{ទ្រឹស្តីសុីនេទិចនៃឧស្ម័នៈ} ជាការសិក្សាអំពីចលនារបស់ម៉ូលេគុលឧស្ម័ន $N$ ម៉ូលេគុលដែលស្ថិតក្នុងធុងរាងគូបមួយ។
+		\emph{ទ្រឹស្តីសុីនេទិចនៃឧស្ម័នៈ} ជាការសិក្សាអំពីចលនារបស់ម៉ូលេគុលឧស្ម័ន ដែលស្ថិតក្នុងធុងដែលផ្ទុកវា។
 	\end{definition}
 	%
 	\begin{figure}[H]
@@ -34,8 +34,8 @@
 			\coordinate[label = right:$\overrightarrow{v}$] ($v$) at (.8,1.5);
 			\coordinate[label = above:$m_{0}$] ($m_{0}$) at (-.5,1); 
 			\draw (5,2) node {\text{\koc ផ្ទៃខាងនៃធុង}}; 
-			\coordinate[label = right:$x$] ($x$) at (.1,0,4.5); 
-			\coordinate[label = below:$y$] ($y$) at (3.8,0,0);
+			\coordinate[label = right:$y$] ($y$) at (.1,0,4.5); 
+			\coordinate[label = below:$x$] ($x$) at (3.8,0,0);
 			\coordinate[label = right:$z$] ($z$) at (0,3.8,0); 
 			\draw [->, -Latex, line width=1.0pt] (4,1.8) --(2.5,1);
 			\end{tikzpicture}
@@ -61,18 +61,12 @@
 			\fill[orange!50, left color = orange!50, right color = orange!10!white]
 			(0.54,-0.26) rectangle +(2.8,5.03);
 			\pattern [pattern color=white, pattern=bricks] (0.54,-0.26) rectangle +(2.8,5.03);
-%			\fill[left color = orange!50, right color = orange!10!white, rounded corners=1]
-%			(0.54,-0.26) rectangle +(2.8,5.03);
-%			\shade[left color = orange!50, right color = orange!10!white, rounded corners=1]
-%			(0.54,-0.26) rectangle +(2.8,5.03);
 			
 			\end{scope}
 			
 			\pgfmathsetseed{10}
 			
 			\foreach \i in {1,2,...,10}{
-				%\pgfmathsetmacro{\x}{(rand*0.5 + 1)*4 + 1}
-				%\pgfmathsetmacro{\y}{(rand*0.5 + 1)*3.9 + 2 }
 				\pgfmathsetmacro{\x}{(rand*0.5 + 1)*3 - 0.5}
 				\pgfmathsetmacro{\y}{(rand*0.5 + 1)*4.7-1.2}
 				\pgfmathsetmacro{\opacVal}{0.95*(\x-2.5)/4 + rand*0.05}
@@ -108,12 +102,27 @@
 	\text{ដូចនេះ}\quad :&\quad P=\frac{2}{3}\times\frac{N}{V}K_{av}
 	\end{align*}
 	\section{ថាមពលសុីនេទិច និងសីតុណ្ហភាព}
-	 \subsection{សមីការភាពនៃឧស្ម័នបរិសុទ្ធៈ} តាមពិសោធន៍បង្ហាញថាៈ
-		\begin{itemize}
-			\item សម្ពាធសមាមាត្រនឹងសីតុណ្ហភាព\quad : \quad $P\sim T$
-			\item សម្ពាធសមាមាត្រនឹងចំនួនម៉ូលេគុល\quad : \quad $P\sim N$
-			\item សម្ពាធច្រាសសមាមាត្រនឹងមាឌ\quad : \quad $P\sim\frac{1}{V}$
-		\end{itemize}
+	 \subsection{សមីការភាពនៃឧស្ម័នបរិសុទ្ធៈ} 
+	 	\begin{multicols}{2}
+	 	តាមពិសោធន៍បង្ហាញថាៈ
+			\begin{itemize}
+				\item សម្ពាធសមាមាត្រនឹងសីតុណ្ហភាព: \quad $P\sim T$
+				\item សម្ពាធសមាមាត្រនឹងចំនួនម៉ូលេគុល: \quad $P\sim N$
+				\item សម្ពាធច្រាសសមាមាត្រនឹងមាឌ: \quad $P\sim\frac{1}{V}$
+			\end{itemize}
+			\begin{figure}[H]
+				\centering
+				\begin{tikzpicture}[scale=.7]
+					\begin{scope}
+						\tikzstyle{balloon}=[ball color=green!60];    
+						\shade[balloon, opacity=0.90] ellipse (1.75 and 2);
+						\shade[balloon, opacity=0.90] (-.1,-2) -- (-.3,-2.2) -- (.3,-2.2) -- (.1,-2) -- cycle;
+						\draw (0,-2.2) -- (0,-2.5);
+					\end{scope}
+				\end{tikzpicture}
+				\caption{បាឡុងរាងស៊្វែផ្ទុកឧស្ម័ន}
+			\end{figure}
+		\end{multicols}
 		\begin{align*}
 			\text{យើងបាន}\quad :& \quad P\sim \frac{NT}{V}\quad \text{ឬ}\quad P=k_{B}\frac{NT}{V}\quad \text{នោះ}\quad PV=Nk_{B}T\\\text{ដែល}\quad :&\quad k_{B}=1.38\times10^{-23}J/K\left(\text{ថេរបុលស្មាន់}\right)\\
 			\text{តែ}\quad :&\quad N=nN_{A}\quad \text{នោះ}\quad PV=nk_{B}N_{A}T\\

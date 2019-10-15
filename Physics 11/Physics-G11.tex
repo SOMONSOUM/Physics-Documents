@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt]{fancy}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[table]{xcolor}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\usepackage{pdfpages}
+\usepackage[version=4]{mhchem}
+\usepackage{tkz-euclide}
+\definecolor{myyellow}{RGB}{254,241,24}
+\definecolor{myorange}{RGB}{234,125,1}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usetikzlibrary{calc,angles,quotes,decorations.markings}
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text}
+\tikzset{>=latex}
+\usepackage{chemfig}
+\usepackage{multirow}
+\newcommand\RectTri[4][thick,green!50!black,text=black]{%
+	\coordinate [label=left:$C$] (C) at #2;
+	\coordinate [label=below right:$B$] (B) at #3;
+	\coordinate (aux) at ($ #2 ! 1 ! 90:#3 $);
+	\coordinate [label=above:$A$] (A) at ($ #2 !#4!(aux) $);
+	
+	\coordinate (perp) at ($(A)!(C)!(B)$);
+	
+	\draw[#1] 
+	(C) -- 
+	node[auto] {$b$} (A) -- 
+	node[auto] {$c$} (B) --
+	node[auto] {$a$} 
+	(C)
+	pic ["$\alpha$",draw,cyan,thick,angle radius=1cm] {angle = C--A--B} 
+	%pic ["$\alpha$",draw,cyan,thick,angle radius=1cm] {angle = B--C--perp}
+	pic ["$\beta$",draw,orange!70!black,thick,angle radius=1cm] {angle = A--B--C}
+	pic ["$\gamma$",draw,orange!70!black,thick,angle radius=1cm] {angle = B--C--A};
+}
+\newcommand{\pythagwidth}{3cm}
+\newcommand{\pythagheight}{2cm}
+\begin{document}
+	%\includepdf[pages=1]{conicfrontcover.pdf}
+	%\frontmatter
+	\pagenumbering{alpkh}
+	%\input{conicacknowledge.tex}
+	%\input{conicpreface.tex}
+	%\input{conictableofcontents.tex}
+	%\mainmatter
+	\pagenumbering{khmer}
+	\input{lesson0.tex}
+	\input{lesson1.tex}
+	%\input{exercises1.tex}
+	%\input{lesson2.tex}
+	\input{lesson3.tex}
+\end{document}

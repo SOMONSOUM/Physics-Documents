@@ -22,13 +22,15 @@
 % language
 \RequirePackage[no-math]{fontspec}% no math font
 \setmainfont[Ligatures=TeX,AutoFakeBold=0.5,AutoFakeSlant=0.25]{Antioch Text}% roman font
-\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer OS Muol Light}% sans serif font
+\setsansfont[Ligatures=TeX,AutoFakeBold=0,AutoFakeSlant=0.25]{Khmer M1}% sans serif font
 \setmonofont[Ligatures=TeX,AutoFakeBold=0.5,AutoFakeSlant=0.25]{Khmer OS Bokor}% typewriter font
 \XeTeXlinebreaklocale "km"% line break rule
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.5pt% line break skip
 
 \newcommand{\koc}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Antioch Text}\selectfont}
-\newcommand{\kml}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Muol Light}\selectfont}
+\newcommand{\KM}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer M2}\selectfont}
+\newcommand{\DS}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Angkor}\selectfont}
+\newcommand{\kml}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer M1}\selectfont}
 \newcommand{\kos}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS System}\selectfont}
 \newcommand{\kbk}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Bokor}\selectfont}
 \newcommand{\kb}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Battambang}\selectfont}
@@ -147,7 +149,7 @@
 	}
 }
 \newtcolorbox{definition}[1][]{
-	title={\kbk និយមន័យ},
+	title={\large\KM និយមន័យ},
 	colframe=magenta,
 	colback=magenta!12!white,
 	boxed title style={colback=magenta},
@@ -568,36 +570,36 @@ after-item-skip=0.5ex]{Itemize}[\item]
 \addtolength{\jot}{1pt}
 %% prevent book contents from vertical stretching %%
 \raggedbottom
-\def\preparelabel{រៀបរៀងដោយ}
-\def\preparename{ស៊ុំ សំអុន}
+\def\preparelabel{រៀបរៀង និងបង្រៀនដោយ}
+\def\preparename{\large\KM ស៊ុំ សំអុន}
 \def\ps@plain{%
 	\let\@oddhead\@empty%
 	\let\@evenhead\@oddhead%
 	\def\@oddfoot{%
-		\scriptsize\textcolor{fancy!89!white}{\footnotesize\itshape\preparelabel~\preparename}%និពន្ធ និងរៀបរៀងដោយ អូល សាយ
-		\hfil\tikz{\node[fill=fancy,text=white,font=\large\sffamily]{\thepage};}%
-		\hfil\textcolor{fancy!89!white}{\footnotesize\itshape សាលាមេតូឌីស្ទកម្ពុជា}}%
+		\scriptsize\textcolor{fancy!89!white}{\footnotesize\itshape\preparelabel~\preparename}%និពន្ធ និងរៀបរៀងដោយ ស៊ុំ សំអុន
+		\hfil\tikz{\node[fill=fancy,text=white,font=\large\KM]{\thepage};}%
+		\hfil\textcolor{fancy!89!white}{\footnotesize\itshape \large\KM សាលាមេតូឌីស្ទកម្ពុជា}}%
 	\def\@evenfoot{%
-		\scriptsize\textcolor{fancy!89!white}{\footnotesize\itshape សាលាមេតូឌីស្ទកម្ពុជា}%
-		\hfil\tikz{\node[fill=fancy,text=white,font=\large\sffamily]{\thepage};}%
+		\scriptsize\textcolor{fancy!89!white}{\footnotesize\itshape \large\KM សាលាមេតូឌីស្ទកម្ពុជា}%
+		\hfil\tikz{\node[fill=fancy,text=white,font=\large\KM]{\thepage};}%
 		\hfil\scriptsize\textcolor{fancy!89!white}{\footnotesize\itshape\preparelabel~\preparename}%
 	}%
 }
 %
 \def\ps@fancy{%
 	\def\@oddhead{%
-		\textcolor{fancy!89!white}{\footnotesize\itshape \leftmark}%
-		\hfil\textcolor{fancy!89!white}{\footnotesize\itshape \rightmark}}%
+		\textcolor{fancy!89!white}{\large\DS\footnotesize\itshape \leftmark}%
+		\hfil\textcolor{fancy!89!white}{\large\DS\footnotesize\itshape \rightmark}}%
 	\def\@evenhead{%
-		\textcolor{fancy!89!white}{\footnotesize\itshape \rightmark}%
-		\hfil\textcolor{fancy!89!white}{\footnotesize\itshape \leftmark}}%
+		\textcolor{fancy!89!white}{\large\DS\footnotesize\itshape \rightmark}%
+		\hfil\textcolor{fancy!89!white}{\large\DS\footnotesize\itshape \leftmark}}%
 	\def\@oddfoot{%
 		\scriptsize\textcolor{fancy!89!white}{\footnotesize\itshape\preparelabel~\preparename}%
-		\hfil\tikz{\node[fill=fancy,text=white,font=\large\sffamily]{\thepage};}%
-		\hfil\textcolor{fancy!89!white}{\footnotesize\itshape សាលាមេតូឌីស្ទកម្ពុជា}}%
+		\hfil\tikz{\node[fill=fancy,text=white,font=\large\KM]{\thepage};}%
+		\hfil\textcolor{fancy!89!white}{\footnotesize\itshape \large\KM សាលាមេតូឌីស្ទកម្ពុជា}}%
 	\def\@evenfoot{%
-		\scriptsize\textcolor{fancy!89!white}{\footnotesize\itshape សាលាមេតូឌីស្ទកម្ពុជា}%
-		\hfil\tikz{\node[fill=fancy,text=white,font=\large\sffamily]{\thepage};}%
+		\scriptsize\textcolor{fancy!89!white}{\footnotesize\itshape \large\KM សាលាមេតូឌីស្ទកម្ពុជា}%
+		\hfil\tikz{\node[fill=fancy,text=white,font=\large\KM]{\thepage};}%
 		\hfil\scriptsize\textcolor{fancy!89!white}{\footnotesize\itshape\preparelabel~\preparename}%
 	}%
 }

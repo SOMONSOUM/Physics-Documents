@@ -1,0 +1,175 @@
+\documentclass[12pt, a4paper]{book}
+\usepackage[
+left=1.5cm,%
+right=1.5cm,%
+top=1.5cm,%
+bottom=1.5cm
+]{geometry}
+% ដើម្បីសរសេរភាសាខ្មែរបានយើងត្រូវប្រើ----
+\usepackage[no-math]{fontspec}
+%----------------------------------
+\setmainfont[Ligatures=TeX,AutoFakeBold=1,AutoFakeSlant=0.25]{Khmer Vanara} %\rmfamily កំណត់ roman font ជា Khmer Vanara
+\setsansfont[Ligatures=TeX,AutoFakeBold=1,AutoFakeSlant=0.25]{Khmer M1} %\sffamily កំណត់ sans serif font ជា Khmer M1
+\setmonofont[Ligatures=TeX,AutoFakeBold=1,AutoFakeSlant=0.25]{Khmer M2} %\ttfamily កំណត់ monospace font ជា Khmer M2
+%-------------------------------
+\XeTeXlinebreaklocale "km"
+\XeTeXlinebreakskip = 0pt plus 0.5pt minus 0.25pt
+%-------------------------------
+
+% ប្រកាស Font ថ្មី​ មានទម្រង់ \newfontfamily{cmd}{fontname}
+\newfontfamily{\ak}{Angkor}
+\newfontfamily{\koks}{Khmer OS Kien Svay}
+\newfontfamily{\kwp}{Khmer Wat Phnom}
+\newfontfamily{\kbk}{Khmer OS Bokor}
+\newfontfamily{\en}{Times New Roman}
+\newfontfamily{\qsm}{Quicksand Light}
+\newfontfamily{\kob}{Khmer OS Battambang}
+
+%របៀបបង្កើត Command ថ្មី
+\newcommand{\mc}{\fontspec{Monotype Corsiva}\selectfont}
+%\newcommand{\qsm}{\fontspec{Quicksand Medium}\selectfont}
+
+% បង្កើត text macro ថ្មី
+\DeclareTextFontCommand{\textkbk}{\kbk}
+\DeclareTextFontCommand{\textak}{\ak}
+\DeclareTextFontCommand{\textkwp}{\kwp}
+\DeclareTextFontCommand{\textkoks}{\koks}
+\DeclareTextFontCommand{\texten}{\en}
+
+%កំណត់ name macro ឡើងវិញ
+\def\abstractname{សង្ខេប}
+\def\appendixname{សេចក្តីបន្ថែម}
+\def\bibname{គន្ថនិទ្ទេស}
+\def\chaptername{ជំពូក}
+\def\contentsname{មាតិកា}
+\def\figurename{រូបភាព}
+\def\indexname{លិបិក្រម}
+\def\listfigurename{បញ្ជីររូបភាព}
+\def\listtablename{បញ្ជីរតារាង}
+\def\partname{ផ្នែក}
+\def\refname{ឯកសារយោង}
+\def\tablename{តារាង}
+
+% បង្កើត Counter ជាអក្សរខ្មែរ
+\makeatletter
+% khmer number
+\def\khmer#1{\expandafter\@khmer\csname c@#1\endcsname}
+\def\@khmer#1{\expandafter\@@khmer\number#1\@nil}
+\def\@@khmer#1{%
+	\ifx#1\@nil% terminate when encounter @nil
+	\else%
+	\ifcase#1 ០\or ១\or ២\or ៣\or ៤\or ៥\or ៦\or ៧\or ៨\or ៩\fi%
+	\expandafter\@@khmer% recursively map the following characters
+	\fi}
+\def\khmernumeral#1{\@@khmer#1\@nil}
+
+% khmer alphabet
+\def\alpkh#1{\expandafter\@alpkh\csname c@#1\endcsname}
+\def\@alpkh#1{%
+	\ifcase#1% zero -> none
+	\or ក\or ខ\or គ\or ឃ\or ង%
+	\or ច\or ឆ\or ជ\or ឈ\or ញ%
+	\or ដ\or ឋ\or ឌ\or ឍ\or ណ%
+	\or ត\or ថ\or ទ\or ធ\or ន%
+	\or ប\or ផ\or ព\or ភ\or ម%
+	\or យ\or រ\or ល\or វ\or ស%
+	\or ហ\or ឡ\or អ%
+	\else%
+	\@ctrerr% otherwise, counter error!
+	\fi}
+
+%
+
+%
+\def\khmershortdate{%
+	\ifnum\day<10\@khmer{0\day}\else\@khmer\day\fi%
+	/\@khmer\month%
+	/\@khmer\year}
+\def\khmerdate{%
+	\ifnum\day<10\@khmer{0\day}\else\@khmer\day\fi~%
+	\ifcase\month\or%
+	មករា\or%
+	កុម្ភៈ\or%
+	មិនា\or%
+	មេសា\or%
+	ឧសភា\or%
+	មិថុនា\or%
+	កក្កដា\or%
+	សីហា\or%
+	កញ្ញា\or%
+	តុលា\or%
+	វិច្ឆិកា\or%
+	ធ្នូ\fi~%
+	\@khmer\year}
+
+\makeatother
+
+\usepackage{enumitem}
+% declare new enumerate counter
+
+%% set enumerate and itemize key for numerals
+%\AddEnumerateCounter{\alpkh}{\@alpkh}{\char"1788}
+%\AddEnumerateCounter{\khmer}{\@khmer}{\char"17e3}
+\AddEnumerateCounter{\alpkh}{\@alpkh}{ឈ}
+\AddEnumerateCounter{\khmer}{\@khmer}{៣}
+% enumerate keys
+\SetEnumitemKey{1}{label=\protect\color{fancy}\protect\sffamily\arabic*.}
+\SetEnumitemKey{a}{label=\protect\color{fancy}\protect\sffamily\alph*.}
+\SetEnumitemKey{A}{label=\protect\color{fancy}\protect\sffamily\Alph*.}
+\SetEnumitemKey{i}{label=\protect\color{fancy}\protect\sffamily\roman*.}
+\SetEnumitemKey{I}{label=\protect\color{fancy}\protect\sffamily\Roman*.}
+\SetEnumitemKey{k}{label=\protect\color{fancy}\protect\sffamily\alpkh*.}
+\SetEnumitemKey{m}{label=\protect\color{fancy}\protect\sffamily\khmer*.}
+% itemize keys
+\SetEnumitemKey{b}{label=\protect\color{fancy}\protect\ensuremath{\bullet}}
+\SetEnumitemKey{c}{label=\protect\color{fancy}\protect\ensuremath{\circ}}
+\SetEnumitemKey{d}{label=\protect\color{fancy}\protect\ensuremath{\diamond}}
+\SetEnumitemKey{t}{label=\protect\color{fancy}\protect\ensuremath{\triangleright}}
+\SetEnumitemKey{p}{label=\protect\color{fancy}\protect\ding{43}}
+\SetEnumitemKey{w}{label=\protect\color{fancy}\protect\ding{45}}
+
+% color
+\RequirePackage[table]{xcolor}
+\DeclareOption{black}{\colorlet{fancy}{black}}
+\DeclareOption{blue}{\colorlet{fancy}{blue}}
+\DeclareOption{brown}{\colorlet{fancy}{brown}}
+\DeclareOption{cyan}{\colorlet{fancy}{cyan}}
+\DeclareOption{darkgray}{\colorlet{fancy}{darkgray}}
+\DeclareOption{gray}{\colorlet{fancy}{gray}}
+\DeclareOption{green}{\colorlet{fancy}{green}}
+\DeclareOption{gray}{\colorlet{fancy}{gray}}
+\DeclareOption{lime}{\colorlet{fancy}{lime}}
+\DeclareOption{magenta}{\colorlet{fancy}{magenta}}
+\DeclareOption{olive}{\colorlet{fancy}{olive}}
+\DeclareOption{orange}{\colorlet{fancy}{orange}}
+\DeclareOption{pink}{\colorlet{fancy}{pink}}
+\DeclareOption{purple}{\colorlet{fancy}{purple}}
+\DeclareOption{red}{\colorlet{fancy}{red}}
+\DeclareOption{teal}{\colorlet{fancy}{teal}}
+\DeclareOption{violet}{\colorlet{fancy}{violet}}
+\DeclareOption{yellow}{\colorlet{fancy}{yellow!45!red}}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
+\ExecuteOptions{magenta}
+\ProcessOptions\relax
+
+\author{ស៊ុំ សំអុន}
+\title{កិច្ចការផ្ទះរបស់សិស្ស}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\frontmatter
+	\tableofcontents
+	\mainmatter
+	\part{ការចាប់ផ្តើមគូសរូប}
+	\chapter{ការប្រើប្រាស់ \texten{tikz}}
+	\section{សញ្ញាណទូទៅ}
+	
+	\textak{សួរស្តីអ្នកទាំងអស់គ្នា} {\sffamily សូមស្វាគមន៍!} \textkoks{ថ្ងៃនេះយើងជួបគ្នាជាមួយនឹងវីដេអូថ្មី} ដែលខ្ញុំនឹងបង្រៀនអ្នកទាំងអស់គ្នា \textkwp{អំពីការចាប់សរសេរអត្ថបទ} {\ttfamily គណិតវិទ្យាជាភាសាខ្មែរ} \textkbk{ដោយប្រើប្រាស់កម្មវីធី} \texten{\LaTeX}។ 
+	\begin{enumerate}[k]
+		\item មានអ្វីប្លែកទេ?
+	\end{enumerate}
+	\appendix
+	\chapter{ការប្រើប្រាស់ \texten{tikz}}
+	\backmatter
+\end{document}
