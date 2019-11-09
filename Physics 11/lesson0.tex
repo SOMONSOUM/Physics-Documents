@@ -266,3 +266,277 @@
 			\end{figure}
 		\end{multicols}
 \end{enumerate}
+\subsection{រង្វង់}
+រង្វង់មួយមានផ្ចិត $O$ កាំ $R$ និងអង្កត់ផ្ចិត $D$ ដូចរូប
+\begin{multicols}{2}
+	\begin{align*}
+	\text{អង្កត់ផ្ចិត}\quad :&\quad D=R+R=2R\\
+	\text{បរិមាត្រ}\quad :&\quad P=\pi D=2\pi R\\
+	\text{ក្រឡាផ្ទៃ}\quad :&\quad S=\pi R^{2}=\pi\frac{D^{2}}{4}
+	\end{align*}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{scope}
+				\coordinate[label=above left:$O$] (O) at (2,2);
+				\coordinate[label=below:$D$] (D) at (2,1.8);
+				\coordinate[label=right:$R$] (R) at (2,2.8);
+				\draw (O) circle (2cm);
+				\draw (O) -- (2,4);
+				\draw (0,2) -- (4,2);
+				\node at (O) {$\bullet$};
+			\end{scope}
+		\end{tikzpicture}
+		\caption{រង្វង់}
+	\end{figure}
+\end{multicols}
+\subsection{គូប}
+គូបមួយមានទ្រនុង $a$ ដូចរូប។ យើងបានមាឌរបស់វាគឺ $V=a\cdot a\cdot a=a^{3}$
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\pic at (-3,-2) {annotated cubic={width=20, height=20, depth=20, units=cm}};
+	\end{tikzpicture}
+	\caption{គូប}
+\end{figure}
+\subsection{ប្រលេពីប៉ែតកែង}
+ប្រលេពីប៉ែតកែងមួយមានទ្រនុង $a$ បណ្តោយ $b$ និងកម្ពស់ $h$ ដូចរូប។ យើងបានមាឌរបស់វាគឺ $V=a\cdot b\cdot h$
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\pic at (0,0) {annotated prole={width=30, height=10, depth=20, units=cm}};
+	\end{tikzpicture}
+	\caption{ប្រលេពីប៉ែតកែង}
+\end{figure}
+\subsection{សុីឡាំង}
+សុីឡាំងមួយមានមុខកាត់ជារង្វង់ដែលមានកាំ $R$ និងកម្ពស់ $h$ ដូចរូប។ យើងបានមាឌ $V=S\cdot h=\pi R^{2}h$
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[yscale=.5, xscale=.8]
+		\coordinate[label=above:$O$] (O) at (0,0);
+		\fill [top color=gray!50!black,bottom color=gray!10,middle color=cyan,shading=axis,opacity=0.25] (0,0) circle (2cm and 0.5cm);
+		\fill [left color=gray!50!black,right color=gray!50!black,middle color=cyan!50,shading=axis,opacity=0.25] (2,0) -- (2,-6) arc (360:180:2cm and 0.5cm) -- (-2,0) arc (180:360:2cm and 0.5cm);
+		\fill [top color=gray!90!,bottom color=gray!2,middle color=cyan!30,shading=axis,opacity=0.25] (0,-6) circle (2cm and 0.5cm);
+		\draw (-2,-6) -- (-2,0) arc (180:360:2cm and 0.5cm) -- (2,-6) ++ (-2,0) circle (2cm and 0.5cm);
+		\draw [densely dashed] (-2,0) arc (180:0:2cm and 0.5cm);
+		\node at (2.5,-2) {$h$};
+		\node at (1,1) {$R$};
+		\draw (O) -- (2, 0);
+		\node at (O) {$\bullet$};
+	\end{tikzpicture}
+	\caption{សុីឡាំង}
+\end{figure}
+\subsection{ស៊្វែ}
+\begin{multicols}{2}
+	ស៊្វែមួយមានកាំ $R$ ដូចរូប។ យើងបានៈ
+	\begin{align*}
+	\text{ក្រឡាផ្ទៃ}\quad :&\quad S=4\pi R^{2}=\pi D^{2}\\
+	\text{មាឌ}\quad :&\quad V=\frac{4}{3}\pi R^{2}
+	\end{align*}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+		\coordinate[label=below:$O$] (O) at (0,0);
+		\shade[ball color = cyan!40, opacity = 0.4] (0,0) circle (2cm);
+		\draw (0,0) circle (2cm);
+		\draw (-2,0) arc (180:360:2 and 0.6);
+		\draw[dashed] (2,0) arc (0:180:2 and 0.6);
+		\fill[fill=cyan] (0,0) circle (1pt);
+		\draw[dashed] (O) -- node[above]{$R$} (2,0);
+		\node at (O) {$\bullet$};
+		\end{tikzpicture}
+		\caption{ស៊្វែ}
+	\end{figure}
+\end{multicols}
+\subsection{សមភាពនៃមុំ}
+\begin{enumerate}[m]
+	\item \emph{\kml មុំទល់កំពូល} 
+	\begin{multicols}{2}
+		បើយើងរកឃើញ $\angle M_{1}$ និង $\angle M_{2}$ ជាមុំទល់កំពូល \\យើងបានៈ $\angle M_{1}=\angle M_{2}$
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+			\coordinate[label=above left:$A$] (A) at (0,1);
+			\coordinate[label=below right:$B$] (B) at (4,0);
+			\coordinate[label=below left:$C$] (C) at (0,0);
+			\coordinate[label=above right:$D$] (D) at (4,1);
+			\coordinate[label=above:$M$] (M) at (2,.5);
+			\draw (A) -- (B);
+			\draw (C) -- (D);
+			\node at (M) {$$};
+			\pic [draw, -, "$1$", angle eccentricity=1.8] {angle = A--M--C};
+			\pic [draw, -, "$2$", angle eccentricity=1.8] {angle = B--M--D};
+			\end{tikzpicture}
+			\caption{មុំទល់កំពូល}
+		\end{figure}
+	\end{multicols}
+	\item \emph{\kml មុំមានជ្រុងកែងរៀងគ្នា} 
+	\begin{multicols}{2}
+		កាលណាយើងមានមុំពីរ $\angle x'ox$ និង $\angle y'oy$ ហើយយើងមានជ្រុង $ox'\perp oy'$ និង $ox\perp oy$។\\ យើងបាន $\angle x'ox=\angle y'oy$
+		\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[scale=.8]
+		\coordinate[label=above left:$x$] (A) at (0,0);
+		\coordinate[label=below:$O$] (B) at (4,0);
+		\coordinate[label=above left:$x'$] (C) at (1,2);
+		\coordinate[label=left:$y$] (D) at (2.5,-1);
+		\coordinate[label=above:$O$] (M) at (2.5,3);
+		\coordinate[label=below:$y'$] (N) at (.2,-.5);
+		\draw (A) -- (B)--(C);
+		\draw (D) -- (M)--(N);
+		\node at (M) {$$};
+		\pic [draw, -, "$\theta$", angle eccentricity=1.8] {angle = C--B--A};
+		\pic [draw, -, "$\theta$", angle eccentricity=1.8] {angle = N--M--D};
+		\end{tikzpicture}
+		\caption{ មុំមានជ្រុងកែងរៀងគ្នា}
+	\end{figure}
+	\end{multicols}
+	\item \emph{\kml មុំដែលមានជ្រុងស្របរៀងគ្នា} 
+	\begin{multicols}{2}
+		បើ $ox\parallel o'x'$ និង $oy\parallel o'y'$ នោះមុំ $\angle xoy$ និង $\angle x'o'y'$ ហៅថាមុំមានជ្រុងត្រូវគ្នា ស្របរៀងគ្នាដែលមានតម្លៃស្មើគ្នា។ យើងបាន $\alpha=\theta$
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+			\coordinate[label=left:$O$] (A) at (0,0);
+			\coordinate[label=left:$O'$] (B) at (0,2.5);
+			\coordinate[label=below:$y'$] (C) at (4,2.5);
+			\coordinate[label=above:$x'$] (D) at (3,4.5);
+			\coordinate[label=below:$y$] (M) at (4,0);
+			\coordinate[label=below:$x$] (N) at (3,2);
+			\draw (C) -- (B)--(D);
+			\draw (M) -- (A)--(N);
+			\pic [draw, -, "$\theta$", angle eccentricity=1.5, angle radius=1cm] {angle = M--A--N};
+			\pic [draw, -, "$\alpha$", angle eccentricity=1.5, angle radius=1cm] {angle = C--B--D};
+			\end{tikzpicture}
+			\caption{ មុំដែលមានជ្រុងស្របរៀងគ្នា}
+		\end{figure}
+	\end{multicols}
+	\item \emph{\kml កន្លះបន្ទាត់ពុះមុំ} 
+	\begin{multicols}{2}
+		បើយើងរកឃើញថា $OI$ ជាកន្លះបន្ទាត់ពុះមុំ $\angle xoy$ នោះយើងបាន $\angle O_{1}=\angle O_{2}$។
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+			\coordinate[label=left:$O$] (A) at (0,0);
+			\coordinate[label=above:$x$] (B) at (3,2);
+			\coordinate[label=below:$y$] (C) at (3,-2);
+			\coordinate[label=below:$I$] (I) at (4,0);
+			\draw (B) -- (A)--(C);
+			\draw (A) -- (I);
+			\pic [draw, -, "$1$", angle eccentricity=1.5, angle radius=.6cm] {angle = I--A--B};
+			\pic [draw, -, "$2$", angle eccentricity=1.5, angle radius=1cm] {angle = C--A--I};
+			\end{tikzpicture}
+			\caption{ កន្លះបន្ទាត់ពុះមុំ}
+		\end{figure}
+	\end{multicols}
+		\item \emph{\kml មុំផ្គុំដោយបន្ទាត់ពីរស្របគ្នានិងខ្នាត់មួយ} 
+		បើ $\left(d\right)\parallel\left(d'\right)$ និង $\left(\Delta\right)$ ជាខ្នាត់យើងបានៈ
+		\begin{align*}
+			\angle A_{1}=\angle B_{7},\quad \angle A_{2}=\angle B_{8}\quad\left(\text{មុំឆ្លាស់ក្នុង}\right)\\
+			\angle A_{3}=\angle B_{5},\quad \angle A_{4}=\angle B_{6}\quad\left(\text{មុំឆ្លាស់ក្រៅ}\right)\\
+			\angle A_{1}=\angle B_{5},~\angle A_{2}=\angle B_{6},~\angle A_{3}=\angle B_{7},~\angle A_{4}=\angle B_{8}~\left(\text{មុំត្រូវគ្នា}\right)\\
+			\angle A_{1}=\angle A_{3},~\angle A_{2}=\angle A_{4},~\angle B_{5}=\angle B_{7},~\angle B_{6}=\angle B_{8}~\left(\text{មុំទល់កំពូល}\right)
+		\end{align*}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+			\coordinate[label=left:$$] (A) at (0,2);
+			\coordinate[label=above:$d$] (B) at (3,2);
+			\coordinate[label=below:$$] (C) at (3,-2);
+			\coordinate[label=below:$$] (D) at (0,0);
+			\coordinate[label=below:$d'$] (E) at (3,0);
+			\coordinate[label=below:$$] (F) at (1,-1);
+			\coordinate[label=above:$\Delta$] (G) at (2,3);
+			\coordinate[label=above:$1$] (A1) at (1,0);
+			\coordinate[label=above:$2$] (A2) at (1.5,0);
+			\coordinate[label=above:$3$] (A3) at (1.4,-.6);
+			\coordinate[label=above:$4$] (A4) at (.9,-.6);
+			\coordinate[label=above:$5$] (B5) at (1.5,2);
+			\coordinate[label=above:$6$] (B6) at (2.1,2);
+			\coordinate[label=above:$7$] (B7) at (2.1,1.5);
+			\coordinate[label=above:$8$] (B8) at (1.5,1.5);
+			\coordinate[label=above:$A$] (I1) at (1.7,.3);
+			\coordinate[label=above:$B$] (I2) at (2.3,2.4);
+			\draw (A) -- (B);
+			\draw (D) -- (E);
+			\draw (F)--(G);
+			\end{tikzpicture}
+			\caption{ មុំផ្គុំដោយបន្ទាត់ពីរស្របគ្នានិងខ្នាត់មួយ}
+		\end{figure}
+	\item \emph{\kml មុំឈមប្រលេឡូក្រាម} 
+		\begin{multicols}{2}
+		បើយើងមានប្រលេឡូក្រាម $ABCD$ ដូចរូប។ យើងបាន $\angle A=\angle C,~\angle B=\angle D$ (មុំឈមប្រលេឡូក្រាម)
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+			\coordinate[label=below:$D$] (A) at (0,0);
+			\coordinate[label=below:$C$] (B) at (3,0);
+			\coordinate[label=above:$B$] (C) at (3.5,2);
+			\coordinate[label=above:$A$] (D) at (.5,2);
+			\draw (A)--(B)--(C)--(D)--cycle;
+			\end{tikzpicture}
+			\caption{ មុំឈមប្រលេឡូក្រាម}
+		\end{figure}
+\end{multicols}
+\end{enumerate}
+\subsection{តារាងមុំនៃអនុគមន៍ត្រីកោណមាត្រ}
+
+\begin{center}
+	\begin{tabular}{ | c | c | c | c | c | c | c | c | c | }
+		\hline
+		$\alpha\left(^\circ\right)$ & $0^\circ$ & $30^\circ$ & $45^\circ$ & $60^\circ$ & $90^\circ$ & $120^\circ$ & $135^\circ$ & $180^\circ$\\ \hline
+		$\alpha\left(rad\right)$ & $0$ & $\frac{\pi}{6}$ & $\frac{\pi}{4}$ & $\frac{\pi}{3}$ & $\frac{\pi}{2}$ & $\frac{2\pi}{3}$ & $\frac{3\pi}{4}$ & $\pi$\\ \hline
+		$\sin\alpha$ & $0$ & $\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & $1$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $0$\\ \hline
+		$\cos\alpha$ & $1$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & $0$ & $-\frac{1}{2}$ &$-\frac{\sqrt{2}}{2}$ & $-1$ \\
+		\hline
+	\end{tabular}
+\end{center}
+\begin{multicols}{2}
+	ឧបមាថាយើងមានត្រីកោណកែង $ABC$ ដូចបង្ហាញក្នុងរូបខាងស្តាំ ។
+	\begin{align*}
+	\text{តាមពីតាគ័រ}\quad BC^{2}=BA^{2}+AC^{2}\\
+	\sin\theta=\frac{\text{ជ្រុងឈម}}{\text{អុីប៉ូតេនុស}},\quad \cos\theta=\frac{\text{ជ្រុងជាប់}}{\text{អុីប៉ូតេនុស}},\quad \tan\theta=\frac{\text{ជ្រុងឈម}}{\text{ជ្រុងជាប់}}
+	\end{align*}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+		\centering 
+		\begin{scope}
+		\large
+		\coordinate (C) at (0,0);
+		\coordinate (A) at (3,0);
+		\coordinate (B) at (3,2);
+		\draw (C) -- (A) -- (B) -- cycle;
+		\pic [draw, -, "$\theta$", angle eccentricity=1.5] {angle = A--C--B};
+		\draw (A) -- ++ (0, .3cm) -- ++ (-.3cm, 0) -- ++ (0, -.3cm);
+		\coordinate[label=below:$A$] (A) at (A);
+		\coordinate[label=above:$B$] (B) at (B);
+		\coordinate[label=below:$C$] (C) at (C);
+		\coordinate[label=below:{\text{ជ្រុងជាប់}}] (1.5,0) at (1.5,0);
+		\coordinate[label=right:{\text{ជ្រុងឈម}}] (3,1) at (3,1);
+		\coordinate[label=right:{\text{អុីប៉ូតេនុស}}] (-1,1) at (-1,1);
+		\end{scope}
+		\end{tikzpicture}
+		\caption{ទំនាក់ទំនងក្នុងត្រីកោណមាត្រ}
+	\end{figure}
+\end{multicols}
+ទំនាក់ទំនង់រវាង $\sin\theta$ និង $\cos\theta$ គឺ
+\begin{align*}
+\tan\theta=\frac{\sin\theta}{\cos\theta} \quad \text{និង}\quad \sin^{2}\theta+\cos^{2}\theta=1
+\end{align*}
+\section{សមីការដឺក្រេទី២ មានមួយអញ្ញាត}
+សមីការដឺក្រេទី២ មានរាងៈ $ax^{2}+bx+c=0$ ដែល $a$ ជាមេគុណទី១ $\left(a\ne0\right)$ $b$ ជាមេគុណទី២ និង $c$ ជាមេគុណទី៣ ហើយ $x$ ជាអញ្ញាត។\\
+យើងអាចដោះស្រាយសមីការនេះបានដោយប្រើ ឌីសគ្រីមីណង់ $\Delta=b^{2}-4ab$។
+\begin{center}
+	\begin{tabular}{| c | c |}
+		\hline
+		 ឌីសគ្រីសមីណង់ & សមីការ​ $ax^{2}+bx+c=0~\left(a\ne 0\right)$ \\ \hline
+		 បើ​ $\Delta = b^{2}-4ac>0$ & សមីការមានប្ញស $x_{1}, x_{2}=\frac{-b\pm\sqrt{\Delta}}{2a}$ (សមីការមានប្ញសពីរផ្សេងគ្នា) \\ \hline
+		 បើ​ $\Delta = b^{2}-4ac=0$ & សមីការមានប្ញស $x_{1}= x_{2}=\frac{-b}{2a}$ (សមីការមានប្ញសឌុប) \\ \hline
+		 បើ $\Delta = b^{2}-4ac<0$ & សមីការមានប្ញស $x_{1}, x_{2}=\frac{-b\pm i\sqrt{\Delta}}{2a}$ (សមីការមានប្ញសពីរជាចំនួនកុំផ្លិច) \\ 
+		 \hline
+	\end{tabular}
+\end{center}
+\begin{center}
+	{\kml \Large \color{ magenta}ចប់ដោយសង្ខេប}
+\end{center}

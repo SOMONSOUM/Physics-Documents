@@ -11,6 +11,68 @@
 \definecolor{myyellow}{RGB}{254,241,24}
 \definecolor{myorange}{RGB}{234,125,1}
 \usepackage{tkz-euclide}
+\usetikzlibrary{quotes,arrows.meta}
+\tikzset{
+	annotated cubic/.pic={
+		\tikzset{%
+			every edge quotes/.append style={midway, auto},
+			/cubic/.cd,
+			#1
+		}
+		\draw [every edge/.append style={pic actions, densely dashed, opacity=.5}, pic actions]
+		(0,0,0) coordinate (o) -- ++(-\cubescale*\cubex,0,0) coordinate (a) -- ++(0,-\cubescale*\cubey,0) coordinate (b) edge coordinate [pos=1] (g) ++(0,0,-\cubescale*\cubez)  -- ++(\cubescale*\cubex,0,0) coordinate (c) -- cycle
+		(o) -- ++(0,0,-\cubescale*\cubez) coordinate (d) -- ++(0,-\cubescale*\cubey,0) coordinate (e) edge (g) -- (c) -- cycle
+		(o) -- (a) -- ++(0,0,-\cubescale*\cubez) coordinate (f) edge (g) -- (d) -- cycle;
+		\path [every edge/.append style={pic actions, |-|}]
+		(b) +(0,-5pt) coordinate (b1) edge ["$a$"'] (b1 -| c)
+		(b) +(-5pt,0) coordinate (b2) edge ["$a$"] (b2 |- a)
+		(c) +(3.5pt,-3.5pt) coordinate (c2) edge ["$a$"'] ([xshift=3.5pt,yshift=-3.5pt]e)
+		;
+	},
+	/cubic/.search also={/tikz},
+	/cubic/.cd,
+	width/.store in=\cubex,
+	height/.store in=\cubey,
+	depth/.store in=\cubez,
+	units/.store in=\cubeunits,
+	scale/.store in=\cubescale,
+	width=10,
+	height=10,
+	depth=10,
+	units=cm,
+	scale=.1,
+}
+
+\tikzset{
+	annotated prole/.pic={
+		\tikzset{%
+			every edge quotes/.append style={midway, auto},
+			/prole/.cd,
+			#1
+		}
+		\draw [every edge/.append style={pic actions, densely dashed, opacity=.5}, pic actions]
+		(0,0,0) coordinate (o) -- ++(-\cubescale*\cubex,0,0) coordinate (a) -- ++(0,-\cubescale*\cubey,0) coordinate (b) edge coordinate [pos=1] (g) ++(0,0,-\cubescale*\cubez)  -- ++(\cubescale*\cubex,0,0) coordinate (c) -- cycle
+		(o) -- ++(0,0,-\cubescale*\cubez) coordinate (d) -- ++(0,-\cubescale*\cubey,0) coordinate (e) edge (g) -- (c) -- cycle
+		(o) -- (a) -- ++(0,0,-\cubescale*\cubez) coordinate (f) edge (g) -- (d) -- cycle;
+		\path [every edge/.append style={pic actions, |-|}]
+		(b) +(0,-5pt) coordinate (b1) edge ["$a$"'] (b1 -| c)
+		(b) +(-5pt,0) coordinate (b2) edge ["$h$"] (b2 |- a)
+		(c) +(3.5pt,-3.5pt) coordinate (c2) edge ["$b$"'] ([xshift=3.5pt,yshift=-3.5pt]e)
+		;
+	},
+	/prole/.search also={/tikz},
+	/prole/.cd,
+	width/.store in=\cubex,
+	height/.store in=\cubey,
+	depth/.store in=\cubez,
+	units/.store in=\cubeunits,
+	scale/.store in=\cubescale,
+	width=10,
+	height=10,
+	depth=10,
+	units=cm,
+	scale=.1,
+}
 \usetkzobj{all}
 \usetikzlibrary{calc,angles,quotes,decorations.markings}
 \usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text}

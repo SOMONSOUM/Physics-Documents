@@ -1,0 +1,48 @@
+\documentclass[12pt,a4paper]{article}
+% math font
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{mathtools}
+\RequirePackage{newpxmath}
+\usepackage{tikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{fontspec}
+\newcommand{\Depth}{3}
+\newcommand{\Height}{3}
+\newcommand{\Width}{3}
+\usetikzlibrary{shapes}
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text, decorations.pathmorphing,shadows}
+\usepackage{pgfplots}
+\usetikzlibrary{patterns,fillbetween}
+\setmainfont{Khmer OS Bokor}
+\pagecolor{white}
+\XeTeXlinebreaklocale "km"% line break rule
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.5pt% line break skip
+
+\newcommand{\koc}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Ang Tasom}\selectfont}
+\newcommand{\km}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer M2}\selectfont}
+\newcommand{\ak}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Angkor}\selectfont}
+\newcommand{\kml}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer M1}\selectfont}
+\newcommand{\kos}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS System}\selectfont}
+\newcommand{\kbk}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Bokor}\selectfont}
+\newcommand{\kb}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Battambang}\selectfont}
+\newcommand{\mc}{\fontspec{Monotype Corsiva}\selectfont}
+\newcommand{\en}{\fontspec{Times New Roman}\selectfont}
+\newcommand{\enb}{\fontspec[Script=Khmer]{Quicksand Medium}}
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}[remember picture, overlay]
+	\begin{scope}
+		\filldraw[fill=orange!70!white, draw=blue!40!black, line width=5pt] (18,-22.8) rectangle (-5,-25);
+		\node[opacity=1] at (15,-23.8) {\includegraphics[width=1.7cm]{qrcode.png}};
+	\end{scope}
+	\begin{scope}
+		\centering
+		\filldraw[fill=yellow!40!white, draw=blue!40!black, line width=8pt] (-2,-10) rectangle (14.5,-2);
+		\node at (6.2,-4) {\scalebox{4}{\color{blue!40!black}\ak រូបវិទ្យាថ្នាក់ទី១២}};
+		\node at (6.2,-6.5) {\scalebox{3.5}{\color{blue!40!black}\ak ទែម៉ូឌីណាមិច}};
+	\end{scope}
+\end{tikzpicture}
+\end{document}

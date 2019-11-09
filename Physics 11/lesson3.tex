@@ -533,4 +533,212 @@
 	\item ប៉ោលពីរឯកលក្ខណ៍ព្យួរត្រង់ចំណុច $O$ ដូចគ្នា។ ប៉ោលនីមួយៗមានម៉ាស $m=0.1g$ និងមានបន្ទុក $q=10^{-8}C$ ដូចគ្នា វាច្រានគ្នា ហើយមានលំនឹងកាលណាវាស្ថិតនៅចម្ងាយ $d=30cm$ ពីគ្នា។ \\ គណនាមុំលំងាក $\alpha$ នៃប៉ោលនីមួយៗ។ យក $g=10m/s^{2}$
 	\end{enumerate}
 \newpage
-%\section{ដែនអគ្គិសនី និងកម្លាំងអគ្គិសនី}
+\section{ដែនអគ្គិសនី}
+\begin{enumerate}[k]
+	\item \emph{\kml ដែនអគ្គិសនី}
+	\begin{definition}
+	\emph{\kml ដែនអគ្គិសនីៈ} ជាលំហំដែលកើតមានជុំវិញបន្ទុកអគ្គិសនី និងតាមរយៈដែននេះអាចឲ្យបន្ទុកមួយមានអំពើលើបន្ទុកមួយទៀត។
+	\end{definition}
+	ឧបមាថា​ គេយកចំណុចបន្ទុកអគ្គិសនី $q>0$ ទៅដាក់ត្រង់ចំណុច $A$ មួយ។ បើគេយកបន្ទុកសាក $q_{1},q_{2},q_{3},\cdots,q_{n}$ ទៅដាក់នៅត្រង់ចំណុច $B$ មួយ វារងនូវកម្លាំង $\overrightarrow{F}_{1}, \overrightarrow{F}_{2},\overrightarrow{F}_{3},\cdots, \overrightarrow{F}_{n}$។ \\
+	ផលធៀបរវាងកម្លាំងអគ្គិសនីនឹងបន្ទុកអគ្គិសនីមានតម្លៃថេរ។
+	\begin{multicols}{2}
+	\begin{align*}
+	\text{គេសរសេរ}\quad :&\quad \frac{\overrightarrow{F}_{1}}{q_{1}}=\frac{\overrightarrow{F}_{2}}{q_{2}}=\frac{\overrightarrow{F}_{3}}{q_{3}}=\cdots=\frac{\overrightarrow{F}_{n}}{q_{n}}=\text{ថេរ}
+	\end{align*}
+	\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\begin{scope}
+	\shade [ball color=red!60] (0,4) circle (8pt);
+	\node at (0,4) {$+$};
+	\coordinate[label=above:$A(q)$] (A) at (0,4.2);
+	\coordinate[label=below:$\overrightarrow{F}$] (F) at (5.5,3.8);
+	\coordinate[label=above:$B(q_{1})$] (B) at (4,4.2);
+	\draw [dashed] (0.3,4) -- (4,4);
+	\draw [->, -Latex, line width=2pt] (4.2,4) --(6,4);
+	\shade [ball color=red!60] (4,4) circle (8pt);
+	\node at (4,4) {$+$};
+	\end{scope}
+	\end{tikzpicture}
+	\caption{វិុចទ័រ​​កម្លាំងអគ្គិសនី}
+	\end{figure}
+	\end{multicols}
+	គេតាងតម្លៃថេរដោយវុិចទ័រ $\overrightarrow{E}$ ហៅថាវុិចទ័រដែនអគ្គិសនី $\overrightarrow{E}=\frac{\overrightarrow{F}}{q}$ ឬ $\overrightarrow{F}=q\overrightarrow{E}$
+	\begin{remark}
+	អាំងតង់សុីតេដែនអគ្គិសនីជាទំហំវុិចទ័រដែលមានលក្ខណៈសម្គាល់ដូចជាៈ
+	\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\begin{scope}
+	\coordinate[label=below:$\overrightarrow{F}$] (F) at (5.5,3.8);
+	\coordinate[label=below:$\overrightarrow{E}$] (E) at (7.5,3.8);
+	\coordinate[label=above:$A(q>0)$] (A) at (4,4.2);
+	\draw [dashed] (0.3,4) -- (4,4);
+	\draw [->, -Latex, line width=2pt] (4.2,4) --(6,4);
+	\draw [->, -Latex, line width=2pt] (4.2,4) --(8,4);
+	\shade [ball color=red!60] (4,4) circle (8pt);
+	\node at (4,4) {$+$};
+	\draw [->, -Latex, line width=2pt] (4,2) --(0.3,2);
+	\draw [dashed] (0.3,2) -- (4,2);
+	\draw [->, -Latex, line width=2pt] (4,2) --(8,2);
+	\shade [ball color=gray!60] (4,2) circle (8pt);
+	\node at (4,2) {$-$};
+	\coordinate[label=below:$\overrightarrow{F}$] (F) at (7.5,1.8);
+	\coordinate[label=below:$\overrightarrow{E}$] (E) at (0.5,1.8);
+	\coordinate[label=above:$A(q<0)$] (A) at (4,2.2);
+	\end{scope}
+	\end{tikzpicture}
+	\caption{វិុចទ័រ​​កម្លាំងអគ្គិសនី និងវុិចទ័រដែនអគ្គិសនី}
+	\end{figure}
+	\begin{itemize}
+	\item ចំណុចចាប់នៅត្រង់ចំណុចបន្ទុកអគ្គិសនី
+	\item ទិសជាទិសនៃកម្លាំងអគ្គិសនី $\overrightarrow{F}$
+	\item ទិសដៅដូចកម្លាំង $\overrightarrow{F}$ បើ $q>0$ ហើយផ្ទុយពីកម្លាំង $\overrightarrow{F}$ បើ $q<0$
+	\item អាំងតង់សុីតេ $E=\frac{F}{\abs{q}}$ ដែល $F$ គិតជា $(N)$, $q$ គិតជា $(C)$ និង $E$ គិតជា $(N/C)$ ឬ $(V/m)$
+	\end{itemize}
+	\end{remark}
+	\item \emph{\kml ទ្រឹស្តីបទសម្រាប់គណនាលំហាត់}
+	\begin{itemize}
+		\item បន្ទុកអគ្គិសនី $Q>0$ បង្គិតត្រង់ចំណុចនីមួយៗជំុវិញវានូវដែន $\overrightarrow{E}$ ចាកផ្ចិត។
+		\item បន្ទុកអគ្គិសនី $Q<0$ បង្គិតត្រង់ចំណុចនីមួយៗជំុវិញវានូវដែន $\overrightarrow{E}$ ចូលផ្ចិត។
+	\end{itemize}
+\end{enumerate}
+
+\subsection{ដែនអគ្គិសនីបង្កើតដោយចំណុចបន្ទុកអគ្គិសនីតែមួយ}
+\begin{enumerate}[m]
+	\item \emph{\kml កន្សោមដែនអគ្គិសនី}
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item គេដាក់បន្ទុក $q$ ត្រង់ $B$ វារងនូវកម្លាំងអគ្គិសនិ\\ $\overrightarrow{F}=K\frac{Q\times q}{r^{2}}\vec{u}$
+			\item តាមនិយមន័យៈ $\overrightarrow{E}=\frac{\overrightarrow{F}_{A/B}}{q}=K\frac{Q}{r^{2}}\vec{u}$
+			\item ជាម៉ូឌុលៈ $E=K\frac{Q}{r^{2}}$ ដែល $K=\frac{1}{4\pi\epsilon}$
+		\end{itemize}
+		\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+		\begin{scope}
+		\draw [->, -Latex] (.2,4) --(1,4);
+		\shade [ball color=red!60] (0,4) circle (8pt);
+		\node at (0,4) {$+$};
+		\coordinate[label=above:$A(Q)$] (A) at (0,4.2);
+		\coordinate[label=below:$\overrightarrow{E}$] (E) at (5.5,3.8);
+		\coordinate[label=below:$\overrightarrow{F}_{A/B}$] (F) at (7.5,3.8);
+		\coordinate[label=above:$B(q)$] (B) at (4,4.2);
+		\draw [dashed] (0.3,4) -- (4,4);
+		\draw [->, -Latex, line width=2pt] (4.2,4) --(6,4);
+		\draw [->, -Latex, line width=2pt] (4.2,4) --(8,4);
+		\shade [ball color=red!60] (4,4) circle (8pt);
+		\node at (4,4) {$+$};
+		\node at (2,4.3) {$r$};
+		\node at (1,4.3) {$\vec{u}$};
+		\end{scope}
+		\end{tikzpicture}
+		\caption{កន្សោមវិុចទ័រ​​ដែនអគ្គិសនី}
+	\end{figure}
+	\end{multicols}
+	\begin{itemize}
+		\item [$-$] ករណីឌីអេឡិចទ្រិចជាសុញ្ញាកាសៈ $E=9\times10^{9}\frac{Q}{r^{2}}$ ព្រោះ $K=\frac{1}{4\pi\epsilon_{0}}=9\times10^{9}SI$
+		\item [$-$] ករណីឌីអេឡិចទ្រិចមិនមែនជាសុញ្ញាកាសៈ $E=\frac{1}{\epsilon_{r}}9\times10^{9}\frac{Q}{r^{2}}$ ព្រោះ $K=\frac{1}{4\pi\epsilon_{0}\epsilon_{r}}$
+	\end{itemize}
+	\item \emph{\kml ខ្សែដែនអគ្គិសនី}
+		\begin{definition}
+			\emph{\kml ខ្សែដែនអគ្គសនី} គឺជាខ្សែដែលប៉ះនឹងវុិចទ័រដែនអគ្គិសនី $\overrightarrow{E}$ ត្រង់ចំណុចនីមួយៗរបស់វា។
+			\begin{figure}[H]
+				\centering
+				\begin{tikzpicture}
+					\begin{scope}
+						\draw[line width=2pt] (0,0) .. controls (1,2) .. (3,3);
+						\draw [->, -Latex, line width=1pt] (1,1.75) --(1.8,2.8);
+						\node at (1,1.75) {$\bullet$};
+						\draw [->, -Latex, line width=2pt] (0,0) --(.5,1);
+					\end{scope}
+				\end{tikzpicture}
+			\end{figure}
+			\emph{\kml ប្រភេទខ្សែដែនអគ្គិសនី}
+				\begin{figure}[H]
+					\begin{subfigure}[t]{0.5\textwidth}
+						\centering
+						\begin{tikzpicture}[scale=.8]
+							\foreach \t in {30,60, ...,360} %boucle
+							\draw[thick, directed] (0pt,0pt) -- (\t:3cm);%trait tracé en coordonnées polaires
+							\shade[ball color=red!40] circle (9pt) node {$+$};
+						\end{tikzpicture}
+						\subcaption{ខ្សែដែននៃបន្ទុកវិជ្ជមាន}
+					\end{subfigure}
+					\begin{subfigure}[t]{0.5\textwidth}
+						\centering
+						\begin{tikzpicture}[scale=.8]
+							\foreach \t in {30,60, ...,360} %boucle
+							\draw[thick, direct] (0pt,0pt) -- (\t:3cm);
+							\shade[ball color=blue!40] circle (9pt) node {$-$};
+						\end{tikzpicture}
+						\subcaption{ខ្សែដែននៃបន្ទុកអវិជ្ជមាន}
+					\end{subfigure}
+					\begin{subfigure}[t]{0.5\textwidth}
+						\centering
+						\includegraphics[scale=0.3]{field_3}
+						\subcaption{ខ្សែដែននៃបន្ទុកពីរដែលមានសញ្ញាផ្ទុយគ្នា}
+					\end{subfigure}
+					\begin{subfigure}[t]{0.5\textwidth}
+						\centering
+						\includegraphics[scale=0.3]{field_4}
+						\subcaption{ខ្សែដែននៃបន្ទុកពីរដែលមានសញ្ញាដូចគ្នា}
+					\end{subfigure}
+				\end{figure}
+		\end{definition}
+\end{enumerate}
+%\subsection{ដែនអគ្គិសនីឯកសណ្ឋាន}
+%\begin{enumerate}
+%	\item \emph{\kml ដែនអគ្គិសនីឯកសណ្ឋាន}
+%	\begin{definition}
+%		\emph{\kml ដែនអគ្គិសនីឯកសណ្ឋានៈ} ជាដែនអគ្គិសនីដែលវុិចទ័រដែននៅគ្រប់ចំណុចទាំងអស់រក្សាទិសដៅនិងតម្លៃដូចៗគ្នា។\\ ខ្សែដែនអគ្គិសនីឯកសណ្ឋានជាបន្ទាត់ស្របៗគ្នា ហើយឃ្លាតស្មើគ្នា។
+%	\end{definition}
+%	\item \emph{\kml ដែនអគ្គិសនីនៅចន្លោះលោហៈពីរស្របគ្នា}
+%\end{enumerate}
+\section{លំហាត់អនុវត្តន៍}
+\begin{enumerate}[m]
+	\begin{multicols}{2}
+		\item គេយកចំណុចបន្ទុកអគ្គិសនី $q=+2\times10^{-9}C$ ទៅដាក់ត្រង់កំពូល $A$ នៃត្រីកោណសម័ង្ស $ABC$ ដែលមានជ្រុង $a=30cm$។ គណនាដែនអគ្គិសនីដែលកើតមានត្រង់ចំណុចកណ្តាល $M$ នៃបាត $BC$។
+					\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[scale=.8]
+		\coordinate [label=above:$A(q>0)$] (A) at (1.0cm,4cm);
+		\coordinate [label=left:$B$] (B) at (-1.0cm,1.0cm);
+		\coordinate [label=right:$C$] (C) at (3cm,1.0cm);
+		\coordinate [label=below:$M$] (M) at (1cm,1.0cm);
+		\draw (A) -- (M);
+		\draw (B) -- node {$\bullet$} (C) -- node[right] {$a$} (A) -- node[left] {$a$} (B);
+		\tkzMarkAngle[size=.5cm,color=cyan,mark=|](C,B,A)
+		\tkzMarkAngle[size=.5cm,color=magenta,mark=|](A,C,B)
+		\tkzMarkAngle[size=.5cm,color=red,mark=|](B,A,C)
+		\shade[ball color=cyan!60] (P) circle (8pt);
+		\node at (A) {$+$};
+		\end{tikzpicture}
+	\end{figure}
+	\end{multicols}
+	\item គេយកចំណុចបន្ទុកអគ្គិសនីពីរគឺ $q_{1}=-10nC$ និង $q_{2}=40nC$ ទៅដាក់ត្រង់ពីរចំណុច $A$ និង $B$ ដែលមានចម្ងាយ $5cm$ ពីគ្នា។
+	\begin{enumerate}[k]
+		\item គណនាដែនអគ្គិសនីត្រង់ចំណុច $M$ មួយស្ថិតនៅចម្ងាយ $3cm$ ពី $A$ និង $4cm$ ពី $B$។
+		\item គណនាកម្លាំងអគ្គិសនីរងដោយបន្ទុក $q'=-10^{-9}C$ ដាក់ត្រង់ $M$
+	\end{enumerate}
+	\item ចំណុចបន្ទុកអគ្គិសនីពីរ $q_{A}=5nC$ និង $q_{B}=-2nC$ ស្ថិតនៅរៀងគ្នាត្រង់ $A$ និង $B$ ដែល $AB=10cm$។
+	\begin{enumerate}[k]
+		\item គណនាកម្លាំងអគ្គិសនីដែលមានអំពើលើបន្ទុកអគ្គិសនីនីមួយៗ
+		\item ទាញរកតម្លៃនៃដែនអគ្គិសនីត្រង់ $A$ និងត្រង់ $B$។
+	\end{enumerate}
+	\item ចំណុចបន្ទុកអគ្គិសនីពីរ $q_{A}=-25nC$ និង $q_{B}=5nC$ ស្ថិតនៅរៀងគ្នាត្រង់ $A$ និង $B$ ដែល $AB=5cm$។ 
+	\begin{enumerate}[k]
+		\item គណនាដែនអគ្គិសនីត្រង់ $A$ បង្កើតដោយបន្ទុក $q_{B}$
+		\item គណនាដែនអគ្គិសនីត្រង់ $B$ បង្កើតដោយបន្ទុក $q_{A}$
+		\item ទាញរកកម្លាំងអគ្គិសនីដែមានអំពើលើបន្ទុក​ $q_{A}$ និង $q_{B}$ រួចធ្វើការសន្និដ្ឋាន។
+	\end{enumerate}
+	\item នៅក្នុងមជ្ឈដ្ឋានមួយមានពែមីទីវីតេធៀប $\epsilon_{r}=3$ គេមានចំណុចបន្ទុកអគ្គិសនីពីរ $q_{A}=4\mu C$ និង $q_{B}=2\mu C$ ស្ថិតនៅរៀងគ្នាត្រង់ចំណុច $A$ និង $B$ ដែល $AB=20cm$។ គណនាដែនអគ្គិសនីត្រង់ចំណុច $O$ កណ្តាល $[AB]$។
+	\item ចំណុចបន្ទុកអគ្គិសនីពីរ $q_{A}=2nC$ និង $q_{B}=-2nC$ ស្ថិតនៅរៀងគ្នាត្រង់ $A$ និង $B$ ដែល $AB=6cm$។ នៅត្រង់ $O$ កណ្តាល $[AB]$ គេដាក់ចំណុចបន្ទុកអគ្គិសនី $q=-1\mu C$។
+	\begin{enumerate}
+		\item គណនាដែនអគ្គិសនីត្រង់ចំណុច $O$។
+		\item ទាញរកកម្លាំងអគ្គិសនីដែលមានអំពើលើបន្ទុក $q$។
+	\end{enumerate}
+	\item ចំណុចបន្ទុកអគ្គិសនី $q<0$ ស្ថិតត្រង់ចំណុច $O$ បានបង្កើតដែនអគ្គសនីតម្លៃ $10\times10^{4}N/C$ ត្រង់ចំណុច $A$។\\
+	គណនាដែនអគ្គិសនីបង្កើតដោយបន្ទុក $q$ នៅត្រង់ចំណុច $B$ ដែល $OB=2 OA$ រួចទាញរកកម្លាំងអគ្គិសនីដែលមានអំពើលើបន្ទុក $Q=-2pC$ ដាក់ត្រង់ $B$។ 
+	\item ចំណុចបន្ទុកអគ្គិសនី $\left(+\right)$ ពីរ $4Q$ និង $Q$ ស្ថិតនៅរៀងគ្នាត្រង់ $A$ និង $B$ ដែល $AB=30cm$។ កំណត់ទីតាំងនៃចំណុច $M$ មួយលើ $[AB]$ ដែលត្រង់ $M$ មានដែនអគ្គិសនីផ្គួបសូន្យ។  
+\end{enumerate}
