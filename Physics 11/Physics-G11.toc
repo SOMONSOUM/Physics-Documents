@@ -1,8 +1,0 @@
-\contentsline {chapter}{មាតិកា}{ក}{chapter*.1}
-\contentsline {chapter}{\numberline {១}ទំហំវុិចទ័រ និងទំហំស្កាលែ}{១}{chapter.1}
-\contentsline {section}{\numberline {១}ទំហំវុិចទ័រ}{១}{section.1.1}
-\contentsline {subsection}{\numberline {ក}ទំហំវិុចទ័រ}{១}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {ខ}វុីទ័រពីរស្មើគ្នា}{១}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {គ}ផលបូកវុិចទ័រ}{២}{subsection.1.1.3}
-\contentsline {section}{\numberline {២}ទំហំស្កាលែ}{៤}{section.1.2}
-\contentsline {section}{\numberline {៣}កូអរដោនេនៃវិុចទ័រ}{៤}{section.1.3}

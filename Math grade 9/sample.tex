@@ -1,0 +1,58 @@
+\documentclass[a4paper,12pt]{fancy}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[table]{xcolor}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\usepackage{wrapfig}
+\usepackage{pdfpages}
+\usepackage{physics}
+\usepackage[version=4]{mhchem}
+\usepackage{pgfplots}
+\usetikzlibrary{mindmap} % LATEX and plain TEX
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text, decorations.markings,shadows}
+\tikzstyle directed=[postaction={decorate,decoration={markings, % arrows on the field lines
+		mark=at position .1 with {\arrowreversed[scale=1.5]{stealth}},
+		mark=at position .9 with {\arrowreversed[scale=1.5]{stealth}}}}]
+\tikzstyle tangent=[postaction={decorate,decoration={markings, % Tangent to the field line
+		mark=at position .7 with {\draw[ultra thick,stealth-,green!60!black,solid](-12pt,0)--(12pt,0)node[above]{$\vec{B}$};}}}]
+\tikzstyle fLines=[thick,dashed,directed,tangent]
+\tikzset{
+	arrow/.style={-{Triangle[length=5mm,width=2mm]}}
+}
+\tikzset{
+	mypath/.style={
+		postaction=decorate,
+		decoration={markings,
+			mark=at position #1 with {\coordinate (x);\arrow{>}}},
+		thick},
+	>=stealth
+}
+\pgfdeclareverticalshading{heat}{100bp}{%
+	color(0bp)=(white);   color(25bp)=(white); color(30bp)=(cyan!50); 
+	color(70bp)=(orange!70); color(75bp)=(white);  color(100bp)=(white)}
+\usetikzlibrary{patterns,fillbetween}
+\pgfplotsset{width=8cm,compat=newest}
+\def\wall{ \fill
+	[fill=black!50] (1,-.5) rectangle (2,.5);
+	\pattern [pattern=bricks] (1,-.5) rectangle (2,.5);
+	\draw
+	[line width=1pt] (1cm+.5pt,-.5) -- ++(0,1); }
+
+\begin{document}
+%\includepdf[pages=1]{front-cover.pdf}
+\frontmatter
+\pagenumbering{alpkh}
+%\input{conicacknowledge.tex}
+%\input{conicpreface.tex}
+\input{tableofcontents.tex}
+\mainmatter
+\pagenumbering{khmer}
+\input{chapter01.tex}
+\input{chapter02.tex}
+\input{chapter03.tex}
+\input{chapter04.tex}
+\input{chapter05.tex}
+\input{chapter06.tex}
+\end{document}

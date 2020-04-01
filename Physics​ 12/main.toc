@@ -22,12 +22,14 @@
 \contentsline {subsection}{\numberline {ឃ}បម្លែងបិទ$\sim $គោលការណ៍សមមូលៈ}{២១}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {ង}កម្មន្តក្នុងករណីកម្តៅមិនប្តូរជាមួយមជ្ឍដ្ឋានក្រៅ(លំនាំអាដ្យាបាទិច)}{២១}{subsection.2.3.5}
 \contentsline {section}{\numberline {៤}សំណួរ និងលំហាត់អនុវត្ត}{២២}{section.2.4}
-\contentsline {chapter}{\numberline {៣}ម៉ាសុីន}{៣៧}{chapter.3}
-\contentsline {section}{\numberline {១}លំនាំអាដ្យាបាទិច}{៣៧}{section.3.1}
-\contentsline {section}{\numberline {២}ម៉ាសុីនទ្រឹស្តី(ម៉ាសុីនកាណូ, ម៉ាសុីនអុីដេអាល់)}{៣៧}{section.3.2}
-\contentsline {subsection}{\numberline {ក}ម៉ាសុីនកម្តៅ}{៣៧}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {ខ}សុិចកាណូ}{៣៩}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {គ}ម៉ាសុីនអុីដេអាល់}{៤០}{subsection.3.2.3}
-\contentsline {section}{\numberline {៣}ម៉ាសុីនពិត(ម៉ាសុីនសាំង,ម៉ាសុីនម៉ាស៊ូត)}{៤០}{section.3.3}
-\contentsline {subsection}{\numberline {ក}ម៉ាសុីនសាំងបន្ទុះបួនវគ្គ}{៤០}{subsection.3.3.1}
-\contentsline {section}{\numberline {៤}សំណួរ និងលំហាត់អនុវត្ត}{៤៣}{section.3.4}
+\contentsline {chapter}{\numberline {៣}ម៉ាសុីន}{៣៩}{chapter.3}
+\contentsline {section}{\numberline {១}លំនាំអាដ្យាបាទិច}{៣៩}{section.3.1}
+\contentsline {section}{\numberline {២}ម៉ាសុីនទ្រឹស្តី(ម៉ាសុីនកាណូ, ម៉ាសុីនអុីដេអាល់)}{៣៩}{section.3.2}
+\contentsline {subsection}{\numberline {ក}ម៉ាសុីនកម្តៅ}{៣៩}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {ខ}សុិចកាណូ}{៤១}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {គ}ម៉ាសុីនអុីដេអាល់}{៤២}{subsection.3.2.3}
+\contentsline {section}{\numberline {៣}ម៉ាសុីនពិត(ម៉ាសុីនសាំង,ម៉ាសុីនម៉ាស៊ូត)}{៤២}{section.3.3}
+\contentsline {subsection}{\numberline {ក}ម៉ាសុីនសាំងបន្ទុះបួនវគ្គ}{៤២}{subsection.3.3.1}
+\contentsline {section}{\numberline {៤}សំណួរ និងលំហាត់អនុវត្ត}{៤៥}{section.3.4}
+\contentsline {chapter}{\numberline {៤}គោលការណ៍រលកតម្រួត និងរលកជញ្ជ្រុំ}{៥១}{chapter.4}
+\contentsline {section}{\numberline {១}ខួប និងប្រេកង់រលក}{៥១}{section.4.1}

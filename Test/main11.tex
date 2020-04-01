@@ -1,0 +1,25 @@
+\documentclass[tikz]{standalone}
+\usepackage{fontspec}
+\setmainfont{Myriad Pro Bold}
+\usetikzlibrary{calc}
+\def\myhbleed{10mm}
+\def\myvbleed{10mm}
+
+\begin{document}
+\begin{tikzpicture}
+% Left page
+\node[anchor=south west,inner sep=0,outer sep=0,minimum height=297mm+\myvbleed,minimum width=210mm+\myhbleed,fill] (lp) at (0,0) {};
+% Spine
+\node[font=\Huge,rotate=90,anchor=north west,inner sep=0,outer sep=0,minimum width=297mm+\myvbleed,minimum height=15.4mm,fill,text=white,text width=280mm,align=left] (spine) at (lp.south east) {Dark side of the Moon\hfill Pink Floyd};
+%Right page
+\node[anchor=south west,inner sep=0,outer sep=0,minimum height=297mm+\myvbleed,minimum width=210mm+\myhbleed,fill] (rp) at (spine.south west) {};
+%Decorations
+\node (flogo) at ($(rp.north)!0.3!(rp.south)$){\includegraphics[width=11cm]{dsotm}};
+\node[text=white,align=center,font=\Huge] (ftitle) at ($(rp.north)!0.7!(rp.south)$) {Dark Side of the Moon};
+%Actual A4 page size + spine + A4 page size - Remove before sending to printer
+\draw[red] (\myhbleed,0.5*\myvbleed) rectangle ++(210mm+15.4mm+210mm,297mm);
+% Outer guides  - Remove them for full picture
+\draw[ultra thick] (\myhbleed,-1cm) node[below] {A}-- ++(210mm,0) node [below] {B} --++ (15.4mm,0) node[below] {C} --++(210mm,0) node[below] {D};
+\draw[ultra thick] (-1cm,0.5*\myvbleed) node[left] {E}-- ++(0,297mm) node[left] {F};
+\end{tikzpicture}
+\end{document}

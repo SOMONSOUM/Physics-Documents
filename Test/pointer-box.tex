@@ -1,0 +1,60 @@
+\documentclass[12pt,a4paper]{article}
+\RequirePackage{geometry}
+\geometry{%
+	left=1cm,%
+	right=1cm,%
+	top=1.5cm,%
+	bottom=1.5cm,%
+	bindingoffset=0.8cm}
+% math font
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{mathtools}
+\RequirePackage{newpxmath}
+%graphic
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usetikzlibrary{shapes}
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text, decorations.pathmorphing,positioning,%shapes.multipart,
+	shapes.callouts}
+\usetikzlibrary{patterns,fillbetween}
+% language
+\RequirePackage[no-math]{fontspec}% no math font
+\setmainfont{Khmer OS Bokor}
+\XeTeXlinebreaklocale "km"% line break rule
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.5pt% line break skip
+
+\newcommand{\at}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Ang Tasom}\selectfont}
+\newcommand{\km}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer M2}\selectfont}
+\newcommand{\ak}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Angkor}\selectfont}
+\newcommand{\kml}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer M1}\selectfont}
+\newcommand{\kv}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer Vanara}\selectfont}
+\newcommand{\kbk}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Bokor}\selectfont}
+\newcommand{\kb}{\fontspec[Scale = 0.8333333334, Script=Khmer]{Khmer OS Battambang}\selectfont}
+\newcommand{\mc}{\fontspec{Monotype Corsiva}\selectfont}
+\newcommand{\en}{\fontspec{Times New Roman}\selectfont}
+\newcommand{\enb}{\fontspec[Script=Khmer]{Quicksand Medium}}
+\pagestyle{empty}
+
+%Define Colors
+\definecolor{activityBackgroundColor}{RGB}{211, 245, 201}
+\definecolor{activityBorderColor}{RGB}{224, 67, 67}
+\definecolor{noteBackgroundColor}{RGB}{166, 237, 145}
+\definecolor{noteBorderColor}{RGB}{224, 67, 67}
+\begin{document}
+	
+	\begin{tikzpicture}
+	\node (A) [draw=activityBorderColor,fill=activityBackgroundColor,rectangle,rounded corners] {$\int_{a}^{b}f(x)dx=F(b)-F(a)$};
+	\node[draw=noteBorderColor,fill=noteBackgroundColor,rectangle callout,callout relative pointer={(-1.2,0)},right =1.3cm of A] (B) {\ak អាំងតេក្រាលកំណត់};
+	\end{tikzpicture}
+	
+	\begin{align*}
+		y=\cos\left(x^{2}+2\right)&=-\left(x^{2}+2\right)'\sin\left(x^{2}+2\right)\begin{tikzpicture}
+		\node[draw=noteBorderColor,fill=noteBackgroundColor,rectangle callout,callout relative pointer={(-1,0)}] {\kv ដោយប្រើៈ $\left(\cos u\right)'=-u'\sin u$};
+		\end{tikzpicture}
+		\\
+		&=-2x\sin\left(x^{2}+2\right)
+	\end{align*}
+\end{document}

@@ -1,8 +1,9 @@
-\documentclass[a4paper,12pt]{styles/fancy}
+\documentclass[a4paper,12pt]{classes/fancy}
 \usepackage{circuitikz}
 \usepackage{graphicx}
-\graphicspath{ {./images/} }
+\graphicspath{{./images/}}
 \usepackage[table]{xcolor}
+\usepackage{multicol}
 \usepackage{pdflscape}
 \usepackage{adjustbox}
 \usepackage{wrapfig}
@@ -13,7 +14,7 @@
 \newcommand{\Height}{3}
 \newcommand{\Width}{3}
 \usepackage{pgfplots}
-\usetikzlibrary{mindmap} % LATEX and plain TEX
+\usetikzlibrary{mindmap}
 \usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text, decorations.markings,shadows}
 \tikzstyle directed=[postaction={decorate,decoration={markings, % arrows on the field lines
 		mark=at position .1 with {\arrowreversed[scale=1.5]{stealth}},
@@ -43,7 +44,7 @@
 	\draw
 	[line width=1pt] (1cm+.5pt,-.5) -- ++(0,1); }
 \begin{document}
-\includepdf{pdf-files/front-cover.pdf}
+%\includepdf{covers/front-cover.pdf}
 \frontmatter
 \pagenumbering{alpkh}
 %\input{introductions/knowledge.tex}
@@ -57,5 +58,6 @@
 \input{exercises/exercises2.tex}
 \input{lessons/lesson3.tex}
 \input{exercises/exercises3.tex}
-\includepdf{pdf-files/back-cover.pdf}
+\input{lessons/lesson4.tex}
+%\includepdf{covers/back-cover.pdf}
 \end{document}

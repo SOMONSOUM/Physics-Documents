@@ -1,0 +1,39 @@
+\documentclass[12pt, a4paper]{scrartcl}
+\usepackage{tikz}
+\usetikzlibrary{shapes.callouts} 
+
+\pgfkeys{%
+	/calloutquote/.cd,
+	width/.code                   =  {\def\calloutquotewidth{#1}},
+	position/.code                =  {\def\calloutquotepos{#1}}, 
+	author/.code                  =  {\def\calloutquoteauthor{#1}},
+	/calloutquote/.unknown/.code  =  {\let\searchname=\pgfkeyscurrentname
+		\pgfkeysalso{\searchname/.try=#1,                                
+			/tikz/\searchname/.retry=#1},\pgfkeysalso{\searchname/.try=#1,
+			/pgf/\searchname/.retry=#1}}
+}  
+
+\newcommand\calloutquote[2][]{%
+	\pgfkeys{/calloutquote/.cd,
+		width               = 5cm,
+		position            = {(0,-1)},
+		text              	= {}}
+	\pgfqkeys{/calloutquote}{#1}                   
+	\node [rectangle callout,callout relative pointer={\calloutquotepos},text width=\calloutquotewidth,/calloutquote/.cd,
+	#1] (tmpcall) at (0,0) {#2};
+	\node at (tmpcall.pointer){\calloutquoteauthor};    
+}  
+
+\begin{document}
+	\begin{tikzpicture}
+	\calloutquote[text=$\int_{a}^{b}f(x)dx$,width=3cm,position={(1,-1)},fill=red!30,rounded corners]{An algorithm must be seen to be believed.}
+	\end{tikzpicture} 
+	
+	\begin{tikzpicture}
+	\calloutquote[text=D. Knuth,width=0.5*\linewidth,position={(0,-1)},fill=green!30,rounded corners]{An algorithm must be seen to be believed.}
+	\end{tikzpicture} 
+	
+	\begin{tikzpicture}
+	\calloutquote[text=D. Knuth,width=5cm,position={(-1,-1)},fill=blue!30,ultra thick,draw,inner sep=12pt]{An algorithm must be seen to be believed.}
+	\end{tikzpicture} 
+\end{document} 

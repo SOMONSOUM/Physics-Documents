@@ -1,0 +1,205 @@
+\documentclass{classes/exam} 
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{tikz}
+\usepackage{physics}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[version=4]{mhchem}
+\usepackage{tkz-euclide}
+\definecolor{myyellow}{RGB}{254,241,24}
+\definecolor{myorange}{RGB}{234,125,1}
+\definecolor{fancyorange1}{RGB}{253,138,9}
+\definecolor{fancyorange2}{RGB}{246,156,123}
+\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}
+\definecolor{brinkpink}{rgb}{0.98, 0.38, 0.5}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\definecolor{lightpink}{rgb}{1.0, 0.71, 0.76}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\tikzstyle arrowstyle=[scale=1]
+\tikzstyle directed=[postaction={decorate,decoration={markings,
+		mark=at position .65 with {\arrow[arrowstyle]{stealth}}}}]
+\tikzstyle direct=[postaction={decorate,decoration={markings,
+		mark=at position .65 with {\arrow[arrowstyle]{stealth reversed}}}}]
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text,calc,angles,quotes,decorations.markings}
+\tikzset{>=latex}
+\usepackage{chemfig}
+\usepackage{multirow}
+\usetikzlibrary{quotes,arrows.meta}
+%\pagestyle{empty}
+\begin{document}
+	\begin{center}
+		{\kml ប្រឡងឆមាសលើកទី១ ថ្នាក់ទី១២(វិទ្យាសាស្រ្តពិត)\\
+		វិញ្ញាសាៈ រូបវិទ្យា\\
+		រយៈពេលៈ ៩០នាទី\\
+		ពិន្ទុៈ ៧៥}
+	\end{center}
+	\begin{enumerate}[I]
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)}
+		\begin{enumerate}[k,2]
+			\item ដូចម្តេចដែលហៅថាម៉ូទ័រចំហេះក្នុង និងចំហេះក្រៅ?
+			\item ដូចម្តេចដែលហៅថារលកតម្រួត ឬរលកលីនេអ៊ែរ?
+		\end{enumerate}
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)} គណនាមាឌធុងដែលផ្ទុកឧស្ម័នអុកសុីសែន $9.6g$ នៅសម្ពាធ $10^{5}Pa$ និងសីតុណ្ហភាព $300K$។ \\ថេរសកលនៃឧស្ម័ន $R=8.31J/mol\cdot K$ និងម៉ាសម៉ូលនៃអុកសុីសែនគឺ $32g/mol$។
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)} លំយោលពីរមានទិសដៅ និងប្រេកង់ដូចគ្នាបង្កើតបានជាលំយោលតម្រួតដែលលំយោលនីមួយៗមានសមីការ $y_{1}=10\sin\left(100\pi t\right)\left(\si{\centi\metre}\right)$ និង $y_{2}=10\sin\left(100\pi t+\frac{\pi}{3}\right)\left(\si{\centi\metre}\right)$។
+		\begin{enumerate}[k]
+			\item សរសេរសមីការតម្រួតនៃលំយោលទាំងពីរខាងលើ។
+			\item ចូរកំណត់អំព្លីទុត ខួប ប្រេកង់ និងមុំផាសដើមនៃលំយោលតម្រួតនេះ។
+		\end{enumerate}
+		\item {\color{magenta}\ks (១៥ ពិន្ទុ)} គេធ្វើឲ្យរលកពីរមានទិសដៅផ្ទុយគ្នា ដាលកាត់មជ្ឈដ្ឋានតែមួយបង្កើតបានជារលកជញ្រ្ជំមួយ។ សមីការរលកនីមួយៗគឺ៖
+		$y_{1}=4.0\sin\left(3.0x-2.0t\right)\left(\si{\centi\metre}\right)$ និង $y_{2}=4.0\sin\left(3.0x+2.0t\right)\left(\si{\centi\metre}\right)$។
+		\begin{enumerate}[k]
+			\item គណនាបម្លាស់ទីអតិបរមា របស់សមីការចលនារលកនៅត្រង់ $x=2.3\si{\centi\metre}$។
+			\item គណនាទីតាំងថ្នាំងត្រង់អំព្លីទុតស្មើសូន្យ និងពោះត្រង់អំព្លីទុតអតិបរមារបស់សមីការចលនារលក។\\ បើរលកចាប់ផ្តើមដាលពីទីតាំងថ្នាំង $x=0$។ គេឲ្យៈ $\sin6.9=0.5775$
+		\end{enumerate}
+		\item {\color{magenta}\ks (១៥ ពិន្ទុ)} ម៉ូទ័រម៉ាស៊ូតមួយទទួលកម្តៅ $3.83MJ$។ វាមានទិន្នផលកម្តៅ $0.45$។
+		\begin{enumerate}[k]
+			\item គណនាកម្មន្តមេកានិចដែលផ្តល់ដោយពិស្តុង។
+			\item តើកម្តៅដែលបញ្ចេញទៅក្នុងបរិយាកាសមានតម្លៃប៉ុន្មាន?
+			\item ទិន្នផលគ្រឿងបញ្ចូនគឺ $0.85$។
+			គណនាកម្មន្តដែលបញ្ចូនដោយភ្លៅម៉ូទ័រ។
+		\end{enumerate}
+		\item {\color{magenta}\ks (១៥ ពិន្ទុ)} ក្នុងស៊ីឡាំងមួយមានឧស្ម័នបរិសុទ្ធម៉ូណូអាតូម $1.0\si{\mole}$ នៅសីតុណ្ហភាព $27^\circ C$។ ដោយរក្សាសីតុណ្ហភាពឲ្យថេរ ឧស្ម័ននោះរីកមាឌពី $V_{1}=300\si{\deci\metre^{3}}$ ទៅ $V_{2}$។ គេឲ្យ $R=8.31\si{\joule/\mole\kelvin}$។
+		\begin{enumerate}[k]
+			\item គណនាបម្រែបម្រួលថាមពលក្នុងនៃឧស្ម័ន។ 
+			\item កម្មន្តដែលបំពេញដោយឧស្ម័នគឺ $997.2\si{\joule}$។ គណនាកម្តៅស្រូបដោយប្រព័ន្ទ។
+			\item គណនាមាឌស្រេច $V_{2}$ នៃឧស្ម័ន។ គេឲ្យ $\ln1=0,~\ln1.5=0.40,~\ln2=0.69$
+		\end{enumerate}
+	\end{enumerate}
+\newpage
+\begin{center}
+	{\kml ប្រឡងឆមាសលើកទី១ ថ្នាក់ទី១២(វិទ្យាសាស្ត្រពិត)\\
+		វិញ្ញាសាៈ រូបវិទ្យា\\
+		រយៈពេលៈ ៩០នាទី\\
+		ពិន្ទុៈ ៧៥}
+\end{center}
+{\kml អត្រាកំណែ}
+\begin{enumerate}[I]
+	\item {\color{magenta}\ks (១០ ពិន្ទុ)}
+	\begin{enumerate}[k]
+		\item ម៉ូទ័រចំហេះក្នុង និងម៉ទ័រចំហេះក្រៅ
+		\begin{itemize}
+			\item ម៉ូទ័រចំហេះក្រៅ ជាប្រភេទម៉ូទ័រដែលបន្ទប់ចំហេះស្ថិតនៅក្រៅកន្លែង ដែលកម្តៅត្រូវបានធ្វើទៅជា កម្មន្ត។
+			\item ម៉ទ័រចំហេះក្នុង ជាប្រភេទម៉ូទ័រដែលបន្ទប់ចំហេះស្ថិតនៅក្នុងកន្លែង ដែលកម្តៅត្រូវបានធ្វើទៅជា កម្មន្ត។
+		\end{itemize}
+		\item រលកតម្រួត ឬរលកលីនេអ៊ែរ កើតមានកាលណារលកពីរ ឬច្រើនដាលឆ្លងកាត់ក្នុងមជ្ឈដ្ឋានតែមួយ បម្លាស់ទីសរុបរាល់ចំណុចណាក៏ដោយនៃរលក ស្មើនឹងផលបូកវ៉ិចទ័រនៃបណ្តាចំណុចបម្លាស់ទីរលកទោលទាំងនោះ។
+	\end{enumerate}
+	\item {\color{magenta}\ks (១០ ពិន្ទុ)} គណនាមាឌធុងដែលផ្ទុកឧស្ម័នអុកស៊ីសែន
+	\begin{align*}
+		\text{តាមរូបមន្ត}\quad :&\quad PV=nRT~\text{នោះ}~V=\frac{nRT}{P}\\
+		\text{តែ}\quad :&\quad n=\frac{m}{M}\\
+		\text{គេបាន}\quad :&\quad V=\frac{mRT}{PM}\\
+		\text{ដោយ}\quad :&\quad P=10^{5}\si{\pascal},~m=9.6\si{\gram},~R=8.31\si{\joule/\mole\cdot\kelvin},~T=300\si{\kelvin},~M=32\si{\gram/\mole}\\
+		\text{គេបាន}\quad :&\quad V=\frac{9.6\times 8.31\times 300}{10^{5}\times 32}=7479\times 10^{-6}m^{3}\\
+		\text{ដូចនេះ}\quad :&\quad V=7479\times 10^{-6}m^{3}
+	\end{align*}
+	\item {\color{magenta}\ks (១០ ពិន្ទុ)}
+	\begin{enumerate}[k]
+		\item សរសេរសមីការតម្រួតនៃលំយោលទាំងពីរ
+		\begin{align*}
+			\text{គេមាន}\quad :&\quad y_{1}=10\sin\left(100\pi t\right)~\text{និង}~y_{2}=10\sin\left(100\pi t+\frac{\pi}{3}\right)\\
+			\text{ប្រើរូបមន្ត}\quad :&\quad \sin p + \sin q =2\sin\frac{p+q}{2}\cos\frac{p-q}{2}\\
+			\text{គេបាន}\quad:&\quad y=y_{1}+y_{2}=10\sin\left(100\pi t\right)+10\sin\left(100\pi t+\frac{\pi}{3}\right)\\
+			\quad :&\quad y=10\left[2\sin\left(\frac{100\pi t+100\pi t +\frac{\pi}{3}}{2}\right)\cos\left(\frac{100\pi t-100\pi t -\frac{\pi}{3}}{2}\right)\right]\\
+			\quad :&\quad y=20\sin\left(100\pi t +\frac{\pi}{6}\right)\cos\left(-\frac{\pi}{6}\right)\\
+			\quad :&\quad y=20\left(\frac{\sqrt{3}}{2}\right)\sin\left(100\pi t +\frac{\pi}{6}\right)\\
+			\text{ដូចនេះ}\quad :&\quad y=10\sqrt{3}\sin\left(100\pi t +\frac{\pi}{6}\right)\left(\si{\centi\metre}\right)
+		\end{align*}
+		\item ចូរកំណត់អំព្លីទុត ខួប ប្រេកង់ និងមុំផាសដើមនៃលំយោលតម្រួត
+		\begin{align*}
+			\text{យើងមាន}\quad :&\quad y=10\sqrt{3}\sin\left(100\pi t +\frac{\pi}{6}\right)\left(\si{\centi\metre}\right)\\
+			\text{មានរាង}\quad :&\quad y=A\sin\left(\omega t +\Phi\right)~\text{គេបាន}\\
+			\text{អំព្លីទុត}\quad :&\quad A=10\si{\centi\metre}\\
+			\text{ខួប}\quad :&\quad T=\frac{2\pi}{\omega}~\text{ដែល}~\omega=100\pi\si{\radian/\second}\\
+			\quad :&\quad T=\frac{2\pi}{100\pi}=\frac{1}{50}\si{\second}\\
+			\text{ប្រកង់}\quad :&\quad f=\frac{1}{T}=\frac{1}{\frac{1}{50}}=50\si{\hertz}\\
+			\text{មុំផាសដើម}\quad :&\quad \Phi=\frac{\pi}{6}\si{\radian}
+		\end{align*}
+	\end{enumerate}
+	\item {\color{magenta}\ks (១៥ ពិន្ទុ)}
+	\begin{enumerate}[k]
+		\item  គណនាបម្លាស់ទីអតិបរមា របស់សមីការចលនារលកនៅត្រង់ $x=2.3\si{\centi\metre}$
+		\begin{align*}
+			\text{គេមាន}\quad :&\quad y_{1}=4\sin\left(3x-2t\right)\left(\si{\centi\metre}\right)~\text{និង}~y_{2}=4\sin\left(3x+2t\right)\left(\si{\centi\metre}\right)\\
+			\text{គេបាន}\quad :&\quad y=y_{1}+y_{2}=4\sin\left(3x-2t\right)+4\sin\left(3x+2t\right)\\
+			\quad :&\quad y=4\left[\sin\left(3x-2t\right)+\sin\left(3x+2t\right)\right]\\
+			\quad:&\quad
+			y=8\sin\left(\frac{3x-2t+3x+2t}{2}\right)\cos\left(\frac{3x-2t-3x-2t}{2}\right)\\
+			\quad :&\quad y=8\sin\left(3x\right)\cos\left(-2t\right)\\
+			\text{នាំឲ្យ}\quad :&\quad y=8\sin 3x \cos 2t\left(\si{\centi\metre}\right)\\
+			\text{បម្លាស់ទីអតិបរមាត្រង់ $x=2.3\si{\centi\metre}$ គឺ}\\
+			\quad :&\quad y_{max}=8\sin\left(3\times 2.3\right)\\
+			\text{ដូចនេះ}\quad :&\quad y_{max}=4.62\si{\centi\metre}
+		\end{align*}
+		\item គណនាទីតាំងថ្នាំងត្រង់អំព្លីទុតស្មើសូន្យ និងពោះត្រង់អំព្លីទុតអតិបរមារបស់សមីការចលនារលក
+		\begin{itemize}
+			\item ត្រង់ទីតាំងថ្នាំងដែលមានអំព្លីទុតស្មើសូន្យ
+			\begin{align*}
+				\text{គេមាន}\quad:&\quad y=8\sin 3x\cos 2t\\
+				\text{កន្សោមអំព្លីទុត}\quad :&\quad A=8\sin 3x=0\\
+				\quad :&\quad \sin 3x =\sin\left(0+n\pi\right)\\
+				\quad :&\quad 3x=n\pi~\Rightarrow~x=n\frac{\pi}{3}\left(\si{\centi\metre}\right)\\
+				\text{ដូចនេះ}\quad :&\quad x=n\frac{\pi}{3}\left(\si{\centi\metre}\right)~\text{ដែល}~\left(n=0,1,2,3,\cdots\right)
+			\end{align*}
+			\item ត្រង់ទីតាំងពោះដែលមានអំព្លីទុតអតិបរមា
+			\begin{align*}
+				\text{កន្សោមអំព្លីទុត}\quad :&\quad A=8\sin 3x~\text{មានតម្លៃអតិបរមាកាលណា:}​~\sin 3x=\pm 1
+			\end{align*}
+			\begin{align*}
+				\text{គេបាន}\quad :&\quad \sin 3x = \sin\left(n\pi +\frac{\pi}{2}\right)\\
+				\quad :&\quad 3x=n\pi +\frac{\pi}{2}~\Rightarrow~x=\left(2n+1\right)\frac{\pi}{6}\left(\si{\centi\metre}\right)\\
+				\text{ដូចនេះ}\quad :&\quad x=\left(2n+1\right)\frac{\pi}{6}\left(\si{\centi\metre}\right)~\text{ដែល}~\left(n=0,1,2,3,\cdots\right)
+			\end{align*}
+		\end{itemize}
+	\end{enumerate}
+	\item {\color{magenta}\ks (១៥ ពិន្ទុ)} 
+	\begin{enumerate}[k]
+		\item គណនាកម្មន្តមេកានិចដែលផ្តល់ដោយពិស្តុង
+		\begin{align*}
+			\text{តាមរូបមន្ត}\quad :&\quad e_{c}=\frac{W_{M}}{Q_{h}}~\Rightarrow~W_{M}=Q_{h}\times e_{c}\\
+			\text{ដោយ}\quad :&\quad Q_{h}=3.83\si{\mega \joule}=3.83\times 10^{6}\si{\joule},~e_{c}=0.45\\
+			\text{គេបាន}\quad :&\quad W_{M}=3.83\times 10^{6}\times 0.45=1.72\times 10^{6}\si{\joule}\\
+			\text{ដូចនេះ}\quad :&\quad W_{M}=1.72\times 10^{6}\si{\joule}
+		\end{align*}
+		\item គណនាកម្តៅដែលបញ្ចេញទៅក្នុងបរិយាកាស
+			\begin{align*}
+				\text{តាមរូបមន្ត}\quad:&\quad W_{M}=Q_{h}-Q_{c}~\Rightarrow~Q_{c}=Q_{h}-W\\
+				\text{ដោយ}\quad :&\quad W_{M}=1.72\times 10^{6}\si{\joule},~Q_{h}=3.83\times 10^{6}\si{\joule}\\
+				\text{គេបាន}\quad :&\quad Q_{c}=\left(3.83-1.72\right)10^{6}=2.11\times 10^{6}\si{\joule}\\
+				\text{ដូចនេះ}\quad :&\quad Q_{c}=2.11\times 10^{6}\si{\joule}
+			\end{align*}
+		\item គណនាកម្មន្តដែលបញ្ចូនដោយភ្លៅម៉ូទ័រ។
+		\begin{align*}
+			\text{តាមរូបមន្ត}\quad:&\quad e_{M}=\frac{W_{U}}{W_{M}}~\Rightarrow~W_{U}=W_{M}\times e_{M}\\
+			\text{ដោយ}\quad :&\quad W_{M}=1.72\times 10^{6},~e_{M}=0.85\\
+			\text{គេបាន}\quad :&\quad W_{U}=1.72\times 10^{6}\times 0.85=1.462\times 10^{6}\si{\joule}\\
+			\text{ដូចនេះ}\quad :&\quad W_{U}=1.462\times 10^{6}\si{\joule}
+		\end{align*}
+	\end{enumerate}
+	\item {\color{magenta}\ks (១៥ ពិន្ទុ)}
+	\begin{enumerate}[k]
+		\item គណនាបម្រែបម្រួលថាមពលក្នុងនៃឧស្ម័ន
+			\begin{align*}
+				\text{តាមរូបមន្ត}\quad :&\quad \Delta U=\frac{3}{2}nR \Delta T\\
+				\text{ដោយឧស្ម័នមានសីតុណ្ហភាពថេរ}\quad :&\quad T_{1}=T_{2}~\Rightarrow~\Delta T=0\\
+				\text{ដូចនេះ}\quad :&\quad \Delta U=0\si{\joule}
+			\end{align*}
+		\item គណនាកម្តៅស្រូបដោយប្រព័ន្ទ
+			\begin{align*}
+				\text{ច្បាប់ទី១ ទែម៉ូឌីណាមិច}\quad :&\quad Q=W+\Delta U\\
+				\text{ដោយ}\quad :&\quad W=997.2\si{\joule},~\Delta U=0\si{\joule}\\
+				\text{គេបាន}\quad :&\quad Q=997.2+0=997.2\si{\joule}\\
+				\text{ដូចនេះ}\quad :&\quad Q=997.2\si{\joule}
+			\end{align*}
+		\item គណនាមាឌស្រេច $V_{2}$ នៃឧស្ម័ន
+			\begin{align*}
+				\text{តាមរូបមន្ត}\quad:&\quad W=nRT\ln\left(\frac{V_{2}}{V_{1}}\right)~\Rightarrow~V_{2}=V_{1}\times e^{\frac{W}{nRT}}\\
+				\text{ដោយ}\quad :&\quad W=997.2\si{\joule},~V_{1}=300\si{\deci\metre^{3}},~R=8.31\si{\joule/\mole\cdot\kelvin},~n=1\si{\mole},~T=27+273=300\si{\kelvin}\\
+				\text{គេបាន}\quad :&\quad V_{2}=300\times 10^{\frac{997.2}{1\times 8.31\times 300}}=300\times e^{0.40}=300\times 1.50=450\si{\deci \metre ^{3}}\\
+				\text{ដូចនេះ}\quad :&\quad V_{2}=450\si{\deci \metre ^{3}}
+			\end{align*}
+	\end{enumerate}
+\end{enumerate}
+\end{document}

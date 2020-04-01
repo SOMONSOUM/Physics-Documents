@@ -1,16 +1,29 @@
-\documentclass[a4paper,12pt]{fancy}
+\documentclass[12pt, a4paper]{classes/header}
 \usepackage{circuitikz}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{multirow}
 \usepackage{graphicx}
+\usepackage{physics}
 \graphicspath{ {./images/} }
+\usepackage{wrapfig}
 \usepackage[table]{xcolor}
+\usepackage{multicol}
 \usepackage{pdflscape}
 \usepackage{adjustbox}
 \usepackage{pdfpages}
 \usepackage[version=4]{mhchem}
 \usepackage{tkz-euclide}
+\usepackage{tkz-euclide}
 \definecolor{myyellow}{RGB}{254,241,24}
 \definecolor{myorange}{RGB}{234,125,1}
-\usepackage{tkz-euclide}
+\definecolor{fancyorange1}{RGB}{253,138,9}
+\definecolor{fancyorange2}{RGB}{246,156,123}
+\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}
+\definecolor{brinkpink}{rgb}{0.98, 0.38, 0.5}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\definecolor{lightpink}{rgb}{1.0, 0.71, 0.76}
 \usetikzlibrary{quotes,arrows.meta}
 \tikzset{
 	annotated cubic/.pic={
@@ -100,17 +113,83 @@
 }
 \newcommand{\pythagwidth}{3cm}
 \newcommand{\pythagheight}{2cm}
+% ខ្សែពួរ
+\newcounter{ropept}
+\pgfkeys{/tikz/.cd,
+	rope width/.store in=\RopeWidth,
+	rope width=5pt,
+	rope step/.store in=\RopeStep,
+	rope step=2mm,
+}
+
+\pgfdeclaredecoration{rope}{initial}
+{% 
+	\state{initial}[width=\RopeStep,next state=cont] {
+		\pgfmoveto{\pgfpoint{0pt}{-\RopeWidth/2}}
+		\pgfpathcurveto
+		{\pgfpoint{5*\RopeStep/6}{0.25*\RopeWidth}}
+		{\pgfpoint{7*\RopeStep/6}{0.45*\RopeWidth}}
+		{\pgfpoint{1.5*\RopeStep}{\RopeWidth/2}}
+		\pgfpathcurveto
+		{\pgfpoint{10*\RopeStep/6}{0.55*\RopeWidth}}
+		{\pgfpoint{11*\RopeStep/6}{0.6*\RopeWidth}}
+		{\pgfpoint{13.5*\RopeStep/6}{\RopeWidth/2}}
+		\setcounter{ropept}{0}
+		\pgfcoordinate{lastup-\theropept}{\pgfpoint{-1.5*\RopeStep/6}{-\RopeWidth/2}}
+		\pgfcoordinate{rope-auxA-\theropept}{\pgfpoint{13.5*\RopeStep/6}{\RopeWidth/2}}
+	}
+	\state{cont}[width=\RopeStep]{ 
+		\pgfmoveto{\pgfpointanchor{lastup-\theropept}{center}}
+		\pgfpathcurveto
+		{\pgfpoint{-5*\RopeStep/6}{-0.6*\RopeWidth}}
+		{\pgfpoint{-4*\RopeStep/6}{-0.55*\RopeWidth}}
+		{\pgfpoint{-3*\RopeStep/6}{-0.55*\RopeWidth}}
+		\pgfpathcurveto
+		{\pgfpoint{-\RopeStep/6}{-0.45*\RopeWidth}}
+		{\pgfpoint{\RopeStep/6}{-0.25*\RopeWidth}}
+		{\pgfpoint{3*\RopeStep/6}{0pt}}
+		\pgfpathcurveto
+		{\pgfpoint{5*\RopeStep/6}{0.25*\RopeWidth}}
+		{\pgfpoint{7*\RopeStep/6}{0.45*\RopeWidth}}
+		{\pgfpoint{9*\RopeStep/6}{\RopeWidth/2}}
+		\pgfpathcurveto
+		{\pgfpoint{10*\RopeStep/6}{0.55*\RopeWidth}}
+		{\pgfpoint{11*\RopeStep/6}{0.6*\RopeWidth}}
+		{\pgfpoint{13.5*\RopeStep/6}{\RopeWidth/2}}
+		\pgfmoveto{\pgfpointanchor{rope-auxA-\theropept}{center}}
+		\pgfpathlineto{\pgfpoint{9*\RopeStep/6}{\RopeWidth/2}}
+		\stepcounter{ropept}
+		\pgfcoordinate{lastup-\theropept}{\pgfpoint{-1.5*\RopeStep/6}{-\RopeWidth/2}}
+		\pgfcoordinate{rope-auxA-\theropept}{\pgfpoint{13.5*\RopeStep/6}{\RopeWidth/2}}
+	}
+	\state{final}[width=5pt]
+	{
+		\pgfmoveto{\pgfpointanchor{lastup-\theropept}{center}}
+		\pgfpathcurveto
+		{\pgfpoint{-5*\RopeStep/6}{-0.6*\RopeWidth}}
+		{\pgfpoint{-4*\RopeStep/6}{-0.55*\RopeWidth}}
+		{\pgfpoint{-0.5*\RopeStep}{-0.55*\RopeWidth}}
+		\pgfpathcurveto
+		{\pgfpoint{-\RopeStep/6}{-0.45*\RopeWidth}}
+		{\pgfpoint{\RopeStep/6}{-0.25*\RopeWidth}}
+		{\pgfpoint{0.5*\RopeStep}{0pt}}
+		\pgfmoveto{\pgfpointdecoratedpathlast}
+		\xdef\LastRope{\theropept}
+	}
+}
 \begin{document}
-	%\includepdf[pages=1]{conicfrontcover.pdf}
-	%\frontmatter
-	\pagenumbering{alpkh}
-	%\input{conicacknowledge.tex}
-	%\input{conicpreface.tex}
-	%\input{conictableofcontents.tex}
-	%\mainmatter
-	\pagenumbering{khmer}
-	\input{lesson0.tex}
-	\input{lesson1.tex}
-	\input{lesson2.tex}
-	%\input{lesson3.tex}
+	\frontmatter\pagenumbering{alpkh}
+	\tableofcontents
+	\mainmatter\pagenumbering{khmer}
+	\input{lessons/lesson0.tex}
+	\input{lessons/lesson1.tex}
+	\input{exercises/exercise1.tex}
+	\input{lessons/lesson2.tex}
+	\input{exercises/exercise2.tex}
+	\input{lessons/lesson3.tex}
+	\input{exercises/exercise3.tex}
+	\input{lessons/lesson4.tex}
+	\input{exercises/exercise4.tex}
+	\backmatter
+	\input{back/reference.tex}
 \end{document}

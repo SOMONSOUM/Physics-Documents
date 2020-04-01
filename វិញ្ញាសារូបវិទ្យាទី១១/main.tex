@@ -1,0 +1,371 @@
+\documentclass{classes/exam} 
+\usepackage{chemfig}
+\usepackage{tikz}
+\usepackage{physics}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[version=4]{mhchem}
+\usepackage{tkz-euclide}
+\definecolor{myyellow}{RGB}{254,241,24}
+\definecolor{myorange}{RGB}{234,125,1}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\tikzstyle arrowstyle=[scale=1]
+\tikzstyle directed=[postaction={decorate,decoration={markings,
+		mark=at position .65 with {\arrow[arrowstyle]{stealth}}}}]
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text, calc,angles,quotes,decorations.markings}
+\tikzset{>=latex}
+\usepackage{chemfig}
+\usepackage{multirow}
+\usetikzlibrary{quotes,arrows.meta}
+\tikzset{
+	annotated prole/.pic={
+		\tikzset{%
+			every edge quotes/.append style={midway, auto},
+			/prole/.cd,
+			#1
+		}
+		\draw [every edge/.append style={pic actions, densely dashed, opacity=.5}, pic actions]
+		(0,0,0) coordinate (o) -- ++(-\cubescale*\cubex,0,0) coordinate (a) -- ++(0,-\cubescale*\cubey,0) coordinate (b) edge coordinate [pos=1] (g) ++(0,0,-\cubescale*\cubez)  -- ++(\cubescale*\cubex,0,0) coordinate (c) -- cycle
+		(o) -- ++(0,0,-\cubescale*\cubez) coordinate (d) -- ++(0,-\cubescale*\cubey,0) coordinate (e) edge (g) -- (c) -- cycle
+		(o) -- (a) -- ++(0,0,-\cubescale*\cubez) coordinate (f) edge (g) -- (d) -- cycle;
+		\path [every edge/.append style={pic actions, |-|}]
+		(b) +(0,-5pt) coordinate (b1) edge ["$a$"'] (b1 -| c)
+		(b) +(-5pt,0) coordinate (b2) edge ["$h$"] (b2 |- a)
+		(c) +(3.5pt,-3.5pt) coordinate (c2) edge ["$b$"'] ([xshift=3.5pt,yshift=-3.5pt]e)
+		;
+	},
+	/prole/.search also={/tikz},
+	/prole/.cd,
+	width/.store in=\cubex,
+	height/.store in=\cubey,
+	depth/.store in=\cubez,
+	units/.store in=\cubeunits,
+	scale/.store in=\cubescale,
+	width=10,
+	height=10,
+	depth=10,
+	units=cm,
+	scale=.1,
+}
+\newcommand\RectTri[4][thick,green!50!black,text=black]{%
+	\coordinate [label=left:$C$] (C) at #2;
+	\coordinate [label=below right:$B$] (B) at #3;
+	\coordinate (aux) at ($ #2 ! 1 ! 90:#3 $);
+	\coordinate [label=above:$A$] (A) at ($ #2 !#4!(aux) $);
+	
+	\coordinate (perp) at ($(A)!(C)!(B)$);
+	
+	\draw[#1] 
+	(C) -- 
+	node[auto] {$b$} (A) -- 
+	node[auto] {$c$} (B) --
+	node[auto] {$a$} 
+	(C)
+	pic ["$\alpha$",draw,cyan,thick,angle radius=1cm] {angle = C--A--B} 
+	%pic ["$\alpha$",draw,cyan,thick,angle radius=1cm] {angle = B--C--perp}
+	pic ["$\beta$",draw,orange!70!black,thick,angle radius=1cm] {angle = A--B--C}
+	pic ["$\gamma$",draw,orange!70!black,thick,angle radius=1cm] {angle = B--C--A};
+}
+%\everymath{\color{blue}}
+\begin{document}
+	\maketitle
+	\borderline{ប្រធាន}
+	\begin{enumerate}[I]
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)} គេមានចំណុចបន្ទុកអគ្គិសនីពីរ $q_{1}=20nC$ និង $q_{2}=80nC$ ដាក់រៀងគ្នាត្រង់ $A,~B$\\ ដែល $a=\abs{AB}=12cm$។ \\កំណត់រកចំណុច $M$ នៃ $[AB]$ ដែលបន្ទុកវិជ្ជមាន $q$ ដាក់ត្រង់ $M$ រងនូវកម្លាំងផ្គួបស្មើសូន្យ។
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)} អាម៉ាតួនៃកុងដង់សាទ័រប្លង់មួយមានចម្ងាយ $d=5cm$ ពីគ្នា។\\ តង់ស្យុងរវាងអាតួទាំងពីរគឺ $V_{AB}=4kV$។
+		\begin{enumerate}[k]
+			\item គូសខ្សែដែនចន្លោះអាម៉ាតួទាំងពីរព្រមទាំងបញ្ជាក់សញ្ញានៃបន្ទុកអគ្គិសនីលើអាម៉ាតួនីមួយៗ។
+			\item គណនាតម្លៃដែនអគ្គិសនីចន្លោះអាម៉ាតួទាំងពីរ។
+		\end{enumerate}
+		\item {\color{magenta}\ks (១៥ ពិន្ទុ)} ចំណុចបន្ទុកអគ្គិសនីពីរ $q_{A}=2nC$ និង $q_{B}=-2nC$ ស្ថិតនៅរៀងគ្នាត្រង់ $A$ និង $B$ ដែល \\$AB=6cm$។ នៅត្រង់ $O$ កណ្តាល $[AB]$ គេដាក់ចំណុចបន្ទុកអគ្គិសនី $q=-1\mu C$។
+		\begin{enumerate}[k,2]
+			\item គណនាដែនអគ្គិសនីត្រង់ចំណុច $O$។
+			\item ទាញរកកម្លាំងអគ្គិសនីដែលមានអំពើលើបន្ទុក $q$។
+		\end{enumerate}
+		\item {\color{magenta}\ks (២០ ពិន្ទុ)} គេមានត្រីកោណកែងសមបាតមួយដែលមានជ្រុង $a=10cm$(ដូចរូប)។ នៅត្រង់ចំណុច $M; N; P$ គេដាក់បន្ទុកអគ្គិសនីរៀងគ្នា $q_{1}=5\mu C~;~q_{2}=-5\mu C~;~q=2\mu C$។ ចូរកំណត់កម្លាំងដែលមានអំពើលើបន្ទុក $q$។
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[scale=1.2, draw=magenta, fill=magenta]
+			\coordinate [label=above left:$M(q_{1})$] (M) at (-1.0cm,1.0cm);
+			\coordinate [label=below right:$P(q)$] (P) at (1.0cm,-1.0cm);
+			\coordinate [label=above right:$N(q_{2})$] (N) at (3cm,1.0cm);
+			\draw (M) -- node[above] {$a=10cm$} (N) -- node[right] {$$} (P) -- node[below] {$$} (M);
+			\tkzMarkAngle[size=.5cm,color=cyan,mark=|](P,M,N)
+			\tkzMarkAngle[size=.5cm,color=cyan,mark=|](M,N,P)
+			\shade[ball color=red!60] (M) circle (6pt);
+			\node at (M) {$+$};
+			\shade[ball color=cyan!60] (N) circle (6pt);
+			\node at (N) {$-$};
+			\shade[ball color=red!60] (P) circle (6pt);
+			\node at (P) {$+$};
+			\node at (0cm,.7cm) {$45^\circ$};
+			\end{tikzpicture}
+		\end{figure}
+		\item {\color{magenta}\ks (២០ ពិន្ទុ)} ប្រូតុងមួយធ្វើចលនាពីបន្ទះ $A$ ទៅបន្ទះ $B$ ចូលក្នុងដែនអគ្គិសនី ឯកសណ្ឋានរវាងបន្ទះលោហៈទាំងពីរដោយគ្មានល្បឿនដើមតាមទិសស្របនឹងខ្សែដែនអគ្គិសនីដែលបង្កើតឡើងដោយតង់ស្យុង $V_{AB}=100V$ និងមិនគិតទម្ងន់ប្រូតុង។
+		\begin{enumerate}[k]
+			\item កំណត់ដែនអគ្គិសនីចន្លោះបន្ទះលោហៈទាំងពីរ បើ $AB=5cm$។
+			\item គណនាសំទុះរបស់ប្រូតុងក្នុងដែនអគ្គិសនី។
+			\item កំណត់សមីការចលនារបស់ប្រូតុងក្នុងដែនអគ្គិសនី។\\
+			គេឲ្យៈ ម៉ាសប្រូតុង $m_{p}=1.67\times10^{-27}kg$ និងបន្ទុកប្រូត្រុង $q_{p}=+e=+1.6\times10^{-19}C$។
+		\end{enumerate}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[scale=1, draw=magenta, fill=magenta]
+				\begin{scope}
+				\draw [->, line width=3pt] (0,2) -- (1,2);
+				\draw [line width=3pt] (0,4) -- (0,0);
+				\draw [line width=3pt] (3,4) -- (3,0);
+				\draw [dashed] (-1,2) -- (4,2);
+				\coordinate[label=left:$A$] (A) at (0,4);
+				\coordinate[label=right:$B$] (B) at (3,4);
+				\coordinate[label=above:$\overrightarrow{\upsilon}$] (v) at (1,2);
+				\end{scope}
+			\end{tikzpicture}
+		\end{figure}
+	\end{enumerate}
+%%%%%%%%%%%%%%% អត្រាកំណែ​ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\borderline{អត្រាកំណ}
+	\begin{enumerate}[I]
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)} កំណត់រកចំណុច $M$
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[draw=magenta,scale=1, fill=magenta]
+				\begin{scope}
+					\draw (0,0) -- (12,0);
+					\draw[dashed] (0,0) -- (0,-1);
+					\draw[dashed] (4,0) -- (4,-1);
+					\draw[dashed] (12,0) -- (12,-1);
+					\shade[ball color=red!60] (0,0) circle (6pt);
+					\shade[ball color=red!60] (12,0) circle (6pt);
+					\node at (0,0) {$+$};
+					\node at (12,0) {$+$};
+					\draw[->, line width=2pt] (4,0) -- (5,0);
+					\draw[->, line width=2pt] (4,0) -- (3,0);
+					\shade[ball color=red!60] (4,0) circle (6pt);
+					\coordinate[label=below left:$A$] (A) at (0,-.2);
+					\coordinate[label=below right:$B$] (B) at (12,-.2);
+					\coordinate[label=above:$M$] (M) at (4,.1);
+					\coordinate[label=above:$\overrightarrow{F}_{1}$] (F1) at (5,.2);
+					\coordinate[label=above:$\overrightarrow{F}_{2}$] (F2) at (3,.2);
+					\draw[<->, line width=1.5pt] (0,-1) -- (4,-1);
+					\coordinate[label=below:$\ell$] (x) at (2,-1);
+					\draw[<->, line width=1.5pt] (4,-1) -- (12,-1);
+					\coordinate[label=below:$a-\ell$] (x) at (8,-1);
+					\node at (4,0) {$+$};
+				\end{scope}
+			\end{tikzpicture}
+		\end{figure}
+		\begin{flalign*}
+			\text{លក្ខខណ្ឌលំនឹង}\quad :& \quad \overrightarrow{F}_{1}+\overrightarrow{F}_{2}=0\quad \text{ឬ}\quad F_{1}=F_{2}\\
+			\text{ដែល}\quad :&\quad F_{1}=9\times10^{9}\frac{\abs{q_{1}\cdot q}}{\ell^{2}}\\
+			\text{នឹង}\quad :&\quad F_{2}=9\times10^{9}\frac{\abs{q_{2}\cdot q}}{\left(a-\ell\right)^{2}}\\
+			\text{គេបាន}\quad :&\quad 9\times10^{9}\frac{\abs{q_{1}\cdot q}}{\ell^{2}}=9\times10^{9}\frac{\abs{q_{2}\cdot q}}{\left(a-\ell\right)^{2}}\\
+			\quad :&\quad \frac{\abs{q_{1}}}{\ell^{2}}=\frac{\abs{q_{2}}}{\left(a-\ell\right)^{2}}\quad\text{ឬ}\quad \frac{a-\ell}{\ell}=\sqrt{\frac{\abs{q_{2}}}{\abs{q_{1}}}}\\
+			\text{ដោយ}\quad :&\quad q_{1}=20nC=20\times10^{-9}C,~q_{2}=80nC=80\times10^{-9}C\quad\text{និង}\quad a=12cm\\
+			\quad :&\quad \frac{a-\ell}{\ell}=\sqrt{\frac{80}{20}}=2\\
+			\quad :&\quad AM=\ell=\frac{a}{3}=\frac{12}{3}=4cm\\
+			\text{និង}\quad :&\quad BM=a-\ell=12-4=8cm\\
+			\text{ដូចនេះ}\quad :&\quad \text{ចំណុច $M$ ស្ថិតនៅចម្ងាយ $4cm$ ពី $A$ និង $8cm$ ពី $B$}
+		\end{flalign*}
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)}
+		\begin{enumerate}[k]
+			\item គូសខ្សែដែនចន្លោះអាម៉ាតួទាំងពីរព្រមទាំងបញ្ជាក់សញ្ញានៃបន្ទុកអគ្គិសនីលើអាម៉ាតួនីមួយៗ
+			\begin{flalign*}
+				\text{គេមាន}\quad :&\quad V_{AB}=4kV=V_{A}-V_{B}=4kV>0\quad \text{នោះ}\quad V_{A}>V_{B}
+			\end{flalign*}
+			យើងបានដែនអគ្គិសនីមានទិសដៅពីអាម៉ាតួ $A$ ទៅអាម៉ាតួ $B$។ \\
+			ដូចនេះគេអាចសន្និដ្ឋានបានថា អាម៉ាតួ $A$ មានបន្ទុកអគ្គិសនីវិជ្ជមាន ហើយ $B$ មានបន្ទុកអគ្គិសនីអវិជ្ជមាន
+			\begin{figure}[H]
+				\centering
+				\begin{tikzpicture}[draw=magenta,scale=1, fill=magenta]
+				\begin{scope}
+					\coordinate[label=above:$\overrightarrow{E}$] (E1) at (2.5, 3);
+					\coordinate (A) at (2.5,2);
+					\coordinate (B) at (2.5,3);
+					\coordinate (C) at (2.5,2.5);
+					\coordinate (D) at (2.5,1.5);
+					\coordinate (E) at (2.5,1);
+					\draw [->] (.5,2) -- (A);
+					\draw [->] (.5,3) -- (B);
+					\draw [->] (.5,2.5) --(C);
+					\draw [->] (.5,1.5) -- (D);
+					\draw [->] (.5,1) -- (E);
+					\draw [line width=3pt] (0,4) -- (0,0);
+					\draw [fill=blue, line width=3pt] (3,4) -- (3,0);
+					\coordinate[label=left:$A$] (A) at (0,4);
+					\coordinate[label=right:$B$] (B) at (3,4);
+					\coordinate[label=left:$+$] (P) at (0,2);
+					\coordinate[label=right:$-$] (N) at (3,2);
+				\end{scope}
+				\end{tikzpicture}
+			\end{figure}
+		\newpage
+		\item គណនាតម្លៃដែនអគ្គិសនីចន្លោះអាម៉ាតួទាំងពីរ
+			\begin{flalign*}
+				\text{តាមរូបមន្ត}\quad :&\quad E=\frac{V_{AB}}{d}\\
+				\text{ដោយ}\quad :&\quad V_{AB}=4kV=40\times10^{2}V~\text{និង}~d=5cm=5\times10^{-2}m\\
+				\text{គេបាន}\quad :&\quad E=\frac{40\times10^{2}}{5\times10^{-2}}=8\times10^{4}V/m\\
+				\text{ដូចនេះ}\quad :&\quad E=8\times10^{4}V/m
+			\end{flalign*}
+		\end{enumerate}
+		\item {\color{magenta}\ks (១៥ ពិន្ទុ)}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[draw=magenta, fill=magenta]
+				\begin{scope}
+				\draw (0,0) -- (8,0);
+				\draw[dashed] (0,0) -- (0,-1);
+				\draw[dashed] (4,0) -- (4,-1);
+				\draw[dashed] (8,0) -- (8,-1);
+				\shade[ball color=red!60] (0,0) circle (6pt);
+				\node at (0,0) {$+$};
+				\shade[ball color=cyan!60] (8,0) circle (6pt);
+				\node at (8,0) {$-$};
+				\draw[->, line width=2pt] (4,0) -- (5,0);
+				\draw[->, line width=2pt] (4,0) -- (3,0);
+				\shade[ball color=cyan!60] (4,0) circle (6pt);
+				\node at (4,0) {$-$};
+				\coordinate[label=below left:$A$] (A) at (0,-.2);
+				\coordinate[label=below right:$B$] (B) at (8,-.2);
+				\coordinate[label=above:$O$] (O) at (4,.2);
+				\coordinate[label=above:$\overrightarrow{E}_{A}$] (EA) at (5,0);
+				\coordinate[label=below:$\overrightarrow{E}_{B}$] (EB) at (5,0);
+				\coordinate[label=above:$\overrightarrow{F}_{A}$] (FA) at (3,0);
+				\coordinate[label=below:$\overrightarrow{F}_{B}$] (FB) at (3,0);
+				\draw[<->, line width=1.5pt] (0,-1) -- (4,-1);
+				\coordinate[label=below:$\frac{AB}{2}$] (x) at (2,-1);
+				\draw[<->, line width=1.5pt] (4,-1) -- (8,-1);
+				\coordinate[label=below:$\frac{AB}{2}$] (x) at (6,-1);
+				\end{scope}
+			\end{tikzpicture}
+		\end{figure}
+		\begin{enumerate}[k]
+			\item គណនាដែនអគ្គិសនីត្រង់ចំណុច $O$។
+				\begin{itemize}
+					\item រកដែន $E_{A}$ ដែលបង្កើតដោយបន្ទុកអគ្គិសនី $q_{A}$ ត្រង់ $O$
+					\begin{flalign*}
+						\text{តាម}\quad :&\quad E_{A}=9\times10^{9}\frac{\abs{q_{A}}}{AO^{2}}\\
+						\text{ដោយ}\quad :&\quad q_{A}=2nC=2\times10^{-9}C,~\text{និង}~AO=\frac{AB}{2}=\frac{6cm}{2}=3cm=3\times10^{-2}m\\
+						\text{គេបាន}\quad :&\quad E_{A}=9\times10^{9}\frac{\abs{2\times10^{-9}}}{\left(3\times10^{-2}\right)^{2}}=2\times10^{4}N/C
+					\end{flalign*}
+					\item រកដែន $E_{B}$ ដែលបង្កើតដោយបន្ទុកអគ្គិសនី $q_{B}$ ត្រង់ $O$
+					\begin{flalign*}
+						\text{តាម}\quad :&\quad E_{B}=9\times10^{9}\frac{\abs{q_{B}}}{OB^{2}}\\
+						\text{ដោយ}\quad :&\quad q_{B}=-2nC=-2\times10^{-9}C,~\text{និង}~OB=\frac{AB}{2}=\frac{6cm}{2}=3cm=3\times10^{-2}m\\
+						\text{គេបាន}\quad :&\quad E_{B}=9\times10^{9}\frac{\abs{-2\times10^{-9}}}{\left(3\times10^{-2}\right)^{2}}=2\times10^{4}N/C
+					\end{flalign*}
+					\emph{\kml សម្គាល់ៈ} សិស្សអាចនិយាយថា $E_{A}=E_{B}$ ព្រោះដែនអគ្គិសនីទាំងពីរបង្កើតដោយបន្ទុកអគ្គិសនីមានតម្លៃដាច់ខាត់ស្មើគ្នា ហើយស្ថិតនៅចម្ងាយស្មើគ្នាពីចំណុច $O$ គឺ $AO=OB=\frac{AB}{2}$។(សិស្សបានពិន្ទុពេញដូចគ្នា)
+					\begin{flalign*}
+						\text{គេបាន}\quad :&\quad \overrightarrow{E}=\overrightarrow{E}_{A}+\overrightarrow{E}_{B}~(\text{ដោយ} \overrightarrow{E}_{A}\uparrow\uparrow\overrightarrow{E}_{B})\\
+						\text{នោះ}\quad :&\quad E=E_{A}+E_{B}=2E_{A}=2\times2\times10^{4}=4\times10^{4} N/C\\
+						\text{ដូចនេះ}\quad :&\quad E=4\times10^{4}N/C
+					\end{flalign*}
+				\end{itemize}
+			\item ទាញរកកម្លាំងអគ្គិសនីដែលមានអំពើលើបន្ទុក $q$។
+				\begin{align*}
+					\text{តាម}\quad F=E\abs{q}
+				\end{align*}
+				\begin{flalign*}
+					\text{ដោយ}\quad :&\quad E=4\times10^{4}~\text{និង}~q=-1\mu C=-1\times10^{-6}C\\
+					\text{គេបាន}\quad :&\quad F=4\times10^{4}\times\abs{-1\times10^{-6}}=4\times10^{-2}N\\
+					\text{ដូចនេះ}\quad :&\quad F=4\times10^{-2}N
+				\end{flalign*}
+		\end{enumerate}
+		\item {\color{magenta}\ks (២០ ពិន្ទុ)} កំណត់កម្លាំងដែលមានអំពើលើបន្ទុក $q$
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[draw=magenta,scale=1.2, fill=magenta]
+				\begin{scope}
+					\coordinate [label=above left:$M(q_{1})$] (M) at (-1.0cm,1.0cm);
+					\coordinate [label=below left:$P(q)$] (P) at (1.0cm,-1.0cm);
+					\coordinate [label=above right:$N(q_{2})$] (N) at (3cm,1.0cm);
+					\coordinate [label=below:$\overrightarrow{F}_{1}$] (F1) at (2cm,-2cm);
+					\coordinate [label=above left:$\overrightarrow{F}_{2}$] (F2) at (2cm,0cm);
+					\coordinate [label=right:$\overrightarrow{F}$] (F) at (3cm,-1cm);
+					\draw (M) -- node[above] {$a=10cm$} (N) -- node[right] {$$} (P) -- node[below] {$$} (M);
+					\draw [->, line width=2pt] (P) -- (2cm, -2cm);
+					\draw [->, line width=2pt] (P) -- (2cm, 0cm);
+					\draw [->, line width=2pt] (P) -- (F);
+					\draw[dashed] (F1)--(F)--(F2);
+					\tkzMarkAngle[size=.5cm,color=cyan,mark=|](P,M,N)
+					\tkzMarkAngle[size=.5cm,color=cyan,mark=|](M,N,P)
+					\shade[ball color=red!60] (M) circle (6pt);
+					\node at (M) {$+$};
+					\shade[ball color=cyan!60] (N) circle (6pt);
+					\node at (N) {$-$};
+					\shade[ball color=red!60] (P) circle (6pt);
+					\node at (P) {$+$};
+					\node at (0cm,.7cm) {$45^\circ$};
+					\pic [draw, "$\beta$", angle eccentricity=1.5, angle radius=.5cm] {angle= F1--P--F2};
+				\end{scope}
+			\end{tikzpicture}
+		\end{figure}
+		\begin{itemize}
+			\item រកមកម្លាំង $F_{1}$ ជាកម្លាំងអគ្គិសនីដែលបង្កើតដោយបន្ទុកអគ្គិសនី $q_{1}$ ត្រង់ $P$ មានបន្ទុកអគ្គិសនី $q$
+			\begin{flalign*}
+				\text{តាម}\quad :&\quad F_{1}=9\times10^{9}\frac{\abs{q_{1}\cdot q}}{MP^{2}}\\
+				\text{តែ}\quad :&\quad \Delta MPN~\text{ជាត្រីកោណកែងសមមាបាត}~MN^{2}=MP^{2}+PN^{2}=2MP^{2}\left(MP=PN\right)\\
+				\text{ដោយ}\quad :&\quad MP=PN=\frac{\sqrt{2}}{2}MN=\frac{\sqrt{2}}{2}10=5\sqrt{2}cm=5\sqrt{2}\times10^{-2}m\\
+				\quad :&\quad q_{1}=5\mu C=5\times10^{-6}C~\text{និង}~q=2\mu C=2\times10^{-6}C\\
+				\text{នោះ}\quad :&\quad F_{1}=9\times10^{9}\frac{\abs{5\times10^{-6}\times2\times10^{-6}}}{\left(5\sqrt{2}\times10^{-2}\right)^{2}}=18N
+			\end{flalign*}
+			\item រកមកម្លាំង $F_{2}$ ជាកម្លាំងអគ្គិសនីដែលបង្កើតដោយបន្ទុកអគ្គិសនី $q_{2}$ ត្រង់ $P$ មានបន្ទុកអគ្គិសនី $q$
+				\begin{flalign*}
+					\text{តាម}\quad :&\quad F_{2}=9\times10^{9}\frac{\abs{q_{2}\cdot q}}{NP^{2}}\\
+					\text{តែ}\quad :&\quad MP=PN\\
+					\text{ដោយ}\quad :&\quad MP=PN=\frac{\sqrt{2}}{2}MN=\frac{\sqrt{2}}{2}10=5\sqrt{2}cm=5\sqrt{2}\times10^{-2}m\\
+					\quad :&\quad q_{2}=-5\mu C=-5\times10^{-6}C~\text{និង}~q=2\mu C=2\times10^{-6}C\\
+					\text{នោះ}\quad :&\quad F_{2}=9\times10^{9}\frac{\abs{-5\times10^{-6}\times2\times10^{-6}}}{\left(5\sqrt{2}\times10^{-2}\right)^{2}}=18N\\
+					\text{គេបាន}\quad :&\quad \overrightarrow{F}= \overrightarrow{F}_{1}+\overrightarrow{F}_{2}(\text{ដោយ}~ \beta=180^\circ-90^\circ=90^\circ) \\
+					\text{នោះ}\quad :&\quad \overrightarrow{F}_{1}\perp\overrightarrow{F}_{2}~\text{និង}~F=F_{1}^{2}+F_{2}^2\\
+					\text{ដោយ}\quad :&\quad F_{1}=F_{2}=18N\\
+					\quad :&\quad F=\sqrt{F_{1}^{2}+F_{2}^{2}}=\sqrt{18^{2}+18^{2}}=18\sqrt{2}N\\
+					\text{ដូចនេះ}\quad :&\quad F=18\sqrt{2}N
+				\end{flalign*}
+		\end{itemize}
+		\newpage
+		\item {\color{magenta}\ks (២០ ពិន្ទុ)}
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[scale=1, draw=magenta, fill=magenta]
+				\begin{scope}
+				\draw [->, line width=3pt] (0,2) -- (1,2);
+				\draw [line width=3pt] (0,4) -- (0,0);
+				\draw [line width=3pt] (3,4) -- (3,0);
+				\draw [dashed] (-1,2) -- (4,2);
+				\coordinate[label=left:$A$] (A) at (0,4);
+				\coordinate[label=right:$B$] (B) at (3,4);
+				\coordinate[label=above:$\overrightarrow{\upsilon}$] (v) at (1,2);
+				\end{scope}
+			\end{tikzpicture}
+		\end{figure}
+			\begin{enumerate}[k]
+				\item កំណត់ដែនអគ្គិសនីចន្លោះបន្ទះលោហៈទាំងពីរ បើ $AB=5cm$
+				\begin{flalign*}
+					\text{តាមរូបមន្ត}\quad :&\quad E=\frac{V_{AB}}{d}\\
+					\text{ដោយ}\quad :&\quad V_{AB}=100V,~\text{និង}~d=AB=5cm=5\times10^{-2}m\\
+					\text{នាំឲ្យ}\quad :&\quad E=\frac{100}{5\times10^{-2}}=20\times10^{2}V/m\\
+					\text{ដូចនេះ}\quad :&\quad E=20\times10^{2}V/m
+				\end{flalign*}
+				\item គណនាសំទុះរបស់ប្រូតុងក្នុងដែនអគ្គិសនី
+				\begin{flalign*}
+					\text{តាមរូបមន្ត}\quad :&\quad F=ma~\Rightarrow~a=\frac{F}{m}=\frac{\abs{q}E}{m}=\frac{\abs{q}V_{AB}}{md}\\
+					\text{ដោយ}\quad :&\quad V_{AB}=100V,~q=q_{e}=+e=1.67\times^{-27}kg~\text{និង}~m_{p}=1.67\times10^{-27}kg\\
+					\quad :&\quad d=AB=5cm=5\times10^{-2}m\\
+					\text{នាំឲ្យ}\quad :&\quad a=\frac{1.6\times10^{-19}\times100}{1.67\times10^{-27}\times5\times10^{-2}}=19.16\times10^{10}m/s^{2}\\
+					\text{ដូចនេះ}\quad :&\quad a=19.16\times10^{10}m/s^{2}
+				\end{flalign*}
+				\item កំណត់សមីការចលនារបស់ប្រូតុងក្នុងដែនអគ្គិសនី
+				\begin{flalign*}
+					\text{តាមសមីការអាប់ស៊ីស}\quad :&\quad x=\frac{1}{2}at^{2}+\upsilon_{0}t+x_{0}~\left(x_{0}=0\right)\\
+					\text{នោះ}\quad :&\quad x=\frac{1}{2}at^{2}+\upsilon_{0}t\\
+					\text{ដោយ}\quad :&\quad a=19.16\times10^{10}m/s^{2}~\text{និង}~\upsilon_{0}=0\\
+					\text{គេបាន}\quad :&\quad x=\frac{1}{2}\left(19.16\times10^{10}\right)t^{2}=9.58\times10^{10}t^{2}\\
+					\text{ដូចនេះ}\quad :&\quad x=9.58\times10^{10}t^{2}
+				\end{flalign*}
+			\end{enumerate}
+	\end{enumerate}
+\end{document}

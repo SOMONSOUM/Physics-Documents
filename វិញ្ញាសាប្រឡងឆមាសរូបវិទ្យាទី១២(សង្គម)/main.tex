@@ -1,0 +1,149 @@
+\documentclass{classes/exam} 
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{tikz}
+\usepackage{physics}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[version=4]{mhchem}
+\usepackage{tkz-euclide}
+\definecolor{myyellow}{RGB}{254,241,24}
+\definecolor{myorange}{RGB}{234,125,1}
+\definecolor{fancyorange1}{RGB}{253,138,9}
+\definecolor{fancyorange2}{RGB}{246,156,123}
+\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}
+\definecolor{brinkpink}{rgb}{0.98, 0.38, 0.5}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\definecolor{lightpink}{rgb}{1.0, 0.71, 0.76}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\tikzstyle arrowstyle=[scale=1]
+\tikzstyle directed=[postaction={decorate,decoration={markings,
+		mark=at position .65 with {\arrow[arrowstyle]{stealth}}}}]
+\tikzstyle direct=[postaction={decorate,decoration={markings,
+		mark=at position .65 with {\arrow[arrowstyle]{stealth reversed}}}}]
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text,calc,angles,quotes,decorations.markings}
+\tikzset{>=latex}
+\usepackage{chemfig}
+\usepackage{multirow}
+\usetikzlibrary{quotes,arrows.meta}
+%\pagestyle{empty}
+\begin{document}
+	\begin{center}
+		{\kml ប្រឡងឆមាសលើកទី១ ថ្នាក់ទី១២(វិទ្យាសាស្រ្តសង្គម)\\
+		វិញ្ញាសាៈ រូបវិទ្យា\\
+		រយៈពេលៈ ៦០នាទី\\
+		ពិន្ទុៈ ៥០}
+	\end{center}
+	\begin{enumerate}[I]
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)} គណនាមាឌឧស្ម័នអុកសុីសែន $6.4g$ ដែលផ្ទុកក្នុងធុងនៅសម្ពាធ $10^{5}\si{\pascal}$ និងសីតុណ្ហភាព $400\si{\kelvin}$។
+		\\ដោយម៉ាសម៉ូលរបស់អុកសុីសែន $M=32\si{\gram/\mole}$
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)} សមីការរលកដាលលើខ្សែមួយកំណត់ដោយ $y=0.30\sin\left(0.20x-0.20t\right)\left(m\right)$ ដែល $t$ គិតជា $(s)$។
+		\begin{enumerate}[k]
+			\item រកអំព្លីទុត ខួប ប្រេកង់ និងចំនួនរលក។
+			\item គណនាល្បឿនដំណាល និងជំហានរលក។
+		\end{enumerate}
+		\item {\color{magenta}\ks (១៥ ពិន្ទុ)} ចូរគណនាបម្រែបម្រួលថាមពលក្នុងរបស់ប្រព័ន្ធទែម៉ូឌីណាមិចពេល៖
+		\begin{enumerate}[k]
+			\item ប្រព័ន្ធស្រូបបរិមាណកម្តៅ $2000J$ និងធ្វើកម្មន្ត $500J$។
+			\item ប្រព័ន្ធស្រូបបរិមាណកម្តៅ $1200J$ និងទទួលកម្មន្ត $400J$ ។
+			\item បរិមាណកម្តៅ $300J$ ត្រូវបានភាយចេញពីប្រព័ន្ធនៅពេលមាឌថេរ។
+		\end{enumerate}
+		\item {\color{magenta}\ks (១៥ ពិន្ទុ)} ម៉ាសុីនម៉ាស៊ូតនៃរថយន្តមួយដែលមានទិន្នផលកម្តៅ $0.45$ ហើយវាស្រូបបរិមាណកម្តៅ $4.0\times 10^{6}J$។\\ 
+		ចូរគណនា៖
+		\begin{enumerate}[k]
+			\item កម្មន្តមេកានិចដែលបានពីពីស្តុង។
+			\item បរិមាណកម្តៅដែលបញ្ចេញទៅក្នុងបរិយាកាស។
+			\item កម្មន្តបានការ បើគេដឹងថាទិន្នផលគ្រឿងបញ្ជូនស្មើនឹង $0.80$។
+		\end{enumerate}
+	\end{enumerate}
+\newpage
+\begin{center}
+	{\kml ប្រឡងឆមាសលើកទី១ ថ្នាក់ទី១២(វិទ្យាសាស្រ្តសង្គម)\\
+		វិញ្ញាសាៈ រូបវិទ្យា\\
+		រយៈពេលៈ ៦០នាទី\\
+		ពិន្ទុៈ ៥០}
+\end{center}
+{\kml អត្រាកំណែ}
+\begin{enumerate}[I]
+	\item {\color{magenta}\ks (១០ ពិន្ទុ)} គណនាមាឌឧស្ម័នអុកសុីសែន
+	\begin{align*}
+		\text{តាមរូបមន្ត}\quad :&\quad PV=nRT,~\Rightarrow V=\frac{nRT}{P}~\text{តែ}~ n=\frac{m}{M}\\
+		\text{គេបាន}\quad :&\quad V=\frac{mRT}{PM}\\
+		\text{ដោយ}\quad :&\quad m=6.4\si{\gram},~M=32\si{\gram/\mole},~P=10^{5}\si{\pascal},~T=400\si{\kelvin},~R=8.31\si{\joule/\mole\kelvin}\\
+		\text{នោះ}\quad :&\quad V=\frac{6.4\times 8.31\times 400}{10^{5}\times 32}=6648\times 10^{-6}\si{\metre^{3}}\\
+		\text{ដូចនេះ} \quad :&\quad V=6648\times 10^{-6}\si{\metre^{3}}
+	\end{align*}
+	\item {\color{magenta}\ks (១០ ពិន្ទុ)} 
+	\begin{enumerate}[k]
+		\item រកអំព្លីទុត ខួប ប្រេកង់ និងចំនួនរលក។
+		\begin{align*}
+			\text{យើងមាន}\quad :&\quad y=0.30\sin\left(0.20x-0.20t\right)\left(m\right)\\
+			\text{មានរាង}\quad :&\quad y=a\sin\left(kx-\omega t\right)\\
+			\text{អំព្លីទុត}\quad :&\quad a=0.30\si{\metre}\\
+			\text{ខួប}\quad :&\quad T=\frac{2\pi}{\omega},~\text{ដែល}~\omega=0.20\si{\radian/\second}\\
+			\quad :&\quad T=\frac{2\pi}{0.20}=10\pi\left(\si{\second}\right)\\
+			\text{ប្រេកង់}\quad :&\quad f=\frac{1}{T}=\frac{1}{10\pi}\left(\si{\hertz}\right)\\
+			\text{ចំនួនរលក}\quad :&\quad k=0.20\si{\radian/\metre} 
+		\end{align*}
+		\item គណនាជំហាន និងល្បឿនដំណាលនៃរលក
+		\begin{itemize}
+			\item គណនាជំហាននៃរលក
+			\begin{align*}
+				\text{តាម}\quad :&\quad k=\frac{2\pi}{\lambda},~\text{នោះ},~\lambda=\frac{2\pi}{k}=\frac{2\pi}{0.20}=10\pi\left(\si{\metre}\right)
+			\end{align*}
+			\item គណនាល្បឿនដំណាលនៃរលក
+			\begin{align*}
+				\text{តាម}\quad :&\quad V=\frac{\lambda}{T}=\frac{10\pi}{10\pi}=1\si{\metre/\second}
+			\end{align*}
+		\end{itemize}
+	\end{enumerate}
+	\item {\color{magenta}\ks (១៥ ពិន្ទុ)} គណនាបម្រែបម្រួលថាមពលក្នុងរបស់ប្រព័ន្ធទែម៉ូឌីណាមិចពេល៖
+	\begin{align*}
+		\text{តាមរូបមន្ត}\quad :&\quad Q=W+\Delta U,~\text{នោះ}~\Delta U=Q-W
+	\end{align*}
+	\begin{enumerate}[k]
+		\item ប្រព័ន្ធស្រូបបរិមាណកម្តៅ $2000J$ និងធ្វើកម្មន្ត $500J$
+			\begin{align*}
+				\text{ដោយ}\quad :&\quad Q=2000\si{\joule},~W=500\si{\joule}\\
+				\text{គេបាន}\quad :&\quad \Delta U=2000-500=1500\si{\joule}\\
+				\text{ដូចនេះ}\quad :&\quad \Delta U=1500\si{\joule}
+			\end{align*}
+		\item ប្រព័ន្ធស្រូបបរិមាណកម្តៅ $1200J$ និងទទួលកម្មន្ត $400J$
+			\begin{align*}
+				\text{ដោយ}\quad :&\quad Q=1200\si{\joule},~W=-400\si{\joule}~(\text{ព្រោះប្រព័ន្ធទទួលកម្មន្ត})\\
+				\text{គេបាន}\quad :&\quad \Delta U=1200-\left(-400\right)=1600\si{\joule}\\
+				\text{ដូចនេះ}\quad :&\quad \Delta U=1600\si{\joule}
+			\end{align*}
+		\item បរិមាណកម្តៅ $300J$ ត្រូវបានភាយចេញពីប្រព័ន្ធនៅពេលមាឌថេរ
+		\begin{align*}
+			\text{ដោយ}\quad :&\quad Q=-300\si{\joule},~W=0\si{\joule}~(\text{ព្រោះមាឌប្រព័ន្ធថេរ})\\
+			\text{គេបាន}\quad :&\quad \Delta U=-300-0=-300\si{\joule}\\
+			\text{ដូចនេះ}\quad :&\quad \Delta U=-300\si{\joule}
+		\end{align*}
+	\end{enumerate}
+	\item {\color{magenta}\ks (១៥ ពិន្ទុ)}
+	\begin{enumerate}[k]
+		\item កម្មន្តមេកានិចដែលបានពីពីស្តុង
+			\begin{align*}
+				\text{តាមរូបមន្ត}\quad:&\quad e_{c}=\frac{W_{M}}{Q_{h}}~\text{នោះ}~W_{M}=Q_{h}\times e_{c}\\
+				\text{ដោយ}\quad :&\quad Q_{h}=4.0\times 10^{6}\si{\joule},~e_{c}=0.45\\
+				\text{នាំឲ្យ}\quad :&\quad W_{M}=4.0\times 10^{6}\times 0.45=1.8\times 10^{6}\si{\joule}\\
+				\text{ដូចនេះ} \quad :&\quad W_{M}=1.8\times 10^{6}\si{\joule}
+			\end{align*}
+		\item បរិមាណកម្តៅដែលបញ្ចេញទៅក្នុងបរិយាកាស
+			\begin{align*}
+				\text{តាមរូបមន្ត}\quad :&\quad W_{M}=Q_{h}-Q_{c}~\text{នោះ}~Q_{c}=Q_{h}-W_{M}\\
+				\text{ដោយ}\quad :&\quad W_{M}=1.8\times10^{6}\si{\joule},~Q_{h}=4.0\times 10^{6}\si{\joule}\\
+				\text{នាំឲ្យ}\quad :&\quad Q_{c}=\left(4.0-1.8\right)10^{6}=2.2\times 10^{6}J
+			\end{align*}
+		\item កម្មន្តបានការ បើគេដឹងថាទិន្នផលគ្រឿងបញ្ជូនស្មើនឹង $0.80$
+		\begin{align*}
+			\text{តាមរូបមន្ត}\quad :&\quad e_{M}=\frac{W_{U}}{W_{M}}~\text{នោះ}~W_{U}=W_{M}\times e_{M}\\
+			\text{ដោយ}\quad :&\quad W_{M}=1.8\times 10^{6},~e_{M}=0.80\\
+			\text{នាំឲ្យ}\quad :&\quad W_{U}=1.8\times 10^{6}\times 0.80=1.44\times 10^{6}\si{\joule}
+		\end{align*}
+	\end{enumerate}
+\end{enumerate}
+\end{document}

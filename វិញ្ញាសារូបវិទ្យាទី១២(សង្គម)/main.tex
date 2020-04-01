@@ -1,0 +1,166 @@
+\documentclass{classes/exam} 
+\usepackage{chemfig}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[version=4]{mhchem}
+%\everymath{\color{blue}}
+\begin{document}
+	\maketitle
+	\borderline{ប្រធាន}
+	\begin{enumerate}[I]
+		\item {\color{magenta}\ks (៤ ពិន្ទុ)} តើបម្លែងទែម៉ូឌីណាមិចចែកចេញជាប៉ុន្មានប្រភេទ? ចូររៀបរាប់ និងពន្យល់។
+		\item {\color{magenta}\ks (៦ ពិន្ទុ)} គេសន្មត់ថាឧស្ម័នមួយនៅក្នុងសុីឡាំងដែលបិទជិតដោយពីស្តុង អាចរីកមាឌពី $2dm^{3}$ ទៅ $5dm^{3}$ ក្រោមសម្ពាធថេរ $200kPa$។ គណនាកម្មន្តធ្វើដោយឧស្ម័ននោះ។
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)}​ ធុងមួយមានផ្ទុកអេល្យូម $2.00mol$ នៅសីតុណ្ហភាព $27^\circ C$។ គេសន្មតថាអេល្យូមជាឧស្ម័នបរិសុទ្ធ។
+			\begin{enumerate}[k]
+				\item គណនាតម្លៃមធ្យមនៃថាមពលសុីនេទិចរបស់ម៉ូលេគុលនីមួយៗ
+				\item គណនាថាមពលសុីនេទិចសរុបរបស់ម៉ូលេគុលទាំងអស់។\\
+				គេឲ្យៈ $k_{B}=1.38\times10^{-23}J/K,~R=8.31J/mol\cdot K$។
+			\end{enumerate}
+		\item {\color{magenta}\ks (១៥ ពិន្ទុ)} ក្នុងសុីឡាំងមួយមានឧស្ម័នបរិសុទ្ធម៉ូណូអាតូម $2mol$ នៅសីតុណ្ហភាព $0^\circ C$។\\ ដោយរក្សាសីតុណ្ហភាពឲ្យថេរ ហើយវារីកមាឌពី $5L$ ទៅ $10L$។\\ គេឲ្យៈ $R=8.31J/mol\cdot K, ~\ln2=0.7,~\ln5=1.6,~ \ln10=2.3$
+		\begin{enumerate}[k]
+			\item តើឧស្ម័ននេះមានបម្រែបម្រួលមាឌតាមលំនាំអ្វី?
+			\item គណនាកម្មន្តដែលឧស្ម័នដែលបានបំពេញក្នុងរយៈពេលបម្រែបម្រួលមាឌនេះ។
+			\item តើបម្រែបម្រួលថាមពលក្នុងនៃប្រព័ន្ធឧស្ម័នមានតម្លៃប៉ុន្មាន?
+		\end{enumerate}
+	\newpage
+		\item {\color{magenta}\ks (១៥ ពិន្ទុ)} គណនាកម្មន្តសរុបក្នុងបម្លែងបិទ $ABCA$ ដូចបង្ហាញក្នុងរូបខាងក្រោម?
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[draw=magenta, fill=magenta, scale=1.2]
+			\begin{scope}
+			\draw (0,0)-- (0,4);
+			\draw (0,0)-- (4,0);
+			\draw [ultra thick] (1,1) -- (1,3) -- (3,1) --cycle;
+			\coordinate [label=above:$A$] (A) at (1,3);
+			\coordinate [label=right:$B$] (B) at (3,1);
+			\coordinate [label=below left:$C$] (C) at (1,1);
+			\draw [dashed] (1,0) --(1,1);
+			\draw [dashed] (0,1) --(1,1);
+			\draw [dashed] (0,3) --(1,3);
+			\draw [dashed] (3,0) --(3,1);
+			\fill [orange!60!white] (1,1) -- (1,3) -- (3,1)--cycle;
+			\pattern [pattern color=white, pattern=bricks] (1,1) -- (1,3) -- (3,1)--cycle;
+			\coordinate [label=right:$V$] ($V$) at (4,0);
+			\coordinate [label=below:$2.0m^{3}$] ($V_{1}$) at (1,0);
+			\coordinate [label=below:$5.0m^{3}$] ($V_{2}$) at (3,0);
+			\coordinate [label=left:$P$] ($P$) at (0,4);
+			\coordinate [label=left:$1.0 atm$] ($P_{1}$) at (0,1);
+			\coordinate [label=left:$2.0 atm$] ($P_{2}$) at (0,3);
+			\draw [arrows = {-Latex[width=10pt, length=10pt]}] (1,2) -- (1,2.2);
+			\draw [arrows = {-Latex[width=10pt, length=10pt]}] (2,1) -- (1.8, 1);
+			\draw [arrows = {-Latex[width=10pt,length=10pt]}] (2,2)--(2.2,1.8);
+			\end{scope}
+			\end{tikzpicture}
+		\end{figure}
+	\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%% អត្រាកំណែ %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\borderline{អត្រាកំណែ}
+\begin{enumerate}[I]
+	\item {\color{magenta}\ks (៤ ពិន្ទុ)} បម្លែងទែម៉ូឌីណាមិចមានពីរប្រភេទគឺ បម្លែងបិទ និងបម្លែងចំហ។
+	\begin{itemize}
+		\item បម្លែងបិទៈ កាលណាប្រព័ន្ធមួយមានភាពដើម និងភាពស្រេចដូចគ្នាគេថាប្រព័ន្ធនោះទទួលរងនូវបម្លែងបិទ។
+		\item បម្លែងចំហៈ កាលណាប្រព័ន្ធមួយមានភាពដើម និងភាពស្រេចខុសគ្នាគេថាប្រព័ន្ធនោះទទួលរងនូវបម្លែងចំហ។
+	\end{itemize}
+	\item {\color{magenta}\ks (៦ ពិន្ទុ)} គណនាកម្មន្តធ្វើដោយឧស្ម័ននោះ
+	\begin{flalign*}
+		\text{តាម}\quad :&\quad W=P\left(V_{2}-V_{1}\right)~(\text{លំនាំអ៊ីសូបា})\\
+		\text{ដោយ}\quad :&\quad P=200kPa=2\times10^{5}Pa,~V_{1}=2dm^{3}=2\times10^{-3}m^{3}~\\
+		\quad :&\quad V_{2}=5dm^{3}=5\times10^{-3}m^{3}\\
+		\text{គេបាន}\quad :&\quad W=2\times10^{5}\left(5-2\right)\times10^{-3}=6\times10^{2}J\\
+		\text{ដូចនេះ}\quad :&\quad W=6\times10^{2}J
+	\end{flalign*}
+	\item {\color{magenta}\ks (១០ ពិន្ទុ)} 
+	\begin{enumerate}[k]
+		\item គណនាតម្លៃមធ្យមនៃថាមពលសុីនេទិចរបស់ម៉ូលេគុលនីមួយៗ
+		\begin{flalign*}
+			\text{តាម}\quad :&\quad K_{av}=\frac{3}{2}k_{B}T\\
+			\text{ដោយ}\quad :&\quad k_{B}=1.38\times10^{-23}J/K,~\text{និង}~T=27+273=300K\\
+			\text{គេបាន}\quad :&\quad K_{av}=\frac{3}{2}\times1.38\times10^{-23}\times300=621\times10^{-23}J\\
+			\text{ដូចនេះ}\quad :&\quad K_{av}=621\times10^{-23}J
+		\end{flalign*}
+		\item គណនាថាមពលសុីនេទិចសរុបរបស់ម៉ូលេគុលទាំងអស់។
+		\begin{flalign*}
+			\text{តាម}\quad :&\quad K=\frac{3}{2}nRT\\
+			\text{ដោយ}\quad :&\quad R=8.31J/mol\cdot K,~n=2.00mol\\
+			\quad :&\quad T=27+273=300K\\
+			\text{គេបាន}\quad :&\quad K=\frac{3}{2}\times2.00\times8.31\times300=7479J\\
+			\text{ដូចនេះ}\quad :&\quad K=7479J
+		\end{flalign*}
+	\end{enumerate}
+	\item {\color{magenta}\ks (១៥ ពិន្ទុ)} \begin{enumerate}[k]
+		\item ឧស្ម័ននេះមានបម្រែបម្រួលមាឌតាមលំនាំអ៊ីសូទែម ព្រោះសីតុណ្ហភាពនៃប្រព័ន្ធមានតម្លៃថេរ។
+		\item គណនាកម្មន្តដែលឧស្ម័នដែលបានបំពេញក្នុងរយៈពេលបម្រែបម្រួលមាឌនេះ។
+			\begin{flalign*}
+				\text{តាម}\quad :&\quad W=nRT\ln\left(\frac{V_{2}}{V_{1}}\right)\\
+				\text{ដោយ}\quad :&\quad n=2mol,~V_{1}=5L,~V_{2}=10,~R=8.31J/mol\cdot K,~T=0+273=273K\\
+				\text{គេបាន}\quad :&\quad W=2\times8.31\times273\times\ln\left(\frac{10}{5}\right)=3176.08J\\
+				\text{ដូចនេះ}\quad :&\quad W=3176.08J\approx3176J
+			\end{flalign*}
+		\item តើបម្រែបម្រួលថាមពលក្នុងនៃប្រព័ន្ធឧស្ម័នមានតម្លៃប៉ុន្មាន?
+		\begin{flalign*}
+			\text{តាម}\quad :&\quad \Delta U=\frac{3}{2}nR\left(T_{2}-T_{1}\right)\\
+			\text{ដោយ}\quad :&\quad T_{1}=T_{2}=273K~\text{ថេរ}\\
+			\text{គេបាន}\quad :&\quad T_{2}-T_{1}=0\\
+			\text{ដូចនេះ}\quad :&\quad \Delta U=0J
+		\end{flalign*}
+	\end{enumerate}
+	\item {\color{magenta}\ks (១៥ ពិន្ទុ)} គណនាកម្មន្តសរុបក្នុងបម្លែងបិទ $ABCA$
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[draw=magenta, fill=magenta, scale=1.2]
+		\begin{scope}
+		\draw (0,0)-- (0,4);
+		\draw (0,0)-- (4,0);
+		\draw [ultra thick] (1,1) -- (1,3) -- (3,1) --cycle;
+		\coordinate [label=above:$A$] (A) at (1,3);
+		\coordinate [label=right:$B$] (B) at (3,1);
+		\coordinate [label=below left:$C$] (C) at (1,1);
+		\draw [dashed] (1,0) --(1,1);
+		\draw [dashed] (0,1) --(1,1);
+		\draw [dashed] (0,3) --(1,3);
+		\draw [dashed] (3,0) --(3,1);
+		\fill [orange!60!white] (1,1) -- (1,3) -- (3,1)--cycle;
+		\pattern [pattern color=white, pattern=bricks] (1,1) -- (1,3) -- (3,1)--cycle;
+		\coordinate [label=right:$V$] ($V$) at (4,0);
+		\coordinate [label=below:$2.0m^{3}$] ($V_{1}$) at (1,0);
+		\coordinate [label=below:$5.0m^{3}$] ($V_{2}$) at (3,0);
+		\coordinate [label=left:$P$] ($P$) at (0,4);
+		\coordinate [label=left:$1.0 atm$] ($P_{1}$) at (0,1);
+		\coordinate [label=left:$2.0 atm$] ($P_{2}$) at (0,3);
+		\draw [arrows = {-Latex[width=10pt, length=10pt]}] (1,2) -- (1,2.2);
+		\draw [arrows = {-Latex[width=10pt, length=10pt]}] (2,1) -- (1.8, 1);
+		\draw [arrows = {-Latex[width=10pt,length=10pt]}] (2,2)--(2.2,1.8);
+		\end{scope}
+		\end{tikzpicture}
+	\end{figure}
+	\begin{flalign*}
+		\text{តាមរូប}\quad :&\quad W=W_{AB}+W_{BC}+W_{CA}
+	\end{flalign*}
+	\begin{itemize}
+		\item ចំពោះលំនាំពី $A\to B$~(សម្ពាធប្រែប្រួលស្មើ)
+		\begin{flalign*}
+			\text{តាម}\quad :&\quad W_{AB}=\frac{P_{A}+P_{B}}{2}\left(V_{B}-V_{A}\right)\\
+			\text{ដោយ}\quad :&\quad P_{A}=2.0atm=2\times10^{5}Pa,~P_{B}=1.0atm=1\times10^{5}Pa\\
+			\quad :&\quad V_{A}=2.0m^{3},~V_{B}=5.0m^{3}\\
+			\text{គេបាន}\quad :&\quad W_{AB}=\frac{\left(2.0+1.0\right)10^{5}}{2}\left(5.0-2.0\right)=4.5\times10^{5}J
+		\end{flalign*}
+		\item ចំពោះលំនាំពី $B\to C$~(លំនាំអុីសូបា)
+		\begin{flalign*}
+			\text{តាម}\quad :&\quad W_{BC}=P_{B}\left(V_{C}-V_{B}\right)\\
+			\text{ដោយ}\quad :&\quad P_{B}=1.0atm=1\times10^{5}Pa,~V_{B}=5.0m^{3},~V_{C}=2.0m^{3}\\
+			\text{គេបាន}\quad :&\quad W_{BC}=1\times10^{5}\left(2.0-5.0\right)=-3\times10^{5}J
+		\end{flalign*}
+		\item ចំពោះលំនាំពី $C\to A$~(លំនាំអុីសូករ)
+		\begin{flalign*}
+			\text{គេបាន}\quad :&\quad W_{CA}=0~(\text{ព្រោះ}~ V_{C}=V_{A}~ \text{ថេរ})		
+		\end{flalign*}
+	\end{itemize}
+	\begin{flalign*}
+		\text{គេបាន}\quad :&\quad W=4.5\times10^{5}-3\times10^{5}+0=1.5\times10^{5}J\\
+		\text{ដូចនេះ}\quad :&\quad W=1.5\times10^{5}J
+	\end{flalign*}
+\end{enumerate}
+\end{document}

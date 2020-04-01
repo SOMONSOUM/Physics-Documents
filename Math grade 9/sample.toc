@@ -1,0 +1,39 @@
+\contentsline {chapter}{មាតិកា}{ខ}{chapter*.1}
+\contentsline {chapter}{\numberline {១}ចំនួនអសនិទាន}{១}{chapter.1}
+\contentsline {section}{\numberline {១}ឬសការេ}{១}{section.1.1}
+\contentsline {section}{\numberline {២}ឬសគួប}{១}{section.1.2}
+\contentsline {section}{\numberline {៣}ប្រមាណវិធីលើរ៉ាឌីកាល់}{១}{section.1.3}
+\contentsline {subsection}{\numberline {ក}វិធីគុណ}{១}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {ខ}វិធីចែក}{១}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {គ}ការបញ្ចេញមួយចំនួនពីក្នុងរ៉ាឌីកាល់}{១}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {ឃ}កាបញ្ចូលមួយចំនួនទៅក្នុងរ៉ាឌីកាល់}{២}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {ង}វិធីបូក និង វិធីដក}{២}{subsection.1.3.5}
+\contentsline {section}{\numberline {៤}ផ្នែកលំហាត់មានដំណោះស្រាយ}{៣}{section.1.4}
+\contentsline {section}{\numberline {៥}ផ្នែកលំហាត់ត្រិះរិះ}{១១}{section.1.5}
+\contentsline {chapter}{\numberline {២}សមាមាត្រ}{១៥}{chapter.2}
+\contentsline {section}{\numberline {១}សមាមាត្រ}{១៥}{section.2.1}
+\contentsline {subsection}{\numberline {ក}សមាមាត្រស្រប}{១៥}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {ខ}សមាមាត្រច្រាស}{១៥}{subsection.2.1.2}
+\contentsline {section}{\numberline {២}លក្ខណៈសមាមាត្រ}{១៥}{section.2.2}
+\contentsline {section}{\numberline {៣}ចំណោទដែលទាក់ទង និង សមាមាត្រ}{១៥}{section.2.3}
+\contentsline {section}{\numberline {៤}ចំណោទដែលទាក់ទង និង ភាគរយ}{១៥}{section.2.4}
+\contentsline {section}{\numberline {៥}ចំណោទនៃភាគរយកើន ឬ ថយ}{១៥}{section.2.5}
+\contentsline {section}{\numberline {៦}ការប្រាក់}{១៥}{section.2.6}
+\contentsline {chapter}{\numberline {៣}កន្សោមពីជគណិត}{១៩}{chapter.3}
+\contentsline {section}{\numberline {១}ផលគុណនៃកន្សោមពីជគណិត}{១៩}{section.3.1}
+\contentsline {section}{\numberline {២}ការដាក់កន្សោមពីជគណិតជាផលគុណនៃកត្តា}{១៩}{section.3.2}
+\contentsline {subsection}{\numberline {ក}ដាក់ជាកត្តារួម}{១៩}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {ខ}ប្រើរូបមន្តសំខាន់ៗ}{១៩}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {គ}វិធីគុណខ្វែង}{២០}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {ឃ}វិធីបំពេញ និង បន្ថយតួ}{២០}{subsection.3.2.4}
+\contentsline {section}{\numberline {៣}ប្រមាណវិធីកន្សោមសនិទាន}{២០}{section.3.3}
+\contentsline {section}{\numberline {៤}ផ្នែកលំហាត់មានដំណោះស្រាយ}{២១}{section.3.4}
+\contentsline {section}{\numberline {៥}ផ្នែកលំហាត់បន្ថែម ពីឯកសារផ្សេងៗ}{២៦}{section.3.5}
+\contentsline {chapter}{\numberline {៤}សមីការដឺក្រេទី១មានមួយអញ្ញាត}{៣១}{chapter.4}
+\contentsline {section}{\numberline {១}សមីការដឺក្រេទី១ មានមួយអញ្ញាត}{៣១}{section.4.1}
+\contentsline {section}{\numberline {២}សមីការដែលមានភាគបែងជាលេខ}{៣១}{section.4.2}
+\contentsline {section}{\numberline {៣}សមីការដែលមានភាគបែងជាអញ្ញាត}{៣១}{section.4.3}
+\contentsline {section}{\numberline {៤}សមីការដែលអង្កទី១ ជាផលគុណនៃកត្តា និងអង្កទី២ស្មើសូន្យ}{៣១}{section.4.4}
+\contentsline {section}{\numberline {៥}ចំណោទសមីការដឺក្រេទី១ មានមួយអញ្ញាត}{៣១}{section.4.5}
+\contentsline {chapter}{\numberline {៥}វិសមីការដឺក្រេទី១មានមួយអញ្ញាត}{៤១}{chapter.5}
+\contentsline {chapter}{\numberline {៦}បំណែងចែកប្រេកង់}{៤៣}{chapter.6}

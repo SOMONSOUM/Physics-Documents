@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.9.8)  9 NOV 2019 14:20
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.9.8)  28 DEC 2019 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,9 +6,9 @@ entering extended mode
 (./main.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(./styles/fancy.cls
+(./classes/fancy.cls
 
-LaTeX Warning: You have requested document class `styles/fancy',
+LaTeX Warning: You have requested document class `classes/fancy',
                but the document class provides `fancy'.
 
 Document Class: fancy 2019/02/04
@@ -2947,51 +2947,51 @@ ations.softclip.code.tex
 tween.code.tex))) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 45.
-LaTeX Font Info:    Try loading font information for OML+npxmi on input line 45
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 47.
+LaTeX Font Info:    Try loading font information for OML+npxmi on input line 47
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 45.
-LaTeX Font Info:    Try loading font information for OMS+npxsy on input line 45
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 47.
+LaTeX Font Info:    Try loading font information for OMS+npxsy on input line 47
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/omsnpxsy.fd
 File: omsnpxsy.fd 2013/03/24 Fontinst v1.933 font definitions for OMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 45.
-LaTeX Font Info:    Try loading font information for U+npxexa on input line 45.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 47.
+LaTeX Font Info:    Try loading font information for U+npxexa on input line 47.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 45.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 45.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 47.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 47.
 
 (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -3030,7 +3030,7 @@ LaTeX Font Info:    ... okay on input line 45.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box128
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 47.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -3040,122 +3040,22 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count385
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `fontspec' on line 45.
+. Activating mapping `fontspec' on line 47.
 .................................................
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.13}).
 
-File: pdf-files/front-cover.pdf Graphic file (type QTm)
-<use  "pdf-files/front-cover.pdf" >
-File: pdf-files/front-cover.pdf Graphic file (type QTm)
- <use  "pdf-files/front-cover.pdf" >
-File: pdf-files/front-cover.pdf Graphic file (type QTm)
-
-<use  "pdf-files/front-cover.pdf"  page1>
-File: pdf-files/front-cover.pdf Graphic file (type QTm)
-
-<use  "pdf-files/front-cover.pdf"  page1>
-File: pdf-files/front-cover.pdf Graphic file (type QTm)
-
-<use  "pdf-files/front-cover.pdf"  page1>
-File: pdf-files/front-cover.pdf Graphic file (type QTm)
-
-<use  "pdf-files/front-cover.pdf"  page1>
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
-File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
-
-)
-File: pdf-files/front-cover.pdf Graphic file (type QTm)
-
-<use  "pdf-files/front-cover.pdf"  page1> [1
-
-]
-\g__fontspec_family_Angkor_int=\count386
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font Angkor/BI (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font Angkor/B (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font Angkor/I (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Angkor(0)' created for font 'Angkor' with options [Scale =
-. 0.8333333334,Script=Khmer].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.:
-. <->s*[0.8333333334]"Angkor/OT:script=khmr;language=DFLT;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-.................................................
-LaTeX Font Info:    Font shape `EU1/Angkor(0)/m/n' will be
-(Font)              scaled to size 11.99991pt on input line 47.
-LaTeX Font Info:    Font shape `EU1/Angkor(0)/m/n' will be
-(Font)              scaled to size 8.33328pt on input line 47.
-
-
-LaTeX Font Warning: Font shape `EU1/Angkor(0)/m/it' undefined
-(Font)              using `EU1/Angkor(0)/m/n' instead on input line 47.
-
-LaTeX Font Info:    Font shape `EU1/Angkor(0)/m/it' will be
-(Font)              scaled to size 8.33328pt on input line 47.
-\g__fontspec_family_KhmerM2_int=\count387
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font Khmer M2/BI (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font Khmer M2/B (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font Khmer M2/I (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'KhmerM2(0)' created for font 'Khmer M2' with options [Scale =
-. 0.8333333334,Script=Khmer].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->s*[0.8333333334]"Khmer
-. M2/OT:script=khmr;language=DFLT;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-.................................................
-
-LaTeX Font Warning: Font shape `EU1/KhmerM2(0)/m/it' undefined
-(Font)              using `EU1/KhmerM2(0)/m/n' instead on input line 47.
-
-LaTeX Font Info:    Font shape `EU1/KhmerM2(0)/m/n' will be
-(Font)              scaled to size 11.99991pt on input line 47.
-LaTeX Font Info:    Font shape `EU1/KhmerM2(0)/m/it' will be
-(Font)              scaled to size 11.99991pt on input line 47.
-[2
-
-] (./introductions/tableofcontents.tex (./main.toc
+(./introductions/tableofcontents.tex (./main.toc
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -3212,13 +3112,94 @@ File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-) [1
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
+File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
+
+))
+\g__fontspec_family_KhmerM2_int=\count386
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Khmer M2/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Khmer M2/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Khmer M2/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'KhmerM2(0)' created for font 'Khmer M2' with options [Scale =
+. 0.8333333334,Script=Khmer].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->s*[0.8333333334]"Khmer
+. M2/OT:script=khmr;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
 
 
-] [2
+LaTeX Font Warning: Font shape `EU1/KhmerM2(0)/m/it' undefined
+(Font)              using `EU1/KhmerM2(0)/m/n' instead on input line 54.
+
+LaTeX Font Info:    Font shape `EU1/KhmerM2(0)/m/n' will be
+(Font)              scaled to size 11.99991pt on input line 54.
+LaTeX Font Info:    Font shape `EU1/KhmerM2(0)/m/it' will be
+(Font)              scaled to size 11.99991pt on input line 54.
+[1
+
+
+
 
 ]
-(./lessons/lesson1.tex
+\g__fontspec_family_Angkor_int=\count387
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Angkor/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Angkor/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Angkor/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Angkor(0)' created for font 'Angkor' with options [Scale =
+. 0.8333333334,Script=Khmer].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[0.8333333334]"Angkor/OT:script=khmr;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+LaTeX Font Info:    Font shape `EU1/Angkor(0)/m/n' will be
+(Font)              scaled to size 11.99991pt on input line 54.
+LaTeX Font Info:    Font shape `EU1/Angkor(0)/m/n' will be
+(Font)              scaled to size 8.33328pt on input line 54.
+
+
+LaTeX Font Warning: Font shape `EU1/Angkor(0)/m/it' undefined
+(Font)              using `EU1/Angkor(0)/m/n' instead on input line 54.
+
+LaTeX Font Info:    Font shape `EU1/Angkor(0)/m/it' will be
+(Font)              scaled to size 8.33328pt on input line 54.
+[2
+
+] (./lessons/lesson1.tex
 មេរៀនទី ១.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
@@ -3707,104 +3688,109 @@ Overfull \hbox (2.34373pt too wide) in paragraph at lines 86--206
  []
 
 [23]
-
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 229.
-
-
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 229.
+Overfull \hbox (2.34373pt too wide) in paragraph at lines 210--399
+[][] []
+ []
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 229.
+Overfull \hbox (2.34373pt too wide) in paragraph at lines 210--399
+[] []
+ []
+
+
+Overfull \hbox (2.34373pt too wide) in paragraph at lines 210--399
+[] [] 
+ []
+
+[24]
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 421.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 421.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 421.
 
 
 Package pgfplots Warning: 'fill between': Could not activate graphics layer 'pr
 e main'. Filled path will be on top of the other ones. Please ensure that 'pre 
 main' is somewhere in the layer list (or set '/tikz/fill between/on layer='). o
-n input line 267.
+n input line 459.
 
 Missing character: There is no ; in font nullfont!
-[24]
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 282.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 474.
 
+[25]
 .................................................
 . fontspec info: "no-scripts"
 . 
 . Font Times New Roman does not contain any OpenType `Script' information.
 .................................................
-[25] [26]
+ [26] [27]
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 472.
-
-
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 472.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 664.
 
 
-Overfull \hbox (10.47923pt too wide) in paragraph at lines 507--508
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 664.
+
+
+Overfull \hbox (10.47923pt too wide) in paragraph at lines 699--700
 []\EU1/AntiochText(0)/m/n/12 ឧស្ម័ន មួយ ស្ថិត ក្នុង សុី ឡាំង បិទ ជិត ដោយ ពី ស្ត
 ុ ង ដែល អាច ផ្លាស់ទី ដោយ គ្មាន កកិត និង ស្ថិត ក្រោម សម្ពាធ បរិយាកាស។
  []
 
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 591--592
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 783--784
 []\EU1/AntiochText(0)/m/n/12 គណនា កម្តៅ ស្រូប ដោយ ឧស្ម័ន ក្នុង ពេល
  []
 
-[28] [29]
-Overfull \hbox (9.24414pt too wide) in paragraph at lines 741--742
+[29] [30]
+Overfull \hbox (9.24414pt too wide) in paragraph at lines 932--933
  [][] 
  []
 
-
-Overfull \vbox (20.89743pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (20.89743pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (20.89743pt too high) has occurred while \output is active []
-
-
-[30]
-
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 841.
-
-
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 841.
-
-
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 841.
-
-
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 841.
-
 [31]
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 895.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1032.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 895.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1032.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 895.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1032.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 895.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1032.
+
+[32]
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1086.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 897.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1086.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 897.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1086.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 897.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1086.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 897.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1088.
 
 
-Overfull \hbox (8.12059pt too wide) in paragraph at lines 898--899
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1088.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1088.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1088.
+
+
+Overfull \hbox (8.12059pt too wide) in paragraph at lines 1089--1090
 []\EU1/AntiochText(0)/m/n/12 អំឡុង ពេល បណ្ណែន មាឌ ក្រោម សីតុណ្ហភាព ថេរ $\OT1/cm
 r/m/n/12 250\OML/npxmi/m/it/12 Pa$ \EU1/AntiochText(0)/m/n/12 មាឌ នៃ ឧស្ម័ន បរិ
 សុទ្ធ នោះ ថយ ចុះពី $\OT1/cmr/m/n/12 0\OML/npxmi/m/it/12 :\OT1/cmr/m/n/12 80\OML
@@ -3813,24 +3799,24 @@ m/it/12 :\OT1/cmr/m/n/12 20\OML/npxmi/m/it/12 m[]$\EU1/AntiochText(0)/m/n/12 ។
  []
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 910.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1101.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 911.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1102.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 912.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1103.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 912.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1103.
 
-[32]
+[33]
 .................................................
 . fontspec info: "no-scripts"
 . 
 . Font Times New Roman does not contain any OpenType `Script' information.
 .................................................
- [33]
+ [34]
 Missing character: There is no ( in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -3892,12 +3878,12 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (2.34373pt too wide) in paragraph at lines 1067--1131
+Overfull \hbox (2.34373pt too wide) in paragraph at lines 1258--1322
 [][] [] 
  []
 
-[34]
-Overfull \hbox (22.29385pt too wide) in paragraph at lines 1138--1139
+[35]
+Overfull \hbox (22.29385pt too wide) in paragraph at lines 1329--1330
 []\EU1/AntiochText(0)/m/n/12 មួយ ក្រាម នៃ ទឹក $[]$ ក្លាយជា ចំហាយទឹក $\OT1/cmr/m
 /n/12 1671\OML/npxmi/m/it/12 cm[]$ \EU1/AntiochText(0)/m/n/12 ពេល វា ពុះ ក្រោម 
 សីតុណ្ហភាព ថេរ $\OT1/cmr/m/n/12 1\OML/npxmi/m/it/12 atm []$\EU1/AntiochText(0)/
@@ -3905,34 +3891,41 @@ m/n/12 ។
  []
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1143.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1334.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1143.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1334.
 
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1147.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1338.
 
 
-Overfull \hbox (3.73021pt too wide) in paragraph at lines 1171--1172
+Overfull \hbox (3.73021pt too wide) in paragraph at lines 1362--1363
 []\EU1/AntiochText(0)/m/n/12 គណនា កម្មន្ត ដែល បាន បំពេញ ដោយ ឧស្ម័ន កំណើន ថាមពល 
 ក្នុង និង កម្តៅ ដែល ត្រូវ ផ្តល់ ឲ្យ ឧស្ម័ន ជា អនុគមន៍
  []
 
 
-Overfull \hbox (3.73021pt too wide) in paragraph at lines 1172--1173
+Overfull \hbox (3.73021pt too wide) in paragraph at lines 1363--1364
 []\EU1/AntiochText(0)/m/n/12 គណនា កម្មន្ត ដែល បាន បំពេញ ដោយ ឧស្ម័ន កំណើន ថាមពល 
 ក្នុង និង កម្តៅ ដែល ត្រូវ ផ្តល់ ឲ្យ ឧស្ម័ន ជា អនុគមន៍
  []
 
-[35]
-Overfull \hbox (6.52356pt too wide) in paragraph at lines 1238--1239
+[36]
+Overfull \hbox (6.52356pt too wide) in paragraph at lines 1429--1430
 []\EU1/AntiochText(0)/m/n/12 ប្រព័ន្ធ ឧស្ម័ន បរិសុទ្ធ មួ យម៉ូ លប ញ្ចេញ ថាមពល $\
 OT1/cmr/m/n/12 3000\OML/npxmi/m/it/12 J$ \EU1/AntiochText(0)/m/n/12 ទៅ មជ្ឈដ្ឋា
 ន ជុំវិញ វា តាម លំ នាំ អុី សូ ទែ ម ដល់ សម្ពាធ ចុងក្រោយ
  []
 
-) (./lessons/lesson3.tex [36]
+[37]
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1576.
+
+
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 1576.
+
+) (./lessons/lesson3.tex [38]
 មេរៀនទី ៣.
 .................................................
 . fontspec info: "no-scripts"
@@ -3951,24 +3944,23 @@ Underfull \hbox (badness 5802) in paragraph at lines 18--20
 
 File: ./images/heat-engine.png Graphic file (type QTm)
 <use  "./images/heat-engine.png" >
-LaTeX Font Info:    Font shape `EU1/Angkor(0)/m/n' will be
-(Font)              scaled to size 9.12494pt on input line 25.
 .................................................
 . fontspec info: "no-scripts"
 . 
 . Font Times New Roman does not contain any OpenType `Script' information.
 .................................................
 
-Overfull \hbox (71.75572pt too wide) in paragraph at lines 17--30
+Overfull \hbox (71.75572pt too wide) in paragraph at lines 17--41
 []$[]$ $[]$
  []
 
-LaTeX Font Info:    Font shape `EU1/Angkor(0)/m/n' will be
-(Font)              scaled to size 9.99994pt on input line 35.
-[37
+[39
 
 ]
-Overfull \hbox (63.54254pt too wide) in paragraph at lines 42--76
+LaTeX Font Info:    Font shape `EU1/Angkor(0)/m/n' will be
+(Font)              scaled to size 9.99994pt on input line 46.
+
+Overfull \hbox (63.54254pt too wide) in paragraph at lines 53--87
 $[]$ $[]$ 
  []
 
@@ -3977,30 +3969,75 @@ $[]$ $[]$
 . 
 . Font Times New Roman does not contain any OpenType `Script' information.
 .................................................
-
-Underfull \hbox (badness 5771) in paragraph at lines 98--101
-\EU1/AntiochText(0)/m/n/12 ប្រតិបត្តិ ការ រវាង ប្រភព ពីរ គឺទី មួយ ប្រភព ក្តៅ ដែ
-ល មាន
- []
-
-File: ./images/Nicolas-Leonard-Sadi-Carnot.png Graphic file (type QTm)
-<use  "./images/Nicolas-Leonard-Sadi-Carnot.png" >
-Overfull \hbox (51.37pt too wide) in paragraph at lines 97--110
-[]$[]$ $[]$ 
- []
-
-[38]
 .................................................
 . fontspec info: "no-scripts"
 . 
 . Font Times New Roman does not contain any OpenType `Script' information.
 .................................................
 
-Overfull \hbox (54.1309pt too wide) in paragraph at lines 111--157
+Underfull \hbox (badness 5771) in paragraph at lines 109--112
+\EU1/AntiochText(0)/m/n/12 ប្រតិបត្តិ ការ រវាង ប្រភព ពីរ គឺទី មួយ ប្រភព ក្តៅ ដែ
+ល មាន
+ []
+
+File: ./images/Nicolas-Leonard-Sadi-Carnot.png Graphic file (type QTm)
+<use  "./images/Nicolas-Leonard-Sadi-Carnot.png" >
+Overfull \hbox (51.37pt too wide) in paragraph at lines 108--121
+[]$[]$ $[]$ 
+ []
+
+[40]
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Times New Roman does not contain any OpenType `Script' information.
+.................................................
+
+Overfull \hbox (54.1309pt too wide) in paragraph at lines 122--168
 []$ $[]$ 
  []
 
-[39]
+[41]
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Times New Roman does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Times New Roman does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Times New Roman does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Times New Roman does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Times New Roman does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Times New Roman does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Times New Roman does not contain any OpenType `Script' information.
+.................................................
+.................................................
+. fontspec info: "no-scripts"
+. 
+. Font Times New Roman does not contain any OpenType `Script' information.
+.................................................
 .................................................
 . fontspec info: "no-scripts"
 . 
@@ -4013,6 +4050,8 @@ Overfull \hbox (54.1309pt too wide) in paragraph at lines 111--157
 .................................................
 File: ./images/first-stroke.jpg Graphic file (type QTm)
  <use  "./images/first-stroke.jpg" >
+LaTeX Font Info:    Font shape `EU1/Angkor(0)/m/n' will be
+(Font)              scaled to size 9.12494pt on input line 219.
 File: ./images/second-stroke.png Graphic file (type QTm)
  <use  "./images/second-stroke.png" >
 File: ./images/thirth-stroke.png Graphic file (type QTm)
@@ -4020,16 +4059,16 @@ File: ./images/thirth-stroke.png Graphic file (type QTm)
 <use  "./images/thirth-stroke.png" >
 File: ./images/fourth-stroke.png Graphic file (type QTm)
  <use  "./images/fourth-stroke.png" >
-[40] [41] [42]
+[42] [43] [44]
 LaTeX Font Info:    Font shape `EU1/KhmerM1(1)/m/n' will be
-(Font)              scaled to size 14.3999pt on input line 323.
-) (./exercises/exercises3.tex [43]
+(Font)              scaled to size 14.3999pt on input line 335.
+) (./exercises/exercises3.tex [45]
 .................................................
 . fontspec info: "no-scripts"
 . 
 . Font Times New Roman does not contain any OpenType `Script' information.
 .................................................
- [44]
+ [46]
 Overfull \hbox (10.10223pt too wide) in paragraph at lines 100--102
 []\EU1/AntiochText(0)/m/n/12 ម៉ា សុី នកា ណូ មួយ មាន ទិន្នផល $\OT1/cmr/m/n/12 22
 %$\EU1/AntiochText(0)/m/n/12 ។ វា ដំណើរការ ចន្លោះ ធុង កម្តៅ ពីរ ដែល មាន បម្រែបម
@@ -4037,38 +4076,33 @@ Overfull \hbox (10.10223pt too wide) in paragraph at lines 100--102
 npxmi/m/it/12 C$\EU1/AntiochText(0)/m/n/12 ។ 
  []
 
-[45] [46] [47]
+[47] [48] [49]
 Overfull \hbox (18.55962pt too wide) in paragraph at lines 176--177
 \EU1/AntiochText(0)/m/n/12 ដោយ ការ ស្រូប ចំហាយទឹក ចូលក្នុង របុំ មាន សិតុ ណ្ហ ភា
 ព $\OT1/cmr/m/n/12 20%$\EU1/AntiochText(0)/m/n/12 ។ ប្រសិនបើ ទឹក $\OT1/cmr/m/n/
 12 60$\EU1/AntiochText(0)/m/n/12 លីត បាន ហូរ ឆ្លងកាត់ របុំ ក្នុង១វិនាទី។
  []
 
-)
-File: pdf-files/back-cover.pdf Graphic file (type QTm)
- <use  "pdf-files/back-cover.pdf" >
-File: pdf-files/back-cover.pdf Graphic file (type QTm)
- <use  "pdf-files/back-cover.pdf" >
-File: pdf-files/back-cover.pdf Graphic file (type QTm)
+) (./lessons/lesson4.tex [50]
+មេរៀនទី ៤.
 
-<use  "pdf-files/back-cover.pdf"  page1>
-File: pdf-files/back-cover.pdf Graphic file (type QTm)
+LaTeX Font Warning: Font shape `OT1/cmr/b/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 2.
 
-<use  "pdf-files/back-cover.pdf"  page1> [48]
-File: pdf-files/back-cover.pdf Graphic file (type QTm)
 
-<use  "pdf-files/back-cover.pdf"  page1>
-File: pdf-files/back-cover.pdf Graphic file (type QTm)
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 6.
 
-<use  "pdf-files/back-cover.pdf"  page1>
-File: pdf-files/back-cover.pdf Graphic file (type QTm)
 
-<use  "pdf-files/back-cover.pdf"  page1> [49]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 6.
+
+) [51
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 61.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 64.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -4079,11 +4113,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 65877 strings out of 493638
- 1514499 string characters out of 6146797
- 1848286 words of memory out of 5000000
- 68133 multiletter control sequences out of 15000+600000
- 48853 words of font info for 198 fonts, out of 8000000 for 9000
+ 65979 strings out of 493638
+ 1516125 string characters out of 6146797
+ 1873114 words of memory out of 5000000
+ 68234 multiletter control sequences out of 15000+600000
+ 49815 words of font info for 205 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  65i,20n,95p,10457b,1494s stack positions out of 5000i,500n,10000p,200000b,80000s
 

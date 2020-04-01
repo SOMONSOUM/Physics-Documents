@@ -1,0 +1,264 @@
+\documentclass{classes/exam} 
+\usepackage{siunitx}
+\usepackage{chemfig}
+\usepackage{tikz}
+\usepackage{physics}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[version=4]{mhchem}
+\usepackage{tkz-euclide}
+\definecolor{myyellow}{RGB}{254,241,24}
+\definecolor{myorange}{RGB}{234,125,1}
+\definecolor{fancyorange1}{RGB}{253,138,9}
+\definecolor{fancyorange2}{RGB}{246,156,123}
+\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}
+\definecolor{brinkpink}{rgb}{0.98, 0.38, 0.5}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+\definecolor{lightpink}{rgb}{1.0, 0.71, 0.76}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\tikzstyle arrowstyle=[scale=1]
+\tikzstyle directed=[postaction={decorate,decoration={markings,
+		mark=at position .65 with {\arrow[arrowstyle]{stealth}}}}]
+\tikzstyle direct=[postaction={decorate,decoration={markings,
+		mark=at position .65 with {\arrow[arrowstyle]{stealth reversed}}}}]
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text,calc,angles,quotes,decorations.markings}
+\tikzset{>=latex}
+\usepackage{chemfig}
+\usepackage{multirow}
+\usetikzlibrary{quotes,arrows.meta}
+%\pagestyle{empty}
+\begin{document}
+	\begin{center}
+		{\kml ប្រឡងឆមាសលើកទី១ ថ្នាក់ទី១១\\
+		វិញ្ញាសាៈ រូបវិទ្យា\\
+		រយៈពេលៈ ៩០នាទី\\
+		ពិន្ទុៈ ៧៥}
+	\end{center}
+	\begin{enumerate}[I]
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)} ខ្សែចម្លងមួយមានអង្កត់ផ្ចិត $d=1mm$ មានប្រវែង $\ell=314m$ ហើយមានរេស៊ីស្ទីវីតេ\\ $\rho=1.6\times10^{-8}\Omega m$។ គណនារេស៊ីស្តង់នៃខ្សែចម្លងនេះ។
+		\item {\color{magenta}\ks (១០ ពិន្ទុ)} គេមានបន្ទុះលោហៈពីរដាក់ស្របគ្នា និងផ្ទុកក្រោមតង់ស្យុង $V_{AB}=500\si{\volt}$។ \\
+		គណនាកម្មន្តអគ្គសនីដើម្បីធ្វើឲ្យ៖
+		\begin{enumerate}[k]
+			\item អ៊ីយ៉ុង $\ce{Cu^{++}}$ ផ្លាស់ទីពីបន្ទះ $A$ ទៅ $B$។
+			\item អ៊ីយ៉ុង $\ce{Cl^{-}}$ ផ្លាស់ទីពីបន្ទះ $A$ ទៅ $B$។
+		\end{enumerate}
+		\item {\color{magenta}\ks (១៥ ពិន្ទុ)} គេយកកុងដង់សាទ័រមួយដែលមានកាប៉ាស៊ីតេ $C_{1}=3\mu\si{\farad}$។
+		\begin{enumerate}[k]
+			\item តើគេត្រូវយកកុងដង់សាទ័រមួយទៀតទៅផ្តុំដូចម្តេចជាមួយនឹងកុងដង់សាទ័រមុន\\ ដើម្បីឲ្យបានកាប៉ាស៊ីតេសមមូល $C=2\mu\si{\farad}$។
+			\item គណនាកាប៉ាស៊ីតេនៃកុងដង់សាទ័រនោះ។
+			\item បើគេយកបង្គុំនោះទៅផ្ទុកក្រោមតង់ស្យុង $V=60\si{\volt}$ គណនាតង់ស្យុងនិងថាមពលនៃកុងដង់សាទ័រនីមួយៗ។
+		\end{enumerate}
+		\item {\color{magenta}\ks (២០ ពិន្ទុ)} គេមានត្រីកោណកែងសមបាតមួយដែលមានជ្រុង $a=10cm$(ដូចរូប)។ នៅត្រង់ចំណុច $M; N; P$ គេដាក់បន្ទុកអគ្គិសនីរៀងគ្នា $q_{1}=5\mu C~;~q_{2}=-5\mu C~;~q=2\mu C$។ ចូរកំណត់កម្លាំងដែលមានអំពើលើបន្ទុក $q$។
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[scale=1.2, draw=magenta, fill=magenta]
+			\coordinate [label=above left:$M(q_{1})$] (M) at (-1.0cm,1.0cm);
+			\coordinate [label=below right:$P(q)$] (P) at (1.0cm,-1.0cm);
+			\coordinate [label=above right:$N(q_{2})$] (N) at (3cm,1.0cm);
+			\draw (M) -- node[above] {$a=10cm$} (N) -- node[right] {$$} (P) -- node[below] {$$} (M);
+			\tkzMarkAngle[size=.5cm,color=cyan,mark=|](P,M,N)
+			\tkzMarkAngle[size=.5cm,color=cyan,mark=|](M,N,P)
+			\shade[ball color=red!60] (M) circle (6pt);
+			\node at (M) {$+$};
+			\shade[ball color=cyan!60] (N) circle (6pt);
+			\node at (N) {$-$};
+			\shade[ball color=red!60] (P) circle (6pt);
+			\node at (P) {$+$};
+			\node at (0cm,.7cm) {$45^\circ$};
+			\end{tikzpicture}
+		\end{figure}
+	\item {\color{magenta}\ks (២០ ពិន្ទុ)} គេឲ្យសៀគ្វីមួយមានជនិតាដែលមានកម្លាំងអគ្គិសនីចលករ $E=12V$ និងរេស៊ីស្តង់ក្នុង $r=1\Omega$ អង្គធាតុចម្លងអូម $R=5\Omega$ និងម៉ូទ័រដែលមានកម្លាំងច្រាសអគ្គិសនីចលករ $E'=10V$ និងរេស៊ីស្តង់ក្នុង $r'=2\Omega$។
+	\begin{multicols}{2}
+		\begin{enumerate}[k]
+			\item គណនាអាំងតង់ស៊ីតេចរន្តក្នុងសៀគ្វី។
+			\item គណនាអានុភាពកម្តៅដែលភាយចេញពីរេស៊ីស្តង់ $R$។
+			\item គណនាអានុភាពអគ្គិសនីស៊ីដោយម៉ូទ័រ។
+		\end{enumerate}
+		\begin{figure}[H]
+			\centering
+			\begin{circuitikz}
+				\begin{scope}[magenta]
+					\draw[european] (0,-2) to[R= $R$, color=magenta] (0,1);
+					\draw(0,1) to[battery1, color=magenta] (3,1);
+					\node at (2,1.2) {$E,r$};
+					\draw (3,1) --(3,-2);
+					\draw[magenta] (1.5,-2) circle (14pt);
+					\draw (3,-2) --(2,-2);
+					\draw (0,-2) --(1,-2);
+					\node at (1.5,-2) {$M$};
+					\draw[magenta] (1.2,-2.2) -- (1.8,-2.2);
+					\node at (1.7,-1.2) {$E',r'$};
+				\end{scope}
+			\end{circuitikz}
+		\end{figure}
+	\end{multicols}
+\end{enumerate}
+\newpage
+\begin{center}
+	{\kml ប្រឡងឆមាសលើកទី១ ថ្នាក់ទី១១\\
+		វិញ្ញាសាៈ រូបវិទ្យា\\
+		រយៈពេលៈ ៩០នាទី\\
+		ពិន្ទុៈ ៧៥}
+\end{center}
+{\kml អត្រាកំណែ}
+\begin{enumerate}[I]
+	\item {\color{magenta}\ks (១០ ពិន្ទុ)} គណនារេស៊ីស្តង់នៃខ្សែចម្លង
+	\begin{align*}
+		\text{តាមរូបមន្ត}\quad :&\quad R=\rho\frac{\ell}{A}\quad
+		\text{ប៉ុន្តែ}\quad A=\pi r^{2}=\pi\frac{d^{2}}{4}~(\text{ផ្ទៃមុខកាត់ខ្សែចម្លង})\\
+		\text{នោះ}\quad :&\quad R=\rho\frac{\ell}{\pi\frac{d^{2}}{4}}=\rho\frac{4\ell}{\pi d^{2}}\\
+		\text{ដោយ}\quad :&\quad \rho=1.6\times10^{-8}\Omega\si{\metre},~\ell=314\si{\metre},~d=1\si{\milli\metre}=1\times10^{-3}\si{\metre}\\
+		\text{គេបាន}\quad :&\quad R=1.6\times10^{-8}\frac{4\times 314}{3.14\times \left(1\times10^{-3}\right)^{2}}=6.4\Omega\\
+		\text{ដូចនេះ}\quad :&\quad R=6.4\Omega
+	\end{align*} 
+	\item {\color{magenta}\ks (១០ ពិន្ទុ)} គណនាកម្មន្តអគ្គសនីដើម្បីធ្វើឲ្យ៖ 
+	\begin{enumerate}[k]
+		\item អ៊ីយ៉ុង $\ce{Cu^{++}}$ ផ្លាស់ទីពីបន្ទះ $A$ ទៅ $B$
+		\begin{align*}
+			\text{តាមរូបមន្ត}\quad :&\quad W_{AB}=qV_{AB}\\
+			\text{ដោយ}\quad :&\quad q=+2e=+2\times 1.6\times10^{-19}=+3.2\times 10^{-19}\si{C},~V_{AB}=500\si{\volt}\\
+			\text{គេបាន}\quad :&\quad W_{AB}=+3.2\times 10^{-19}\times 500=16\times10^{-17}\si{\joule}\\
+			\text{ដូចនេះ}\quad :&\quad W_{AB}=16\times10^{-17}\si{\joule}
+		\end{align*}
+			\item អ៊ីយ៉ុង $\ce{Cl^{-}}$ ផ្លាស់ទីពីបន្ទះ $A$ ទៅ $B$
+		\begin{align*}
+			\text{តាមរូបមន្ត}\quad :&\quad W_{AB}=qV_{AB}\\
+			\text{ដោយ}\quad :&\quad q=-1e=-1\times 1.6\times10^{-19}=-1.6\times 10^{-19}\si{C},~V_{AB}=500\si{\volt}\\
+			\text{គេបាន}\quad :&\quad W_{AB}=-1.6\times 10^{-19}\times 500=-8\times10^{-17}\si{\joule}\\
+			\text{ដូចនេះ}\quad :&\quad W_{AB}=-8\times10^{-17}\si{\joule}
+		\end{align*}
+	\end{enumerate}
+	\item {\color{magenta}\ks (១៥ ពិន្ទុ)}
+	\begin{enumerate}[k]
+		\item គេត្រូវយកកុងដង់សាទ័រមួយទៀតគឺ $C_{2}$ ទៅផ្គុំជាស៊េរីជាមួយ $C_{1}$ ព្រោះ $C<C_{1}$។
+		\item គណនាកាប៉ាស៊ីតេនៃកុងដង់សាទ័រនោះ
+		\begin{align*}
+			\text{ដោយ $C_{1}$ និង $C_{2}$ តជាស៊េរី}\\
+			\text{តាម}\quad :&\quad \frac{1}{C}=\frac{1}{C_{1}}+\frac{1}{C_{2}}
+			\text{នោះ}\quad C_{2}=\frac{C\times C_{1}}{C_{1}-C}\\
+			\text{ដោយ}\quad :&\quad C_{1}=3\mu\si{\farad},~C=2\mu\si{\farad}\\
+			\text{គេបាន}\quad :&\quad C_{2}=\frac{3\times 2}{3-2}=6\mu\si{\farad}\\
+			\text{ដូចនេះ}\quad :&\quad C_{2}=6\mu\si{\farad}
+		\end{align*}
+		\item គណនាតង់ស្យុងនិងថាមពលនៃកុងដង់សាទ័រនីមួយៗ
+		\begin{itemize}
+			\item គណនាតង់ស្យុងកុងដង់សាទ័រនីមួយៗ
+			\begin{align*}
+				\text{ដោយ $C_{1}$ និង $C_{2}$ តជាស៊េរី}\quad :&\quad q=q_{1}=q_{2}\\
+				\text{គេបាន}\quad :&\quad q=q_{1}~\Leftrightarrow~ CV=C_{1}V_{1}\\
+				\text{នាំឲ្យ}\quad :&\quad V_{1}=\frac{CV}{C_{1}}\\
+				\text{ដោយ}\quad :&\quad V=60\si{\volt},~C=2\mu \si{\farad}=2\times 10^{-6}\si{\farad},~C_{1}=3\mu\si{\farad}=3\times 10^{-6}\si{\farad}\\
+				\text{គេបាន}\quad :&\quad V_{1}=\frac{2\times 10^{-6}\times 60}{3\times 10^{-6}}=40\si{\volt}\\
+				\text{ម្យ៉ាងទៀត}\quad :&\quad V=V_{1}+V_{2}~\text{នោះ}\quad V_{2}=V-V_{1}\\
+				\text{គេបាន}\quad :&\quad V_{2}=60-40=20\si{\volt}\\
+				\text{ដូចនេះ}\quad :&\quad V_{1}=40\si{\volt},~\text{និង}~V_{2}=20\si{\volt}
+			\end{align*}
+			\item គណនាថាមពលនៃកុងដង់សាទ័រនីមួយៗ
+			\begin{align*}
+				\text{តាមរូបមន្ត}\quad :&\quad E_{C_{1}}=\frac{1}{2}C_{1}V_{1}^{2}\\
+				\text{ដោយ}\quad :&\quad C_{1}=3\times 10^{-6}\si{\farad},~V_{1}=40\si{\volt}\\
+				\text{គេបាន}\quad :&\quad E_{C_{1}}=\frac{1}{2}\left(3\times10^{-6}\right)\left(40\right)^{2}=24\times 10^{-4}\si{\joule}\\
+				\text{តាមរូបមន្ត}\quad :&\quad E_{C_{2}}=\frac{1}{2}C_{2}V_{2}^{2}\\
+				\text{ដោយ}\quad :&\quad C_{2}=6\times 10^{-6}\si{\farad},~V_{2}=20\si{\volt}\\
+				\text{គេបាន}\quad :&\quad E_{C_{2}}=\frac{1}{2}\left(6\times10^{-6}\right)\left(20\right)^{2}=12\times 10^{-4}\si{\joule}\\
+				\text{ដូចនេះ}\quad :&\quad E_{C_{1}}=24\times 10^{-4}\si{\joule}~\text{និង}~E_{C_{2}}=12\times 10^{-4}\si{\joule}		
+			\end{align*}
+		\end{itemize}
+	\end{enumerate}
+	\item {\color{magenta}\ks (២០ ពិន្ទុ)} កំណត់កម្លាំងដែលមានអំពើលើបន្ទុក $q$
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}[draw=magenta,scale=1.2, fill=magenta]
+		\begin{scope}
+		\coordinate [label=above left:$M(q_{1})$] (M) at (-1.0cm,1.0cm);
+		\coordinate [label=below left:$P(q)$] (P) at (1.0cm,-1.0cm);
+		\coordinate [label=above right:$N(q_{2})$] (N) at (3cm,1.0cm);
+		\coordinate [label=below:$\overrightarrow{F}_{1}$] (F1) at (2cm,-2cm);
+		\coordinate [label=above left:$\overrightarrow{F}_{2}$] (F2) at (2cm,0cm);
+		\coordinate [label=right:$\overrightarrow{F}$] (F) at (3cm,-1cm);
+		\draw (M) -- node[above] {$a=10cm$} (N) -- node[right] {$$} (P) -- node[below] {$$} (M);
+		\draw [->, line width=2pt] (P) -- (2cm, -2cm);
+		\draw [->, line width=2pt] (P) -- (2cm, 0cm);
+		\draw [->, line width=2pt] (P) -- (F);
+		\draw[dashed] (F1)--(F)--(F2);
+		\tkzMarkAngle[size=.5cm,color=cyan,mark=|](P,M,N)
+		\tkzMarkAngle[size=.5cm,color=cyan,mark=|](M,N,P)
+		\shade[ball color=red!60] (M) circle (6pt);
+		\node at (M) {$+$};
+		\shade[ball color=cyan!60] (N) circle (6pt);
+		\node at (N) {$-$};
+		\shade[ball color=red!60] (P) circle (6pt);
+		\node at (P) {$+$};
+		\node at (0cm,.7cm) {$45^\circ$};
+		\pic [draw, "$\beta$", angle eccentricity=1.5, angle radius=.5cm] {angle= F1--P--F2};
+		\end{scope}
+		\end{tikzpicture}
+	\end{figure}
+	\begin{itemize}
+		\item រកមកម្លាំង $F_{1}$ ជាកម្លាំងអគ្គិសនីដែលបង្កើតដោយបន្ទុកអគ្គិសនី $q_{1}$ ត្រង់ $P$ មានបន្ទុកអគ្គិសនី $q$
+		\begin{flalign*}
+			\text{តាម}\quad :&\quad F_{1}=9\times10^{9}\frac{\abs{q_{1}\cdot q}}{MP^{2}}\\
+			\text{តែ}\quad :&\quad \Delta MPN~\text{ជាត្រីកោណកែងសមមាបាត}~MN^{2}=MP^{2}+PN^{2}=2MP^{2}\left(MP=PN\right)\\
+			\text{ដោយ}\quad :&\quad MP=PN=\frac{\sqrt{2}}{2}MN=\frac{\sqrt{2}}{2}10=5\sqrt{2}cm=5\sqrt{2}\times10^{-2}m\\
+			\quad :&\quad q_{1}=5\mu C=5\times10^{-6}C~\text{និង}~q=2\mu C=2\times10^{-6}C\\
+			\text{នោះ}\quad :&\quad F_{1}=9\times10^{9}\frac{\abs{5\times10^{-6}\times2\times10^{-6}}}{\left(5\sqrt{2}\times10^{-2}\right)^{2}}=18N
+		\end{flalign*}
+		\item រកមកម្លាំង $F_{2}$ ជាកម្លាំងអគ្គិសនីដែលបង្កើតដោយបន្ទុកអគ្គិសនី $q_{2}$ 
+			ត្រង់ $P$ មានបន្ទុកអគ្គិសនី $q$
+		\begin{flalign*}
+			\text{តាម}\quad :&\quad F_{2}=9\times10^{9}\frac{\abs{q_{2}\cdot q}}{NP^{2}}\quad \text{តែ}\quad MP=PN\\
+			\text{ដោយ}\quad :&\quad MP=PN=\frac{\sqrt{2}}{2}MN=\frac{\sqrt{2}}{2}10=5\sqrt{2}cm=5\sqrt{2}\times10^{-2}m\\
+			\quad :&\quad q_{2}=-5\mu C=-5\times10^{-6}C~\text{និង}~q=2\mu C=2\times10^{-6}C\\
+			\text{នោះ}\quad :&\quad F_{2}=9\times10^{9}\frac{\abs{-5\times10^{-6}\times2\times10^{-6}}}{\left(5\sqrt{2}\times10^{-2}\right)^{2}}=18N\\
+			\text{គេបាន}\quad :&\quad \overrightarrow{F}= \overrightarrow{F}_{1}+\overrightarrow{F}_{2}(\text{ដោយ}~ \beta=180^\circ-90^\circ=90^\circ) \\
+			\text{នោះ}\quad :&\quad \overrightarrow{F}_{1}\perp\overrightarrow{F}_{2}~\text{និង}~F=F_{1}^{2}+F_{2}^2\quad\text{ដោយ}\quad F_{1}=F_{2}=18N\\
+			\quad :&\quad F=\sqrt{F_{1}^{2}+F_{2}^{2}}=\sqrt{18^{2}+18^{2}}=18\sqrt{2}N\\
+			\text{ដូចនេះ}\quad :&\quad F=18\sqrt{2}N
+		\end{flalign*}
+	\end{itemize}
+	\item {\color{magenta}\ks (២០ ពិន្ទុ)} 
+	\begin{figure}[H]
+		\centering
+		\begin{circuitikz}
+			\begin{scope}[magenta]
+				\draw[european] (0,-2) to[R= $R$, color=magenta] (0,1);
+				\draw(0,1) to[battery1, color=magenta] (3,1);
+				\node at (2,1.2) {$E,r$};
+				\draw (3,1) --(3,-2);
+				\draw[magenta] (1.5,-2) circle (14pt);
+				\draw (3,-2) --(2,-2);
+				\draw (0,-2) --(1,-2);
+				\node at (1.5,-2) {$M$};
+				\draw[magenta] (1.2,-2.2) -- (1.8,-2.2);
+				\node at (1.7,-1.2) {$E',r'$};
+			\end{scope}
+		\end{circuitikz}
+	\end{figure}
+	\begin{enumerate}[k]
+		\item គណនាអាំងតង់ស៊ីតេចរន្តក្នុងសៀគ្វី
+			\begin{align*}
+				\text{តាមច្បាប់អូមទូទៅ}\quad :&\quad E-E'=\Sigma RI~\Leftrightarrow~E-E'=\left(R+r+r'\right)I\\
+				\text{នាំឲ្យ}\quad :&\quad I=\frac{E-E'}{R+r+r'}\\
+				\text{ដោយ}\quad :&\quad E=12\si{\volt},~E'=10\si{\volt},~R=10\Omega,~r=1\Omega,~r'=2\Omega\\
+				\text{គេបាន}\quad :&\quad I=\frac{12-10}{5+1+2}=0.25\si{\ampere}\\
+				\text{ដូចនេះ}\quad :&\quad I=0.25\si{\ampere}
+			\end{align*}
+		\item គណនាអានុភាពកម្តៅដែលភាយចេញពីរេស៊ីស្តង់ $R$
+		\begin{align*}
+			\text{តាមរូបមន្ត}\quad :&\quad P_{eR}=V_{R}I=RI^{2}~(\text{ព្រោះ}~V_{R}=RI)\\
+			\text{ដោយ}\quad :&\quad R=5\Omega,~I=0.25\si{\ampere}\\
+			\text{គេបាន}\quad :&\quad P_{eR}=5\left(0.25\right)^{2}=0.3125\si{\joule}\\
+			\text{ដូចនេះ}\quad :&\quad P_{eR}=0.3125\si{\joule}
+		\end{align*}
+		\item គណនាអានុភាពអគ្គិសនីស៊ីដោយម៉ូទ័រ
+			\begin{align*}
+				\text{តាមរូបមន្ត}\quad :&\quad P_{eM}=V_{M}I=\left(E'+r'I\right)I~(\text{ព្រោះ}~V_{M}=E'+r'I)\\
+				\text{ដោយ}\quad :&\quad E'=10\si{\volt},~r'=2\Omega,~I=0.25\si{\ampere}\\
+				\text{គេបាន}\quad :&\quad P_{eM}=\left(10-2\times 0.25\right)\left(0.25\right)=2.625\si{\watt}\\
+				\text{ដូចនេះ}\quad :&\quad P_{eM}=2.625\si{\watt}
+			\end{align*}
+	\end{enumerate}
+\end{enumerate}
+\end{document}

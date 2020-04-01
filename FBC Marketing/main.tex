@@ -1,0 +1,14 @@
+\documentclass[12pt,a4paper]{classes/fancy}
+\usepackage{graphicx}
+\usepackage{tikz}
+\graphicspath{{./images/}}
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text, decorations.markings,shadows}
+\pgfdeclareverticalshading{heat}{100bp}{%
+	color(0bp)=(white);   color(25bp)=(white); color(30bp)=(cyan!50); 
+	color(70bp)=(orange!70); color(75bp)=(white);  color(100bp)=(white)}
+\begin{document}
+    \frontmatter\pagenumbering{alpkh}
+    \tableofcontents
+    \mainmatter\pagenumbering{khmer}
+    \input{lessons/lesson1.tex}
+\end{document}

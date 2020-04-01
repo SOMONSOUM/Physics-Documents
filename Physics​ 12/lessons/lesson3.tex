@@ -21,8 +21,19 @@
 \begin{minipage}[r]{.6\textwidth}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=.3]{heat-engine}\\
-		\caption{\DS ម៉ាសុីនចំហាយទឹក}
+		\begin{tikzpicture}
+			\node at (0,0) {\includegraphics[scale=.3]{heat-engine}};
+			\node at (-1.7,.2) {\fontsize{10}{10}{\text{\DS ម៉ាស៊ីនបូម}}};
+			\node at (-.5,-1) {\fontsize{10}{10}{\text{\DS ករជាញើស}}};
+			\node at (-.5,3.1) {\fontsize{10}{10}{\text{\DS ឆ្នាំងដាំទឹក}}};
+			\node at (3.5,1.2) {\fontsize{10}{10}{\text{\DS ពីស្តុង}}};
+			\node at (.3,1) {$Q_{h}$};
+			\node at (.1,-2.8) {$Q_{c}$};
+			\node at (3.2,-.5) {$W$};
+			\draw (3.1,.5) -- (3.1,1.2);
+			\draw[->, line width=2pt] (2.7,-.8) -- (3.7,-.8);
+		\end{tikzpicture}
+		\caption{ម៉ាសុីនចំហាយទឹក}
 	\end{figure}
 \end{minipage}
 នៅពេលដែលពីស្តុងផ្លាស់ទីវាអាចធ្វើឲ្យកង់ស្ពឺនៃយានអាចវិលបាន(គឺបំពេញកម្មន្តទៅមជ្ឈដ្ឋានក្រៅបាន)។ បន្ទាប់ពីចាកចេញពីម៉ាសុីន ចំហាយមួយចំនួន ក៏បន្តទៅតំបន់ដែលចំហាយឲ្យករទៅជាទឹក(ប្រភពធុងត្រជាក់)។\\
@@ -73,7 +84,7 @@
 			\caption{ដ្យាក្រាមតាងការបម្លែងថាមពលកម្តៅ}
 		\end{figure}
 	\end{minipage}
-	\item \emph{\DS ប្រសិទ្ធភាពនៃម៉ាសុីនកម្តៅ}
+	\item \emph{\DS ប្រសិទ្ធភាពនៃម៉ាសុីនកម្តៅ(\en Efficiency)}
 	\begin{flalign*}
 		\text{គេមាន}\quad :&\quad W=Q_{h}-Q_{c}\\
 		\text{គេបាន}\quad :&\quad e=\frac{W}{Q_{h}}=\frac{Q_{h}-Q_{c}}{Q_{h}}\\
@@ -171,14 +182,14 @@
 		\item ទិន្នផលកម្តៅអតិបរមាអាស្រ័យតែនឹងសីតុណ្ហភាពដាច់ខាតនៃប្រភពកម្តៅ $T_{h}$ និងប្រភពត្រជាក់ $T_{c}$។
 	\end{itemize}
 	\begin{flalign*}
-		\text{យើងបានទិន្នផលកម្តៅអតិបរមា}\quad :& \quad e=\frac{\Delta T}{T_{h}}=\frac{T_{h}-T_{c}}{T_{h}}=1-\frac{T_{c}}{T_{h}}
+		\text{យើងបានទិន្នផលកម្តៅអតិបរមា}\quad :& \quad e_{C}=\frac{\Delta T}{T_{h}}=\frac{T_{h}-T_{c}}{T_{h}}=1-\frac{T_{c}}{T_{h}}\quad\text{\en Carnot(ideal) Efficiency}
 	\end{flalign*}
 \end{enumerate}
 \subsection{ម៉ាសុីនអុីដេអាល់}
 ចំពោះម៉ាសុីនអុីដេអាល់ យើងបានកម្តៅសមាមាត្រនឹងសីតុណ្ហភាពៈ $\frac{T_{h}}{T_{c}}=\frac{Q_{h}}{Q_{c}}$
 \begin{flalign*}
-	\text{គេអាចសរសេរ}\quad :&\quad e=1-\frac{Q_{c}}{Q_{h}}=\frac{Q_{h}-Q_{c}}{Q_{h}}=\frac{W}{Q_{h}}\\
-	\text{ដូចនេះ}\quad :&\quad e=\frac{W}{Q_{h}}\left(\text{ជាទិន្នផលកម្តៅអតិបរមា}\right)
+	\text{គេអាចសរសេរ}\quad :&\quad e_{C}=1-\frac{Q_{c}}{Q_{h}}=\frac{Q_{h}-Q_{c}}{Q_{h}}=\frac{W}{Q_{h}}\\
+	\text{ដូចនេះ}\quad :&\quad e_{C}=\frac{W}{Q_{h}}\left(\text{ជាទិន្នផលកម្តៅអតិបរមា}\right)
 \end{flalign*}
 \section{ម៉ាសុីនពិត(ម៉ាសុីនសាំង,ម៉ាសុីនម៉ាស៊ូត)}
 \subsection{ម៉ាសុីនសាំងបន្ទុះបួនវគ្គ}
@@ -266,7 +277,7 @@
 						\quad &\quad W_{M}\quad\text{កម្មន្តមេកានិច$\left(J\right)$}\\
 						\quad &\quad Q_{c}\quad \text{កម្តៅភាយចេញពីម៉ាសុីន(ថាមពលខាតបង់)$\left(J\right)$}
 					\end{flalign*}
-					\item \emph{\kml ទិន្នផលកម្តៅនៃម៉ាសុីន៖} $e_{c}=\frac{W_{M}}{Q_{h}}=1-\frac{Q_{c}}{Q_{h}}$(ក្នុងបន្ទប់ចំហេះ)
+					\item \emph{\kml ទិន្នផលកម្តៅនៃម៉ាសុីន៖} $e_{C}=\frac{W_{M}}{Q_{h}}=1-\frac{Q_{c}}{Q_{h}}$(ក្នុងបន្ទប់ចំហេះ)
 				\end{enumerate}
 			\item [$\bullet$] \emph{\kml ផ្នែកមេកានិច(ផ្នែកបញ្ចូនៈ)} កម្មន្តមេកានិច $W_{M}$ ត្រូវបានបញ្ចូនទៅជាកម្មន្តបានការ $W_{U}$ និងកម្តៅចេញពីម៉ាសុីនដោយកកិត $Q'_{c}$។
 			\begin{enumerate}[k]
@@ -276,20 +287,21 @@
 				\quad &\quad W_{U}\quad \text{កម្មន្តបានការ$\left(J\right)$}\\
 				\quad &\quad Q'_{c}\quad \text{កម្តៅភាយចេញពីម៉ាសុីនដោយកកិត(ថាមពលខាតបង់)$\left(J\right)$}
 				\end{flalign*}
-				\item \emph{\kml ទិន្នផលកម្តៅនៃម៉ាសុីន៖} $e_{M}=\frac{W_{U}}{W_{M}}$(លើភ្លៅម៉ូទ័រ)
-			\end{enumerate}
-			យើងបានទិន្នផលសរុបរបស់ម៉ាសុីនគឺៈ
-			\begin{flalign*}
-				\quad &\quad e=\frac{W_{U}}{Q_{h}}\\
+				\item \emph{\kml ទិន្នផលមេកានិច ឬទិន្នផលនៃគ្រឿងបញ្ជូននៃម៉ាសុីនកម្តៅ៖} $e_{M}=\frac{W_{U}}{W_{M}}$(លើភ្លៅម៉ូទ័រ)
+				\item \emph{\kml ទិន្នផលបានការ ឬទិន្នផលសរុប(ទិន្នផលពិត)}\\
+				យើងបានទិន្នផលសរុប ឬទិន្នផលបានការនៃម៉ាសុីនគឺៈ
+				\begin{flalign*}
+				\quad &\quad e_{U}=\frac{W_{U}}{Q_{h}}\\
 				\text{ដោយ}\quad :&\quad e_{M}=\frac{W_{U}}{W_{M}}\quad \text{នោះ}\quad W_{U}=e_{M}\times W_{M}\\
-				\text{យើងបាន}\quad:&\quad e=\frac{e_{M}\times W_{M}}{Q_{h}}=e_{M}\times e_{c}\\
-				\text{ដូចនេះ}\quad :&\quad e=\frac{W_{U}}{Q_{h}}=e_{M}\times e_{c}
-			\end{flalign*}
-			\item [$\bullet$] \emph{\kml អានុភាពមេកានិចរបស់ម៉ាសុីនៈ} $P=\frac{W}{t}$ ឬ $P_{M}=\frac{W_{M}}{t}$
-			\begin{flalign*}
-				\text{ដែល}\quad :&\quad P\quad \text{គិតជា} \left(W\right)\\
-				\text{និង}\quad :&\quad t\quad \text{គិតជា}\left(s\right)
-			\end{flalign*}
+				\text{យើងបាន}\quad:&\quad e_{U}=\frac{e_{M}\times W_{M}}{Q_{h}}=e_{M}\times e_{C}\\
+				\text{ដូចនេះ}\quad :&\quad e_{U}=\frac{W_{U}}{Q_{h}}=e_{M}\times e_{C}
+				\end{flalign*}
+			\end{enumerate}
+				\item [$\bullet$] \emph{\kml អានុភាពមេកានិចរបស់ម៉ាសុីនៈ} $P=\frac{W}{t}$ ឬ $P_{M}=\frac{W_{M}}{t}$
+				\begin{flalign*}
+					\text{ដែល}\quad :&\quad P\quad \text{គិតជា} \left(W\right)\\
+					\text{និង}\quad :&\quad t\quad \text{គិតជា}\left(s\right)
+				\end{flalign*}
 			\end{itemize}
 		\begin{remark}
 			ម៉ាសុីនសាំងមានទិន្នផលប្រហែល $30\%$ រីឯទិន្នផលម៉ាសុីនម៉ាស៊ូតប្រហែល $39\%$។ ទិន្នផលនៃគ្រឿងបញ្ចូនមានតម្លែ $90\%$ និងទិន្នផលបានការមានតម្លៃប្រហែល​ $30\%$។ ទិន្នផលនេះមានតម្លៃទាប។ ក្នុងចំណុះសាំង $10$ លីត្រ មានតែ $3$ លីត្រទេដែលផ្តល់កម្មន្តបានការ។ 

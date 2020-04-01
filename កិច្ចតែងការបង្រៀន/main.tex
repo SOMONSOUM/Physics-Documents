@@ -1,0 +1,109 @@
+\documentclass{classes/exam} 
+\usepackage{chemfig}
+\usepackage{tabu,tikz}
+\usepackage{physics}
+\usepackage{circuitikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[version=4]{mhchem}
+\usepackage{tkz-euclide}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\tikzstyle arrowstyle=[scale=1]
+\tikzstyle directed=[postaction={decorate,decoration={markings,
+		mark=at position .65 with {\arrow[arrowstyle]{stealth}}}}]
+\tikzstyle direct=[postaction={decorate,decoration={markings,
+		mark=at position .65 with {\arrow[arrowstyle]{stealth reversed}}}}]
+\usetikzlibrary{shadings,shapes.geometric,calc, patterns, angles, quotes, arrows.meta, shapes, decorations.pathmorphing, decorations.shapes, decorations.text,calc,angles,quotes,decorations.markings}
+\tikzset{>=latex}
+\usepackage{chemfig}
+\usepackage{multirow}
+\usetikzlibrary{quotes,arrows.meta}
+\begin{document}
+{\kml\large\noindent 
+\begin{flushleft}
+	សាលាមេតូឌីស្ទកម្ពុជា
+\end{flushleft}
+\begin{flushright}
+ព្រះរាជាណាចក្រកម្ពុជា\\
+ជាតិ សាសនា ព្រះមហាក្សត្រ
+\end{flushright}}
+\begin{center}
+{\kml\LARGE កិច្ចតែងការបង្រៀន}
+\end{center}
+\begin{itemize}
+	\item កាលបរិច្ឆេទ ​ថ្ងៃ អង្គារ ទី ២៨ ខែ តុលា ឆ្នាំ ២០១៩ 
+	\item មុខវិជ្ជា រូបវិទ្យា{\en(Physics)}
+	\item ថ្នាក់ទី ១២ $A$
+	\item ជំពូកទី ១ ទែម៉ូឌីណាមិច{\en(Thermodynamics)}
+	\item មេរៀនទី១ ទ្រឹស្តីសុីនេទិចនៃឧស្ម័ន{\en(The Kinetic Theory of Gases)}
+\end{itemize}
+\begin{enumerate}[I]
+	\item {\kml វត្ថុបំណងមេរៀន}\quad ក្រោយពីសិក្សាមេរៀននេះចប់សិស្សនឹងអាច
+\begin{itemize}
+	\item វិជ្ជាសម្បទា ពន្យល់បានពីឯកតានិម្មិត និយមន័យចំនួនកុំផ្លិច និង ឬសការេនៃចំនួន\\
+	អវិជ្ជមានបានត្រឹមត្រូវតាមរយៈឧទាហរណ៍
+	\item បំណិនសម្បទា បញ្ចេញ និងគណនាការេនៃចំនួនអវិជ្ជមានពីរ៉ាឌីកាល់បានត្រឹមត្រូវ
+	ត្រូវតាមរយៈលំហាត់គំរូ
+	\item ចរិយាសម្បទា បណ្តុះស្មារតីអោយចូលចិត្តសិក្សាគណិតវិទ្យាតាម​លក្ខណៈជាក្រុម ឬជាបុគ្គល
+\end{itemize}
+	\item {\kml សម្ភារៈឧបទេស}\quad
+\begin{itemize}
+	\item [$ - $] សៀវភៅសិក្សាថ្នាក់ទី~១០\quad (~ទំព័រ ~$ 91-94 $~)
+	\item [$ - $] សៀវភៅគ្រូទំព័រ ~~(~$ 92-94 $~)~~
+	\item [$ - $]​ប័ណ្ណសំណួរ
+\end{itemize}
+	\item {\kml វិធីសាស្រ្តបង្រៀន}\\[5pt]
+	$ -\quad $ តាមវិធីសាស្រ្តចម្រុះ
+	\item {\kml វិធីសាស្រ្តបង្រៀន}
+\end{enumerate}
+\noindent
+\begin{tabu} to\linewidth{|X[1,l]|X[1,l]|X[1,l]|} \hline
+	\centering {\kml សកម្មភាពគ្រូ }& \centering {\kml ខ្លឹមសារមេរៀន} &\centering {\kml សកម្មភាពសិស្ស } \\ \hline
+	&\vspace{-1mm}\centering {\ml ជំហានទី១ }&\\
+	&\vspace{-2mm}\centering (~រដ្ឋបាលថ្នាក់~: ~៣ នាទី)&\\
+	bត្រូវដាក់លំហាត់អោយសិស្សធ្វើកិច្ចការផ្ទះ& សរសេរកិច្ចការផ្ទះ
+\begin{center}
+	\begin{tikzpicture}
+		\draw (0,0)--(2,0)--(0,3)--cycle;
+	\end{tikzpicture}
+\end{center}
+&b ត្រូវធ្វើកិច្ចការផ្ទះ\\
+&\centering {\ml ជំហានទី២ }​&\\
+&\vspace{-2mm}\centering (~រំលឹកមេរៀនចាស់~: ~៧ នាទី)&\\
+bត្រូវដាក់លំហាត់អោយសិស្សធ្វើកិច្ចការផ្ទះ& សរសេរកិច្ចការផ្ទះ
+\begin{center}
+	\begin{tikzpicture}
+		\draw (0,0)--(2,0)--(0,3)--cycle;
+	\end{tikzpicture}
+\end{center}
+	& ត្រូវធ្វើកិច្ចការផ្ទះ\\
+	&\centering {\ml ជំហានទី៣ }​&\\
+	&\vspace{-2mm}\centering (~ពង្រឹងពុទ្ធិ~:~៥ នាទី)&\\
+	ត្រូវដាក់លំហាត់អោយសិស្សធ្វើកិច្ចការផ្ទះ& សរសេរកិច្ចការផ្ទះ
+\begin{center}
+	\begin{tikzpicture}
+		\draw (0,0)--(2,0)--(0,3)--cycle;
+	\end{tikzpicture}
+\end{center}
+	& ត្រូវធ្វើកិច្ចការផ្ទះ\\\hline
+\end{tabu}
+\newpage
+\noindent
+\begin{tabu} to\linewidth{|X[1,l]|X[1,l]|X[1,l]|} \hline
+	&\centering {\ml ជំហានទី៤ }​&\\
+	&\vspace{-2mm}\centering (~បណ្តាំផ្ញើរ~:~៥ នាទី)&\\
+	ត្រូវដាក់លំហាត់អោយសិស្សធ្វើកិច្ចការផ្ទះ& សរសេរកិច្ចការផ្ទះ
+\begin{center}
+	\begin{tikzpicture}
+		\draw (0,0)--(2,0)--(0,3)--cycle;
+	\end{tikzpicture}
+\end{center}
+\begin{enumerate}
+	\item
+	\item
+	\item
+\end{enumerate}
+&ត្រូវធ្វើកិច្ចការផ្ទះ\\\hline
+\end{tabu}
+\end{document}

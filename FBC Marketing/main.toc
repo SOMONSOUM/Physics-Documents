@@ -1,0 +1,3 @@
+\contentsline {chapter}{\numberline {១}ការបង្កើតផេកតាមស្តង់ដារ និងការ}{១}{chapter.1}
+\contentsline {section}{\numberline {១}ការបង្កើតផេកតាមកុំព្យូទ័រ}{១}{section.1.1}
+\contentsline {subsection}{\numberline {១.១}របៀបដាក់ឈ្មោះផេកហ្វេសប៊ុក}{១}{subsection.1.1.1}

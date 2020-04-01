@@ -1,9 +1,13 @@
-\documentclass[a4paper,12pt]{fancy}
+\documentclass[a4paper,12pt]{classes/fancy}
 \usepackage{circuitikz}
+\usepackage{multicol}
+\usepackage{wrapfig}
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 \usepackage[table]{xcolor}
+\usepackage{esvect}
 \usepackage{pdflscape}
+\usepackage{physics}
 \usepackage{adjustbox}
 \usepackage{pdfpages}
 \usepackage[version=4]{mhchem}
@@ -106,18 +110,26 @@
 \newcommand{\pythagwidth}{3cm}
 \newcommand{\pythagheight}{2cm}
 \begin{document}
+	\definecolor{xfqqff}{rgb}{0.5,0,1}
+	\definecolor{qqqqff}{rgb}{0,0,1}
+	\definecolor{ffqqqq}{rgb}{1,0,0}
+	\definecolor{qqqqff}{rgb}{0,0,1}
 	%\includepdf[pages=1]{conicfrontcover.pdf}
 	%\frontmatter
 	\pagenumbering{alpkh}
-	%\input{conicacknowledge.tex}
-	%\input{conicpreface.tex}
-	%\input{conictableofcontents.tex}
+	%\input{introduction/conicacknowledge.tex}
+	%\input{introduction/conicpreface.tex}
+	%\input{introduction/conictableofcontents.tex}
 	\mainmatter
 	\pagenumbering{khmer}
-	\input{lesson0.tex}
-	\input{lesson1.tex}
+	\input{lessons/lesson0.tex}
+	\input{lessons/lesson1.tex}
 	%\input{exercises1.tex}
-	%\input{lesson2.tex}
-	\input{lesson3.tex}
-	%\input{lesson4.tex}
+	\input{lessons/lesson2.tex}
+	\input{lessons/lesson3.tex}
+	\input{lessons/lesson4.tex}
+	\input{lessons/lesson5.tex}
+	\input{lessons/lesson6.tex}
+%	\input{lessons/lesson7.tex}
+	\input{lessons/lesson8.tex}
 \end{document}

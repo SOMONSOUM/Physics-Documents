@@ -1,0 +1,69 @@
+\contentsline {chapter}{\numberline {១}មូលដ្ឋានគ្រឹះខ្លះៗនៃគណិតវិទ្យា}{១}{chapter.1}
+\contentsline {section}{\numberline {១}ស្វ័យគុណ}{១}{section.1.1}
+\contentsline {section}{\numberline {២}ឯកលក្ខណៈភាពសំខាន់ៗ}{១}{section.1.2}
+\contentsline {section}{\numberline {៣}លក្ខណៈនៃប្រភាគពីរស្មើគ្នា}{១}{section.1.3}
+\contentsline {section}{\numberline {៤}សមីការបន្ទាត់}{១}{section.1.4}
+\contentsline {section}{\numberline {៥}ទម្រង់ស្តង់ដានៃស្វ័យគុណ}{២}{section.1.5}
+\contentsline {section}{\numberline {៦}ទ្រឹស្តីបទកូសុីនុស និងសុីនុស}{២}{section.1.6}
+\contentsline {section}{\numberline {៧}ផលគុណស្កាលែនៃពីរវុិចទ័រ}{២}{section.1.7}
+\contentsline {section}{\numberline {៨}ធរណីមាត្រក្នុងប្លង់ និងអនុគមន៍ត្រីកោណមាត្រ}{២}{section.1.8}
+\contentsline {subsection}{\numberline {៨.១}ការេ}{២}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {៨.២}ចតុកោណកែង}{៣}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {៨.៣}ប្រភេទនៃត្រីកោណ}{៣}{subsection.1.8.3}
+\contentsline {subsection}{\numberline {៨.៤}រង្វង់}{៤}{subsection.1.8.4}
+\contentsline {subsection}{\numberline {៨.៥}គូប}{៤}{subsection.1.8.5}
+\contentsline {subsection}{\numberline {៨.៦}ប្រលេពីប៉ែតកែង}{៥}{subsection.1.8.6}
+\contentsline {subsection}{\numberline {៨.៧}សុីឡាំង}{៥}{subsection.1.8.7}
+\contentsline {subsection}{\numberline {៨.៨}ស៊្វែ}{៥}{subsection.1.8.8}
+\contentsline {subsection}{\numberline {៨.៩}សមភាពនៃមុំ}{៥}{subsection.1.8.9}
+\contentsline {subsection}{\numberline {៨.១០}តារាងមុំនៃអនុគមន៍ត្រីកោណមាត្រ}{៧}{subsection.1.8.10}
+\contentsline {section}{\numberline {៩}សមីការដឺក្រេទី២ មានមួយអញ្ញាត}{៨}{section.1.9}
+\contentsline {chapter}{\numberline {២}ទំហំវុិចទ័រ និងទំហំស្កាលែ}{៩}{chapter.2}
+\contentsline {section}{\numberline {១}ទំហំវុិចទ័រ}{៩}{section.2.1}
+\contentsline {subsection}{\numberline {១.១}វុិចទ័រពីរស្មើគ្នា}{៩}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {១.២}ផលបូកវុិចទ័រ}{១០}{subsection.2.1.2}
+\contentsline {section}{\numberline {២}ទំហំស្កាលែ}{១២}{section.2.2}
+\contentsline {section}{\numberline {៣}កូអរដោនេនៃវិុចទ័រ}{១២}{section.2.3}
+\contentsline {section}{\numberline {៤}សំណួរ លំហាត់អនុវត្តន៍ និងកិច្ចការផ្ទះ}{១៣}{section.2.4}
+\contentsline {chapter}{\numberline {៣}ចលនាអង្គធាតុតាមមួយវិមាត្រ}{១៥}{chapter.3}
+\contentsline {section}{\numberline {១}ចលនាមេកានិច}{១៥}{section.3.1}
+\contentsline {section}{\numberline {២}បម្លាស់ទី ល្បឿន វុិចទ័រល្បឿន}{១៥}{section.3.2}
+\contentsline {subsection}{\numberline {២.១}ចម្ងាយចរ និងបម្លាស់ទី}{១៥}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {២.២}ល្បឿន វុិចទ័រល្បឿន}{១៥}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {២.៣}វុិចទ័រល្បឿនខណៈ}{១៦}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {២.៤}សំទុះ សំទុះមធ្យម សំទុះខណៈ}{១៦}{subsection.3.2.4}
+\contentsline {section}{\numberline {៣}ចលនាអង្គធាតុតាមមួយវិមាត្រ}{១៧}{section.3.3}
+\contentsline {subsection}{\numberline {៣.១}ចលនាត្រង់ស្មើ}{១៧}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {៣.២}ចលនាត្រង់ប្រែប្រួលស្មើ}{១៧}{subsection.3.3.2}
+\contentsline {section}{\numberline {៤}សំណួរ លំហាត់អនុវត្តន៍ និងកិច្ចការផ្ទះ}{១៩}{section.3.4}
+\contentsline {chapter}{\numberline {៤}ច្បាប់ចលនារបស់ញូតុន}{២១}{chapter.4}
+\contentsline {section}{\numberline {១}កម្លាំង}{២១}{section.4.1}
+\contentsline {subsection}{\numberline {១.១}សញ្ញាណកម្លាំង{\fontspec {Times New Roman}\selectfont (Force Notation)}}{២១}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {១.២}ផលបូកកម្លាំង}{២៣}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {១.៣}បំបែកកម្លាំង}{២៥}{subsection.4.1.3}
+\contentsline {section}{\numberline {២}ច្បាប់ចលនារបស់ញូតុន}{២៦}{section.4.2}
+\contentsline {subsection}{\numberline {២.១}ច្បាប់ទី១ ញូតុន ឬ ច្បាប់និចលភាព}{២៦}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {២.២}ច្បាប់ទី២ ញូតុន ឬ ច្បាប់គ្រឹះឌីណាមិច}{២៧}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {២.៣}ច្បាប់ទី៣ ញូតុន ឬ ច្បាប់អំពើ និងប្រតិកម្ម}{២៨}{subsection.4.2.3}
+\contentsline {section}{\numberline {៣}ម៉ាស និងទម្ងន់}{២៨}{section.4.3}
+\contentsline {subsection}{\numberline {៣.១}ម៉ាស{\fontspec {Times New Roman}\selectfont (Mass)}}{២៨}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {៣.២}ទម្ងន់ ឬកម្លាំងទំនាញដែនដី{\fontspec {Times New Roman}\selectfont (Weight or Gravitational Force)}}{២៨}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {៣.៣}ភាពខុសគ្នារវាង ម៉ាស និងទម្ងន់}{២៩}{subsection.4.3.3}
+\contentsline {section}{\numberline {៤}កម្លាំងកែង និងកម្លាំងកកិត}{៣០}{section.4.4}
+\contentsline {subsection}{\numberline {៤.១}កម្លាំងកែង ឬកម្លាំងប្រតិកម្មកែង{\fontspec {Times New Roman}\selectfont (Normal Force)}}{៣០}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {៤.២}កម្លាំងកកិត​{\fontspec {Times New Roman}\selectfont (Friction Forces)}}{៣០}{subsection.4.4.2}
+\contentsline {section}{\numberline {៥}អនុវត្តន៍ច្បាប់ញូតុន}{៣២}{section.4.5}
+\contentsline {subsection}{\numberline {៥.១}របៀបប្រើច្បាប់ញូតុនដើម្បីដោះស្រាយលំហាត់}{៣២}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {៥.២}អង្គធាតុរអិលលើប្លង់ទេរ}{៣២}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {៥.៣}ម៉ាស៊ីនអាត់វូត}{៣៣}{subsection.4.5.3}
+\contentsline {section}{\numberline {៦}សំណួរ លំហាត់អនុវត្តន៍ និងកិច្ចការផ្ទះ}{៣៤}{section.4.6}
+\contentsline {chapter}{\numberline {៥}កម្មន្ត ថាមពល អានុភាព}{៣៧}{chapter.5}
+\contentsline {section}{\numberline {១}កម្មន្តបង្កើតដោយកម្លាំងថេរ}{៣៧}{section.5.1}
+\contentsline {subsection}{\numberline {១.១}ផលគុណស្កាលែ{\fontspec {Times New Roman}\selectfont (Scalar Product)}}{៣៧}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {១.២}កម្មន្តបង្កើតដោយកម្លាំងថេរ}{៣៧}{subsection.5.1.2}
+\contentsline {section}{\numberline {២}ថាមពលស៊ីនេទិច និងទ្រឹស្តីកម្មន្ត-ថាមពលស៊ីនេទិច}{៣៧}{section.5.2}
+\contentsline {subsection}{\numberline {២.១}ថាមពលស៊ីនេទិច{\fontspec {Times New Roman}\selectfont (Kinetic Energy)}}{៣៧}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {២.២}ទ្រឹស្តីកម្មន្ត-ថាមពលស៊ីនេទិច{\fontspec {Times New Roman}\selectfont (The Work-Kinetic Energy Theorem)}}{៣៧}{subsection.5.2.2}
+\contentsline {section}{\numberline {៣}ថាមពលប៉ូតង់ស្យែល{\fontspec {Times New Roman}\selectfont (Potential Energy)}}{៣៧}{section.5.3}
+\contentsline {section}{\numberline {៤}អានុភាព{\fontspec {Times New Roman}\selectfont (Power)}}{៣៧}{section.5.4}
+\contentsline {section}{\numberline {៥}សំណួរ លំហាត់អនុវត្តន៍ និងកិច្ចការផ្ទះ}{៣៧}{section.5.5}

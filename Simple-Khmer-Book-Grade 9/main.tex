@@ -1,0 +1,105 @@
+\documentclass[12pt,a4paper]{book} % Default font size and left-justified equations
+\renewcommand{\baselinestretch}{1.65}
+%----------------------------------------------------------------------------------------
+
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+\newtheorem{review}{\kml រំលឹក}
+\newtheorem{general}{\kml ជាទូទៅ}
+%\newtheorem{answer}{\kml ចម្លើយ}
+%\newtheorem{property}{\kml លក្ខណះ}
+\newtheorem{formula}{\kml រូបមន្ត}
+\newtheorem{exercise}{\kml លំហាត់}
+
+\newcommand{\answer}{\begin{center}
+\kml \color{magenta} ដំណោះស្រាយ
+\end{center}}
+
+\newcommand{\solution}{{\begin{center}\kml \color{magenta} សម្រាយបញ្ជាក់\end{center} }}
+\newcommand{\pros}{{\begin{center}\kml \color{magenta} ផ្នែកលំហាត់មានដំណោះស្រាយ\end{center} }}
+\newcommand{\problem}{{\begin{center}\kml \color{magenta} ផ្នែកលំហាត់ត្រិះរិះ\end{center} }}
+\newcommand{\proa}{{\begin{center}\kml \color{magenta} ផ្នែកលំហាត់បន្ថែម ពីឯកសាផ្សេងៗ \end{center} }}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator{\arccot}{arccot}
+\setmainfont [Scale = 0.8333333334, Script=Khmer]{Khmer OS Content}
+\begin{document}
+\def\chaptername{\color{magenta} \kb មេរៀនទី}
+\renewcommand{\contentsname}{\color{magenta}\kml មាតិកា} 
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+\AddToShipoutPicture*{\put(0,0){\includegraphics[scale=1.25]{v.jpg}}} % Image background
+\begin{tikzpicture}[remember picture,overlay]
+%ដាក់ផ្ទាំងពីក្រោយជា pdf
+%\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background}};
+%ដាក់ផ្ទាំងពីក្រោយជា រូបភាព
+\draw (current page.center) node [fill=ocre!70!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering \color{white} \kml មេរៀនសង្ខេប និង លំហាត់មេរៀន\\[15pt] % Book title
+{\Large \color{white} \kml ថ្នាក់ទី ៩}\\[20pt] % Subtitle
+{ \color{white} \kml ខែម  ពុទ្ធីូ}}}; % Author name
+\end{tikzpicture}
+\vfill
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+%\noindent Copyright \copyright\today\\ % Copyright notice
+%
+%\noindent \textsc{ Published by Publisher}\\ % Publisher
+ 
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
+
+\chapterimage{band1.png} % Table of contents heading image
+
+\pagestyle{empty} % No headers
+
+\tableofcontents % Print the table of contents itself
+
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+
+%\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot{\kbk រៀបរៀងដោយ៖ \kml ខែម  ពុទ្ធី}
+\cfoot{\kbk \color{magenta}​\thepage}
+\rfoot{\kbk ទូរស័ព្ទលេខ៖ 092/093 522 866 }
+
+
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+\input{chapter01}
+\input{chapter02}
+\input{chapter03}
+\input{chapter04}
+\input{chapter05}
+\input{chapter06}
+\input{chapter07}
+\input{chapter08}
+\input{chapter09}
+\input{chapter10}
+\input{chapter11}
+\input{chapter12}
+\input{chapter13}
+\input{chapter14}
+\input{chapter15}
+\input{chapter16}
+\input{chapter17}
+\input{chapter18}
+\end{document}

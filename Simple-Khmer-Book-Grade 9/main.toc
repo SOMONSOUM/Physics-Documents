@@ -1,0 +1,118 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 1+"17E0\relax }ចំនួនអសនិទាន}{\char \numexpr 7+"17E0\relax }{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 1+"17E0\relax .\char \numexpr 1+"17E0\relax }ឬសការេ}{\char \numexpr 7+"17E0\relax }{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 1+"17E0\relax .\char \numexpr 2+"17E0\relax }ឬសគួប}{\char \numexpr 7+"17E0\relax }{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 1+"17E0\relax .\char \numexpr 3+"17E0\relax }ប្រមាណវិធីលើរ៉ាឌីកាល់}{\char \numexpr 7+"17E0\relax }{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 1+"17E0\relax .\char \numexpr 3+"17E0\relax .\char \numexpr 1+"17E0\relax }វិធីគុណ}{\char \numexpr 7+"17E0\relax }{subsection.1.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 1+"17E0\relax .\char \numexpr 3+"17E0\relax .\char \numexpr 2+"17E0\relax }វិធីចែក}{\char \numexpr 8+"17E0\relax }{subsection.1.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 1+"17E0\relax .\char \numexpr 3+"17E0\relax .\char \numexpr 3+"17E0\relax }ការបញ្ចេញមួយចំនួនពីក្នុងរ៉ាឌីកាល់}{\char \numexpr 8+"17E0\relax }{subsection.1.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 1+"17E0\relax .\char \numexpr 3+"17E0\relax .\char \numexpr 4+"17E0\relax }កាបញ្ចូលមួយចំនួនទៅក្នុងរ៉ាឌីកាល់}{\char \numexpr 8+"17E0\relax }{subsection.1.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 1+"17E0\relax .\char \numexpr 3+"17E0\relax .\char \numexpr 5+"17E0\relax }វិធីបូក និង វិធីដក}{\char \numexpr 8+"17E0\relax }{subsection.1.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 2+"17E0\relax }សមាមាត្រ}{\char \numexpr 2+"17E0\relax \char \numexpr 3+"17E0\relax }{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 2+"17E0\relax .\char \numexpr 1+"17E0\relax }សមាមាត្រ}{\char \numexpr 2+"17E0\relax \char \numexpr 3+"17E0\relax }{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 2+"17E0\relax .\char \numexpr 1+"17E0\relax .\char \numexpr 1+"17E0\relax }សមាមាត្រស្រប}{\char \numexpr 2+"17E0\relax \char \numexpr 3+"17E0\relax }{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 2+"17E0\relax .\char \numexpr 1+"17E0\relax .\char \numexpr 2+"17E0\relax }សមាមាត្រច្រាស}{\char \numexpr 2+"17E0\relax \char \numexpr 3+"17E0\relax }{subsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 2+"17E0\relax .\char \numexpr 2+"17E0\relax }លក្ខណៈសមាមាត្រ}{\char \numexpr 2+"17E0\relax \char \numexpr 3+"17E0\relax }{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 2+"17E0\relax .\char \numexpr 3+"17E0\relax }ចំណោទដែលទាក់ទង និង សមាមាត្រ}{\char \numexpr 2+"17E0\relax \char \numexpr 4+"17E0\relax }{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 2+"17E0\relax .\char \numexpr 4+"17E0\relax }ចំណោទដែលទាក់ទង និង ភាគរយ}{\char \numexpr 2+"17E0\relax \char \numexpr 4+"17E0\relax }{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 2+"17E0\relax .\char \numexpr 5+"17E0\relax }ចំណោទនៃភាគរយកើន ឬ ថយ}{\char \numexpr 2+"17E0\relax \char \numexpr 4+"17E0\relax }{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 2+"17E0\relax .\char \numexpr 6+"17E0\relax }ការប្រាក់}{\char \numexpr 2+"17E0\relax \char \numexpr 4+"17E0\relax }{section.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 3+"17E0\relax }កន្សោមពីជគណិត}{\char \numexpr 2+"17E0\relax \char \numexpr 7+"17E0\relax }{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 3+"17E0\relax .\char \numexpr 1+"17E0\relax }ផលគុណនៃកន្សោមពីជគណិត}{\char \numexpr 2+"17E0\relax \char \numexpr 7+"17E0\relax }{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 3+"17E0\relax .\char \numexpr 2+"17E0\relax }ការដាក់កន្សោមពីជគណិតជាផលគុណនៃកត្តា}{\char \numexpr 2+"17E0\relax \char \numexpr 7+"17E0\relax }{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 3+"17E0\relax .\char \numexpr 2+"17E0\relax .\char \numexpr 1+"17E0\relax }ដាក់ជាកត្តារួម}{\char \numexpr 2+"17E0\relax \char \numexpr 7+"17E0\relax }{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 3+"17E0\relax .\char \numexpr 2+"17E0\relax .\char \numexpr 2+"17E0\relax }ប្រើរូបមន្តសំខាន់ៗ}{\char \numexpr 2+"17E0\relax \char \numexpr 7+"17E0\relax }{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 3+"17E0\relax .\char \numexpr 2+"17E0\relax .\char \numexpr 3+"17E0\relax }វិធីគុណខ្វែង}{\char \numexpr 2+"17E0\relax \char \numexpr 8+"17E0\relax }{subsection.3.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 3+"17E0\relax .\char \numexpr 2+"17E0\relax .\char \numexpr 4+"17E0\relax }វិធីបំពេញ និង បន្ថយតួ}{\char \numexpr 2+"17E0\relax \char \numexpr 8+"17E0\relax }{subsection.3.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 3+"17E0\relax .\char \numexpr 3+"17E0\relax }ប្រមាណវិធីកន្សោមសនិទាន}{\char \numexpr 2+"17E0\relax \char \numexpr 8+"17E0\relax }{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 4+"17E0\relax }សមីការដឺក្រេទី១មានមួយអញ្ញាត}{\char \numexpr 4+"17E0\relax \char \numexpr 1+"17E0\relax }{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 4+"17E0\relax .\char \numexpr 1+"17E0\relax }សមីការដឺក្រេទី១ មានមួយអញ្ញាត}{\char \numexpr 4+"17E0\relax \char \numexpr 1+"17E0\relax }{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 4+"17E0\relax .\char \numexpr 2+"17E0\relax }សមីការដែលមានភាគបែងជាលេខ}{\char \numexpr 4+"17E0\relax \char \numexpr 1+"17E0\relax }{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 4+"17E0\relax .\char \numexpr 3+"17E0\relax }សមីការដែលមានភាគបែងជាអញ្ញាត}{\char \numexpr 4+"17E0\relax \char \numexpr 2+"17E0\relax }{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 4+"17E0\relax .\char \numexpr 4+"17E0\relax }សមីការដែលអង្កទី១ ជាផលគុណនៃកត្តា និងអង្កទី២ស្មើសូន្យ}{\char \numexpr 4+"17E0\relax \char \numexpr 2+"17E0\relax }{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 4+"17E0\relax .\char \numexpr 5+"17E0\relax }ចំណោទសមីការដឺក្រេទី១ មានមួយអញ្ញាត}{\char \numexpr 4+"17E0\relax \char \numexpr 2+"17E0\relax }{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 5+"17E0\relax }វិសមីការដឺក្រេទី១មានមួយអញ្ញាត}{\char \numexpr 5+"17E0\relax \char \numexpr 3+"17E0\relax }{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 6+"17E0\relax }បំណែងចែកប្រេកង់}{\char \numexpr 5+"17E0\relax \char \numexpr 5+"17E0\relax }{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 7+"17E0\relax }មធ្យមស្ថិតិ}{\char \numexpr 5+"17E0\relax \char \numexpr 7+"17E0\relax }{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 8+"17E0\relax }ប្រូបាប}{\char \numexpr 5+"17E0\relax \char \numexpr 9+"17E0\relax }{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 9+"17E0\relax }ចម្ងាយរវាងពីរចំណុច}{\char \numexpr 6+"17E0\relax \char \numexpr 1+"17E0\relax }{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 0+"17E0\relax }សមីការបន្ទាត់}{\char \numexpr 6+"17E0\relax \char \numexpr 3+"17E0\relax }{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 0+"17E0\relax .\char \numexpr 1+"17E0\relax }ការសង់បន្ទាត់}{\char \numexpr 6+"17E0\relax \char \numexpr 3+"17E0\relax }{section.10.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 0+"17E0\relax .\char \numexpr 1+"17E0\relax .\char \numexpr 1+"17E0\relax }ការសង់បន្ទាត់តាមតារាងតម្លៃលេខ}{\char \numexpr 6+"17E0\relax \char \numexpr 3+"17E0\relax }{subsection.10.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 0+"17E0\relax .\char \numexpr 1+"17E0\relax .\char \numexpr 2+"17E0\relax }ការសង់បន្ទាត់កាត់តាមពីរចំណុច}{\char \numexpr 6+"17E0\relax \char \numexpr 3+"17E0\relax }{subsection.10.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 0+"17E0\relax .\char \numexpr 2+"17E0\relax }សមីការនៃបន្ទាត់}{\char \numexpr 6+"17E0\relax \char \numexpr 3+"17E0\relax }{section.10.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 0+"17E0\relax .\char \numexpr 2+"17E0\relax .\char \numexpr 1+"17E0\relax }សមីការនៃបន្ទាត់កាត់តាមពីរចំណុច}{\char \numexpr 6+"17E0\relax \char \numexpr 3+"17E0\relax }{subsection.10.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 0+"17E0\relax .\char \numexpr 2+"17E0\relax .\char \numexpr 2+"17E0\relax }លក្ខខណ្ឌនៃបន្ទាត់ស្រប}{\char \numexpr 6+"17E0\relax \char \numexpr 3+"17E0\relax }{subsection.10.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 0+"17E0\relax .\char \numexpr 2+"17E0\relax .\char \numexpr 3+"17E0\relax }លក្ខខណ្ឌនៃបន្ទាត់កែង}{\char \numexpr 6+"17E0\relax \char \numexpr 3+"17E0\relax }{subsection.10.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 1+"17E0\relax }ប្រព័ន្ធសមីការដឺក្រេទី១មានពីរអញ្ញាត}{\char \numexpr 7+"17E0\relax \char \numexpr 1+"17E0\relax }{chapter.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 1+"17E0\relax .\char \numexpr 1+"17E0\relax }ដំណោះស្រាយប្រព័ន្ធសសមីការតាមក្រាភិច}{\char \numexpr 7+"17E0\relax \char \numexpr 1+"17E0\relax }{section.11.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 1+"17E0\relax .\char \numexpr 2+"17E0\relax }ដំណោះស្រាយប្រព័ន្ធសមីការតាមវិធីជំនួស}{\char \numexpr 7+"17E0\relax \char \numexpr 2+"17E0\relax }{section.11.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 1+"17E0\relax .\char \numexpr 3+"17E0\relax }ដំណោះស្រាយប្រព័ន្ធសមីការតាមវិធីបូកបំបាត់}{\char \numexpr 7+"17E0\relax \char \numexpr 2+"17E0\relax }{section.11.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 1+"17E0\relax .\char \numexpr 4+"17E0\relax }ដំណោះស្រាយប្រព័ន្ធសមីការតាមដេទែមីណង់}{\char \numexpr 7+"17E0\relax \char \numexpr 2+"17E0\relax }{section.11.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 2+"17E0\relax }ទ្រឹស្ដីបទពីតាគ័រ}{\char \numexpr 8+"17E0\relax \char \numexpr 3+"17E0\relax }{chapter.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 3+"17E0\relax }រង្វង់ និង បន្ទាត់}{\char \numexpr 8+"17E0\relax \char \numexpr 5+"17E0\relax }{chapter.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 4+"17E0\relax }លក្ខណៈមុំនៃរង្វង់}{\char \numexpr 8+"17E0\relax \char \numexpr 7+"17E0\relax }{chapter.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 5+"17E0\relax }ទ្រឹស្ដីបទតាលែស}{\char \numexpr 8+"17E0\relax \char \numexpr 9+"17E0\relax }{chapter.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 6+"17E0\relax }ត្រីកោណដូចគ្នា}{\char \numexpr 9+"17E0\relax \char \numexpr 1+"17E0\relax }{chapter.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 7+"17E0\relax }ពហុកោណ}{\char \numexpr 9+"17E0\relax \char \numexpr 3+"17E0\relax }{chapter.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {\char \numexpr 1+"17E0\relax \char \numexpr 8+"17E0\relax }សូលីត}{\char \numexpr 9+"17E0\relax \char \numexpr 5+"17E0\relax }{chapter.18}
+\contentsfinish 
