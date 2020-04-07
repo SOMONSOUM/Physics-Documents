@@ -1,0 +1,53 @@
+%\ProvidesPackage{beamerthemeKhmer}
+\mode<presentation>
+\hypersetup{pdfpagemode=FullScreen}
+%
+\newif\ifbeamer@secheader
+\beamer@secheaderfalse
+%
+\DeclareOptionBeamer{secheader}{\beamer@secheadertrue}
+\ProcessOptionsBeamer
+%
+\useinnertheme{rounded}% build-in theme
+\useoutertheme{infolines}% build-in theme
+\usefonttheme{khmer}% self-designed theme
+\usecolortheme{khmer}% modified theme
+\useinnertheme{circle}% modified theme
+%
+\ifbeamer@secheader\else\setbeamertemplate{headline}[default]\fi
+%
+\setbeamercovered{transparent}
+%
+\setbeamertemplate{theorems}[numbered]
+%\setbeamertemplate{frametitle}[default][left]%left,right,center
+%
+\setlength{\leftmargini}{2.75ex}
+\setlength{\leftmarginii}{2.75ex}
+\setlength{\leftmarginiii}{2.75ex}
+\AtBeginDocument{%
+    \setlength{\abovedisplayskip}{0pt}
+    \setlength{\belowdisplayskip}{0pt}
+    \setlength{\abovedisplayshortskip}{0pt}
+    \setlength{\belowdisplayshortskip}{0pt}
+}
+%
+\addtobeamertemplate{frametitle}{
+    \def\insertframetitle{\thesection.~\insertsection}}{}
+\addtobeamertemplate{frametitle}{
+    \let\insertframesubtitle\insertsubsectionhead}{}
+\CheckCommand*\beamer@checkframetitle{\@ifnextchar\bgroup\beamer@inlineframetitle{}}
+\renewcommand*\beamer@checkframetitle{\global\let\beamer@frametitle\relax\@ifnextchar\bgroup\beamer@inlineframetitle{}}
+%
+\AtBeginPart{%
+\beamer@tocsectionnumber=0\relax
+\setcounter{section}{0}
+\setcounter{theorem}{0}}
+\AtBeginSection[] % Do nothing for \section*
+{
+    \begin{frame}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+%
+\mode<all>
+%\endinput
